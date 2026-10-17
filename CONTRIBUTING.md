@@ -3,7 +3,8 @@
 Start with the README's AI disclaimer and European build identifiers, then
 read [the research handover](docs/research-index.md). Original project work
 is MIT-licensed; do not commit game binaries, extracted assets, account
-profiles, process dumps or credentials.
+profiles, process dumps or credentials. The explicitly reviewed generated
+content-complete game-data file is separate from account/profile data.
 
 Record the patch SHA-256, emulator revision, backend and input method for
 new results. Distinguish an input request, CPU result, native acceptance,

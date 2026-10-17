@@ -9,6 +9,7 @@ from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from patch_format import read
+from create_content_save import valid as valid_save
 
 ROOT = Path(__file__).resolve().parents[1]
 FINAL = ROOT / 'experiments/gamepad-final-v1.0.0'
@@ -24,6 +25,14 @@ def main():
     release_zip = ROOT / 'releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip'
     if hashlib.sha256(release_zip.read_bytes()).hexdigest() != 'f63e598c14f141e22cfb8039378329b1bc3d853b45026892d0449298e025e1eb':
         errors.append('Frozen English release archive changed')
+    save_dir = ROOT / 'releases/v1.0.0/content-complete-save'
+    save = (save_dir / 'DB_SAVE').read_bytes()
+    save_manifest = json.loads((save_dir / 'manifest.json').read_text())
+    if (not valid_save(save)
+            or hashlib.sha256(save).hexdigest() != save_manifest['sha256']
+            or int.from_bytes(save[0x2EEC:0x2EF0], 'big') != 1
+            or save[0x2F00:0x2F18] != bytes([255]) * 24):
+        errors.append('Generated save checksum, identity or inactive power-up mismatch')
     counts = {'files': len(files), 'python': 0, 'json': 0, 'toml': 0, 'markdown': 0}
     for path in files:
         rel = path.relative_to(ROOT)

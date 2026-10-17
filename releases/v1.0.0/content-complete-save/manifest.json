@@ -1,0 +1,24 @@
+{
+  "title": "Dragon Ball Z for Kinect",
+  "region": "Europe",
+  "languages": [
+    "En",
+    "Fr",
+    "De",
+    "Es",
+    "It"
+  ],
+  "title_id": "4E4D084E",
+  "format": "Xenia extracted SystemData/DB_SAVE, not a signed Xbox 360 STFS container",
+  "bytes": 150000,
+  "sha256": "08f6df33f0a4a79d1be117f210b7cf295cd189ea309b68cc7604d4ebad132ca9",
+  "generator": "tools/create_content_save.py",
+  "character_groups": 55,
+  "character_variants": 67,
+  "native_checksum_valid": true,
+  "active_powerup": null,
+  "account_or_profile_data_included": false,
+  "scope": "All identified content available; scores remain zero and Xbox achievements are not written.",
+  "validation_scope": "This exact file was read into the native save buffer in an isolated Xenia Null-GPU session, byte-identical across all 150000 bytes, with the gamepad/storage patch and without the automatic-content-unlock hook. Its native-format checksum is valid and no power-up is active. This is a load/data check, not a full gameplay test.",
+  "runtime_evidence": "../../../research/published-save-runtime.json"
+}

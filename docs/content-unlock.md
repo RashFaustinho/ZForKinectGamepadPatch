@@ -16,6 +16,8 @@ A fresh-profile Vulkan test confirmed55 groups/67 variants, applied another Goku
 python3 tools/create_content_save.py /tmp/new-dbzk-save --xuid B13EBABEBABEBABE
 ```
 
-That XUID is a synthetic research example; use the appropriate local profile for installation. The generator refuses an existing output directory. Default bonus is now inactive; explicit `--powerup 0..11` equips one. Back up your own SystemData/header before copying a generated save under `content/<local-profile-XUID>/4E4D084E/`. Account/profile files and generated save binaries are not published in this repository; their generator is.
+That XUID is a synthetic research example; use the appropriate local profile for installation. The generator refuses an existing output directory. Default bonus is now inactive; explicit `--powerup 0..11` equips one. Back up your own SystemData/header before copying a generated save under `content/<local-profile-XUID>/4E4D084E/`. The optional [published content-complete save](../releases/v1.0.0/content-complete-save/README.md) includes only generated DB_SAVE data, English installation instructions, a manifest and checksums. No account/profile is distributed. It has no active power-up and is optional with the final patch.
 
 [Classifier/save-load evidence](../experiments/content-unlock/save-load-checks.json), [historical unlocked variant](../experiments/gamepad-unlocked), and [final card validation](../experiments/gamepad-final-v1.0.0/runtime-checks.json). Every bonus's individual combat effect was not measured.
+
+The exact optional published save was additionally loaded in `publication-save-null-01` using the gamepad/storage patch without automatic unlocks. All 150,000 loaded bytes match its SHA-256, its native-format checksum is valid, and no power-up is active. [Account-free load/data report](../research/published-save-runtime.json).

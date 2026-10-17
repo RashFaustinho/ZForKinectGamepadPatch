@@ -37,6 +37,10 @@ The log should show **`Gamepad conversion 1.0.0`** being applied. No Python inst
 
 The TOML is **64,441 bytes (62.93 KiB)**. Its SHA-256 is `bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50`. The released gameplay bytes are unchanged from the final version tested with the user.
 
+## Optional content-complete save
+
+[Download the European content-complete save and installation guide](releases/v1.0.0/content-complete-save/README.md). It enables the identified chapters and all 55 character groups / 67 variants, with **no active power-up card**. “Complete” refers to content availability; scores and Xbox achievements are not fabricated. Back up your existing save before replacing it. No account profile is included. The final patch also enables content availability, so this save is optional.
+
 ## Xbox 360 controls
 
 | Context | Input | Action |

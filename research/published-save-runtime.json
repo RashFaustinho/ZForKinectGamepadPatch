@@ -1,0 +1,27 @@
+{
+  "session": "publication-save-null-01",
+  "scope": "Read-only comparison with the native loaded save buffer; no unlock hook or live writes. Not a full gameplay test.",
+  "file_bytes": 150000,
+  "file_sha256": "08f6df33f0a4a79d1be117f210b7cf295cd189ea309b68cc7604d4ebad132ca9",
+  "loaded_buffer_sha256": "08f6df33f0a4a79d1be117f210b7cf295cd189ea309b68cc7604d4ebad132ca9",
+  "loaded_buffer_exact_match": true,
+  "local_native_format_checksum_valid": true,
+  "powerup_flags": 1,
+  "active_powerup": false,
+  "selected_item_slots": [
+    4294967295,
+    4294967295,
+    4294967295,
+    4294967295,
+    4294967295,
+    4294967295
+  ],
+  "startup_patches": [
+    {
+      "name": "4E4D084E.virtual-player.patch.toml",
+      "sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd"
+    }
+  ],
+  "backend": "Null GPU (logic only; no rendering claim)",
+  "automatic_content_unlock_patch_loaded": false
+}

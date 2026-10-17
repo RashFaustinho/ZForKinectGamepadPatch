@@ -20,7 +20,7 @@ Generic PowerPC decompilation missed VMX128 details. GhidraXenon improved decodi
 
 ## What is not distributed
 
-Original disc/executable data, decrypted PE images, extracted game asset archives, full proprietary decompiled routines, account/profile files, raw memory dumps, and private local tool binaries are excluded. These are inputs or environment artifacts, not missing original patch source. Generated all-content save source is included; private profile files are not needed to use it. Do not expect an old absolute path in a JSON report to be a public downloadable artifact.
+Original disc/executable data, decrypted PE images, extracted game asset archives, full proprietary decompiled routines, account/profile files, raw memory dumps, and private local tool binaries are excluded. These are inputs or environment artifacts, not missing original patch source. The optional generated content-complete DB_SAVE and its source are included; no account/profile or account-bound content header is distributed. Do not expect an old absolute path in a JSON report to be a public downloadable artifact.
 
 The new inspection utilities and [build instructions](building.md) describe how to obtain the verified private image from a user-owned game copy. The committed predecessor patches contain the project's authored generated code needed to reproduce the final build; the optional full historical pipeline additionally needs the described original asset metadata.
 
