@@ -1,0 +1,5 @@
+{
+  "scope": "Negative control: the new native-priority-gate regression must reject revision 15.",
+  "old_patch_rejected": true,
+  "failure": "AssertionError: (4, 'right', 0, {'defensive_C': 1, 'left_28': 0, 'right_29': 0})"
+}

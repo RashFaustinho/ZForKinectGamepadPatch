@@ -1,0 +1,11 @@
+{
+  "purpose": "LOCAL TEST ONLY: transient stage access; never distribute",
+  "base_patch_sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd",
+  "stage_flags": [
+    "0x28",
+    "0xbc",
+    "0x150",
+    "0x1e4",
+    "0x278"
+  ]
+}

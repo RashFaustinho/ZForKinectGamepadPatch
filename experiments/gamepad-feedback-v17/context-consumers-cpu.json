@@ -1,0 +1,67 @@
+{
+  "patch_sha256": "3e8233d23a1ec5a4f986b65c22507e15ae5e96a7950a8b8ed1ab838023a83ab0",
+  "scope": "Execute original contextual-strike consumer with the emitted pad bridge.\n\nThis verifies the original dispatcher's four distinct results and action\nrecords, including native input suppression. ABI register save/restore helpers\nare stubbed because this isolated CPU runs in 32-bit mode. It does not prove that a battle\nhas reached that prompt or establish its visible animation.",
+  "passed": true,
+  "cases": [
+    {
+      "button": "LB",
+      "suppressed": false,
+      "native_result": 1,
+      "native_last_action": "0x1e"
+    },
+    {
+      "button": "LB",
+      "suppressed": true,
+      "native_result": 1,
+      "native_last_action": "0xffffffff"
+    },
+    {
+      "button": "RB",
+      "suppressed": false,
+      "native_result": 2,
+      "native_last_action": "0x1f"
+    },
+    {
+      "button": "RB",
+      "suppressed": true,
+      "native_result": 2,
+      "native_last_action": "0xffffffff"
+    },
+    {
+      "button": "LT",
+      "suppressed": false,
+      "native_result": 3,
+      "native_last_action": "0x20"
+    },
+    {
+      "button": "LT",
+      "suppressed": true,
+      "native_result": 3,
+      "native_last_action": "0xffffffff"
+    },
+    {
+      "button": "RT",
+      "suppressed": false,
+      "native_result": 4,
+      "native_last_action": "0x21"
+    },
+    {
+      "button": "RT",
+      "suppressed": true,
+      "native_result": 4,
+      "native_last_action": "0xffffffff"
+    },
+    {
+      "button": "none",
+      "suppressed": false,
+      "native_result": 0,
+      "native_last_action": "0xffffffff"
+    },
+    {
+      "button": "none",
+      "suppressed": true,
+      "native_result": 0,
+      "native_last_action": "0xffffffff"
+    }
+  ]
+}

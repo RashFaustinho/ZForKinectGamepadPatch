@@ -1,0 +1,14 @@
+{
+  "current_patch_sha256": "d144e215d0883acf7355b4ff1e0609e1c9c7da44b641857ca19e900969cd6258",
+  "status": "experimental optional all-content variant; full story unverified",
+  "cpu_evidence": "cpu-checks.json",
+  "runtime_evidence": "runtime-checks.json",
+  "native_content_and_qr_evidence": "gameplay-checks.json",
+  "generated_save_evidence": "../content-unlock/save-load-checks.json",
+  "boss_evidence": "../gamepad-layout-v2/boss-persistence-checks.json",
+  "limits": [
+    "Every character animation and bonus effect not tested",
+    "Six combination-part codes accepted by native classifier; complete pair flow not visually verified",
+    "Physical controller and Windows untested"
+  ]
+}

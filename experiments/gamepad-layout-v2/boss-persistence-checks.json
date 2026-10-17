@@ -1,0 +1,76 @@
+{
+  "session": "revision3-ape-persistent-01",
+  "gamepad_patch_sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd",
+  "before": {
+    "stage5_flags": 0,
+    "next_saga_stage_flags": 0,
+    "save_sha256": "56e8ab79c421ebf565fe81fec4178737899e94d7064bd13f0d9fd9ef33c1b706"
+  },
+  "native_probe_flags": {
+    "fifth_stage": 3,
+    "next_saga_first_stage": 1
+  },
+  "samples": [
+    {
+      "attempt": 0,
+      "battle_context": "0xbcecfce0",
+      "save_mode": 0,
+      "next_saga_on_disk": 0,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    },
+    {
+      "attempt": 1,
+      "battle_context": "0xbcecfce0",
+      "save_mode": 0,
+      "next_saga_on_disk": 0,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    },
+    {
+      "attempt": 2,
+      "battle_context": "0xbcecfce0",
+      "save_mode": 2,
+      "next_saga_on_disk": 0,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    },
+    {
+      "attempt": 3,
+      "battle_context": "0xbcecfce0",
+      "save_mode": 2,
+      "next_saga_on_disk": 1,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    },
+    {
+      "attempt": 4,
+      "battle_context": "0xbcecfce0",
+      "save_mode": 0,
+      "next_saga_on_disk": 1,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    },
+    {
+      "attempt": 5,
+      "battle_context": "0xbcecfce0",
+      "save_mode": 0,
+      "next_saga_on_disk": 1,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    },
+    {
+      "attempt": 6,
+      "battle_context": "0x0",
+      "save_mode": 0,
+      "next_saga_on_disk": 1,
+      "checksum_valid": true,
+      "ui_manager_entry_pointer": "0xbc85af20"
+    }
+  ],
+  "after_next_saga_on_disk": 1,
+  "after_next_saga_in_memory": 1,
+  "after_save_checksum_valid": true,
+  "after_save_sha256": "7b1389b0ec0a3455ea6b5dac3683071499ed7ceed16bce5d910e913a385deadf",
+  "scope": "Only first-five-stage diagnostic access and query logging; no all-content unlock patch or generated save imported"
+}

@@ -1,0 +1,259 @@
+{
+  "scope": "Run original 822A4138 to verify RT initializes a charged strike's hand.\n\nThe native close-distance predicate and ABI helpers are stubbed in this 32-bit\nfixture; the original selection body and both actual input APIs execute.\n",
+  "patch_sha256": "b1d02c704952705963dd6a47d4a811d2c406498de66c69ea7832ed3fcf3833aa",
+  "passed": 36,
+  "cases": [
+    {
+      "mode": 4,
+      "button": "RT",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 4,
+      "button": "RT",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "RT_already_held",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 4,
+      "button": "RT_already_held",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "Y",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "Y",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "Y_already_held",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "Y_already_held",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "X",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "X",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "none",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "none",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "RT",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 5,
+      "button": "RT",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "RT_already_held",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 5,
+      "button": "RT_already_held",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "Y",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "Y",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "Y_already_held",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "Y_already_held",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "X",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "X",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "none",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "none",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "RT",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "RT",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "RT_already_held",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "RT_already_held",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "Y",
+      "suppressed": false,
+      "native_action": "0x7",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 6,
+      "button": "Y",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "Y_already_held",
+      "suppressed": false,
+      "native_action": "0x7",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 6,
+      "button": "Y_already_held",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "X",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "X",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "none",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "none",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    }
+  ]
+}

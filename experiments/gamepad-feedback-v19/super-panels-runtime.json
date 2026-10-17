@@ -1,0 +1,156 @@
+{
+  "scope": "Read loaded battle panel textures and native child draw order; never write.",
+  "bridge_frame": 1223,
+  "panels": [
+    {
+      "widget_offset": "0x5c",
+      "panel_slot": "0x40",
+      "panel": "0xbd4073a0",
+      "super_defense": true,
+      "widget_active": 1,
+      "visibility_state": 2,
+      "texture_index": 16,
+      "label": "RS up",
+      "texture": "0xbc668180",
+      "icon_flags": "0x1",
+      "children": [
+        {
+          "index": 1,
+          "name": "i_pl_attack",
+          "flags": "0x0",
+          "node": "0xbd895df0"
+        },
+        {
+          "index": 3,
+          "name": "i_pl_guard",
+          "flags": "0x0",
+          "node": "0xbd895f60"
+        },
+        {
+          "index": 5,
+          "name": "a_pl_attack_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd8960d0"
+        },
+        {
+          "index": 7,
+          "name": "a_pl_guard_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd896240"
+        },
+        {
+          "index": 9,
+          "name": "i_ico_dummy_grp",
+          "flags": "0x1",
+          "node": "0xbd896520"
+        },
+        {
+          "index": 11,
+          "name": "i_pl_seal_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd8963b0"
+        }
+      ]
+    },
+    {
+      "widget_offset": "0x60",
+      "panel_slot": "0x40",
+      "panel": "0xbd4074a0",
+      "super_defense": true,
+      "widget_active": 1,
+      "visibility_state": 2,
+      "texture_index": 15,
+      "label": "LS left",
+      "texture": "0xbc6680b0",
+      "icon_flags": "0x1",
+      "children": [
+        {
+          "index": 1,
+          "name": "i_pl_attack",
+          "flags": "0x0",
+          "node": "0xbd8cc210"
+        },
+        {
+          "index": 3,
+          "name": "i_pl_guard",
+          "flags": "0x0",
+          "node": "0xbd8cc380"
+        },
+        {
+          "index": 5,
+          "name": "a_pl_attack_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd8cc4f0"
+        },
+        {
+          "index": 7,
+          "name": "a_pl_guard_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd8cc660"
+        },
+        {
+          "index": 9,
+          "name": "i_ico_dummy_grp",
+          "flags": "0x1",
+          "node": "0xbd8cc940"
+        },
+        {
+          "index": 11,
+          "name": "i_pl_seal_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd8cc7d0"
+        }
+      ]
+    },
+    {
+      "widget_offset": "0x64",
+      "panel_slot": "0x40",
+      "panel": "0xbd4075a0",
+      "super_defense": true,
+      "widget_active": 1,
+      "visibility_state": 2,
+      "texture_index": 2,
+      "label": "B",
+      "texture": "0xbc667620",
+      "icon_flags": "0x1",
+      "children": [
+        {
+          "index": 1,
+          "name": "i_pl_attack",
+          "flags": "0x0",
+          "node": "0xbd902630"
+        },
+        {
+          "index": 3,
+          "name": "i_pl_guard",
+          "flags": "0x0",
+          "node": "0xbd9027a0"
+        },
+        {
+          "index": 5,
+          "name": "a_pl_attack_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd902910"
+        },
+        {
+          "index": 7,
+          "name": "a_pl_guard_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd902a80"
+        },
+        {
+          "index": 9,
+          "name": "i_ico_dummy_grp",
+          "flags": "0x1",
+          "node": "0xbd902d60"
+        },
+        {
+          "index": 11,
+          "name": "i_pl_seal_anm_grp",
+          "flags": "0x0",
+          "node": "0xbd902bf0"
+        }
+      ]
+    }
+  ]
+}

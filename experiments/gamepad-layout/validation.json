@@ -1,0 +1,197 @@
+{
+  "status": "development prototype; selected Goku/Raditz actions verified",
+  "title_id": "4E4D084E",
+  "module_hash": "C9561ED1F9AFFED4",
+  "current_patch_sha256": "feb2f0aa42b226e7ee951d785b97d04214ff616988421b44427081a8d404808d",
+  "current_patch_runtime_verification": "virtual-player-14/runtime-patch-verification.json",
+  "notes": [
+    "Earlier sessions use earlier bridge revisions; controls and regressions are described in docs/gamepad-research.md",
+    "Tests use Xenia keyboard gamepad, not a physical USB controller",
+    "Later null-GPU tests render no game frames; only the earlier Vulkan test provides visual evidence",
+    "The native jump action enters Ki charging; it is mapped to D-pad Down and held super directions"
+  ],
+  "results": [
+    {
+      "action": "X punch",
+      "session": "virtual-player-08",
+      "evidence": "punch-effect.png",
+      "evidence_sha256": "2afa5b481b55aeeedecf6e9f5a617548884be1bc74b5e260c07fb5f5d86e98ae",
+      "observed": {
+        "raditz_hp": [
+          31500,
+          31350,
+          31200
+        ]
+      },
+      "method": "Vulkan rendering"
+    },
+    {
+      "action": "Y kick",
+      "session": "virtual-player-11",
+      "evidence": "new-layout-basic-actions.json",
+      "evidence_sha256": "2d186a37a2bc7c1e9dcba66f880398165f4599e9fee61652baffe9a0326065c2",
+      "observed": {
+        "raditz_hp": [
+          31500,
+          31200
+        ]
+      },
+      "method": "null GPU; memory observations"
+    },
+    {
+      "action": "A normal energy shot, ranged phase",
+      "session": "virtual-player-13",
+      "evidence": "ranged-a-long.json",
+      "evidence_sha256": "9fdd65029cfc07470b2d09a98334ace3c4d025b5820943a72a805d85acf3b283",
+      "observed": {
+        "raditz_hp": [
+          31500,
+          31380
+        ]
+      },
+      "method": "null GPU; memory observations"
+    },
+    {
+      "action": "D-pad Down aura charge",
+      "session": "virtual-player-13",
+      "evidence": "aura-corrected.json",
+      "evidence_sha256": "9133102bf9c1fd923d89b3287add0c9e712082360331a4a32e12813116a5f4ad",
+      "observed": {
+        "energy": [
+          0,
+          100
+        ]
+      },
+      "method": "null GPU; memory observations"
+    },
+    {
+      "action": "Lower super on release",
+      "session": "virtual-player-14",
+      "evidence": "lower-super.json",
+      "evidence_sha256": "00cba3914ff463b66de0f1522da57e9202f6cc386244547abaee0a663ed5e4ec",
+      "observed": {
+        "raditz_hp": [
+          31500,
+          26709
+        ],
+        "energy_cost": 50
+      },
+      "method": "null GPU; memory observations"
+    },
+    {
+      "action": "Upper super on release",
+      "session": "virtual-player-14",
+      "evidence": "upper-super.json",
+      "evidence_sha256": "f42a9e455fd4d54a38affd39e1f39ff74ce69aaf32fd1a1a236d90d2d0c4cb75",
+      "observed": {
+        "raditz_hp": [
+          26709,
+          19509
+        ],
+        "energy_cost": 100
+      },
+      "method": "null GPU; memory observations"
+    },
+    {
+      "action": "Repeated upper super",
+      "session": "virtual-player-14",
+      "evidence": "upper-super-full.json",
+      "evidence_sha256": "101d1cec65c279db4b477b71d66b502569ee8c8480c83df3f3b6efbed979c398",
+      "observed": {
+        "raditz_hp": [
+          19509,
+          12309
+        ],
+        "energy": [
+          0,
+          100,
+          0
+        ]
+      },
+      "method": "null GPU; memory observations"
+    },
+    {
+      "action": "B held guard",
+      "session": "virtual-player-14",
+      "evidence": "guard-b.json",
+      "evidence_sha256": "ab14464b0901114686102f4ec64ab7b2f4e2b7975eb72c1009e60d1f2df4f0be",
+      "observed": {
+        "states": [
+          20,
+          80,
+          20
+        ],
+        "hp": [
+          21000,
+          21000
+        ]
+      },
+      "method": "null GPU; state transition; no universal damage protection claim"
+    },
+    {
+      "action": "Left step",
+      "session": "virtual-player-14",
+      "evidence": "step-left.json",
+      "evidence_sha256": "f41ad7e4632895934f14895d1cbb75715f676e164c9a9cfb5a0467243b14c798",
+      "observed": {
+        "position_xz": [
+          [
+            -69.89,
+            54.16
+          ],
+          [
+            -57.38,
+            66.89
+          ]
+        ]
+      },
+      "method": "null GPU; world position"
+    },
+    {
+      "action": "Right step",
+      "session": "virtual-player-14",
+      "evidence": "step-right.json",
+      "evidence_sha256": "611da0ac3f85f983e9443abd990846cfddcdce1b503d2f7c6f72aff115b74e44",
+      "observed": {
+        "position_xz": [
+          [
+            -57.38,
+            66.89
+          ],
+          [
+            -68.98,
+            57.79
+          ]
+        ]
+      },
+      "method": "null GPU; world position"
+    },
+    {
+      "action": "Fourth upper super",
+      "session": "virtual-player-14",
+      "evidence": "upper-super-fourth.json",
+      "evidence_sha256": "e1c39490e1e951324ab2c41337b4d9bb10454f1377074b51eb83d0a5cde75e62",
+      "observed": {
+        "raditz_hp": [
+          5109,
+          0
+        ],
+        "player_hp_at_hit": 16400
+      },
+      "method": "null GPU; memory observations; post-battle result not yet verified"
+    }
+  ],
+  "not_verified": [
+    "Every character, special sequence and boss encounter",
+    "Full story completion",
+    "Screen-relative direction and animations for new steps",
+    "Guard effectiveness against every attack type",
+    "Physical controller and real-time performance on a physical GPU",
+    "Audio and save data"
+  ],
+  "ending_status": "Raditz HP reached zero; subsequent cinematics observed; mission result not verified",
+  "ending_observations": [
+    "virtual-player-14/after-raditz-zero.json",
+    "virtual-player-14/raditz-ending-observation.json"
+  ]
+}

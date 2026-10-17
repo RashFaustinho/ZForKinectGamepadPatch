@@ -1,0 +1,115 @@
+{
+  "width": 128,
+  "height": 128,
+  "content_scale": 0.55,
+  "format": "BC3/DXT5, linear RGBA, no byte swap",
+  "packing": "independent raw LZ4 blocks",
+  "packed_bytes": 15600,
+  "sha256": "6607a22c2758459a531d4a507743db3a10dacfc0dceb249d122d2e39f5d9819a",
+  "textures": [
+    {
+      "index": 2,
+      "label": "B",
+      "offset": 0,
+      "packed_bytes": 1532,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "07a0fac14e9f8356c8894bf83a799cbef7fd1abda0913cdb9c420e3d1f9c9d58"
+    },
+    {
+      "index": 3,
+      "label": "X",
+      "offset": 1532,
+      "packed_bytes": 1564,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "979fece6e4b479a9018f30aa4e8652b6738314ac64983bbe761cf6ef4f38d85d"
+    },
+    {
+      "index": 4,
+      "label": "Y",
+      "offset": 3096,
+      "packed_bytes": 1510,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "128c089243703b676589f43010b10455e559ca4632c2982ff0c458c1edc5ff61"
+    },
+    {
+      "index": 5,
+      "label": "A",
+      "offset": 4606,
+      "packed_bytes": 1500,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "57d20a15b22577834357359a3ed52709f2045122ef71c596987d18044c0731cb"
+    },
+    {
+      "index": 6,
+      "label": "LB",
+      "offset": 6106,
+      "packed_bytes": 848,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "43c30d2f1401a457f3ccd053089912cb9d71ea7a9edc061176bbfa54b2b09b5b"
+    },
+    {
+      "index": 7,
+      "label": "LT",
+      "offset": 6954,
+      "packed_bytes": 828,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "010149eab6e52cec0856753d5e115c82074668c939debc9d3a7f73edbf90bb26"
+    },
+    {
+      "index": 9,
+      "label": "RB",
+      "offset": 7782,
+      "packed_bytes": 952,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "1614543715941bd53b3021696e132498f18b130b9a6de5333606c828416206ab"
+    },
+    {
+      "index": 10,
+      "label": "RT",
+      "offset": 8734,
+      "packed_bytes": 910,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "4e246b9b983d9012db557876c88cd86d68f10e85a47814ceeedfa93a1e65a4f6"
+    },
+    {
+      "index": 14,
+      "label": "LS_RIGHT",
+      "offset": 9644,
+      "packed_bytes": 1350,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "25de5dc0d29711b4aca50f6efdc3b82d3c2b90be294fe71cc8eee8555f8faa31"
+    },
+    {
+      "index": 15,
+      "label": "LS_LEFT",
+      "offset": 10994,
+      "packed_bytes": 1345,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "64779d653e317e215c39e70fbe8acb94482e2f559b3bd9f0dc36f4ba83cefe0e"
+    },
+    {
+      "index": 21,
+      "label": "DPAD_DOWN",
+      "offset": 12339,
+      "packed_bytes": 561,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "f90d564340fb1144642f4e0fb9de859777096395e5fd57febed840c02aff5939"
+    },
+    {
+      "index": 16,
+      "label": "RS_UP",
+      "offset": 12900,
+      "packed_bytes": 1352,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "b9ace233b70a84187739e244dead9eb2ced17c6cb9bd3b83b4e2e46edde5a62c"
+    },
+    {
+      "index": 17,
+      "label": "RS_DOWN",
+      "offset": 14252,
+      "packed_bytes": 1348,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "cc55d94908c38cd6730192a74adb2ea86437da2c3c1bf63dd032359503e91c98"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+name: Validate publication
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  publication:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tools/validate_publication.py
+      - run: python tools/package_patch.py

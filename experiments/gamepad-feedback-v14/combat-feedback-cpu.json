@@ -1,0 +1,39 @@
+{
+  "scope": "Exercise contextual inputs and bounded UI changes; no gameplay claim.",
+  "patch_sha256": "90c1ff920daf9e2f37848d1a1d779596fd8e5597f306167c8343f46abd488222",
+  "input_cases": 384,
+  "ui_cases": [
+    {
+      "case": "normal",
+      "changed": true,
+      "idempotent": true
+    },
+    {
+      "case": "already_ordered",
+      "changed": true,
+      "idempotent": true
+    },
+    {
+      "case": "missing_pad",
+      "changed": false,
+      "idempotent": true
+    },
+    {
+      "case": "unmapped_texture",
+      "changed": false,
+      "idempotent": true
+    },
+    {
+      "case": "missing_root",
+      "changed": false,
+      "idempotent": true
+    },
+    {
+      "case": "missing_dummy",
+      "changed": false,
+      "idempotent": true
+    }
+  ],
+  "clash_texture_cases": 4,
+  "passed": true
+}

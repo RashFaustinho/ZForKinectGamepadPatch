@@ -1,0 +1,13 @@
+{
+  "session": "revision3-save-load-02",
+  "patch_sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd",
+  "unlock_patch_loaded": false,
+  "native_save_status": 1,
+  "native_loaded_flag": 1,
+  "file_bytes": 150000,
+  "save_sha256": "ad4b3f6c89ef9d1d3e7601295f285017e8dbbdfca6f7f9ea6b6901d88a3275aa",
+  "loaded_buffer_exact_match": true,
+  "native_file_enumerated": true,
+  "local_checksum_valid": true,
+  "scope": "Native loading and checksum validation with the gamepad/storage patch only; no all-content code hook present"
+}

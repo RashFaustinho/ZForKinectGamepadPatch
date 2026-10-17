@@ -1,0 +1,27 @@
+{
+  "status": "experimental; see separate CPU, runtime and gameplay validation files",
+  "hook": "0x82195550",
+  "code_cave": "0x825eb100",
+  "diagnostic_data": "0x8266e180",
+  "code_bytes": 1732,
+  "original_xex_sha256": "d09d3c36857d930279f2657188f0b135c27d22a39306178743d4e9becd42d438",
+  "purpose": "Experimental action API mapping; individual combat actions require gameplay verification",
+  "main_code_bytes": 1204,
+  "boss_recognizers": {
+    "entry": "0x825ebe40",
+    "bytes": 308,
+    "scope": "battle kind 1 only",
+    "runtime_registration": true
+  },
+  "boss_qte": {
+    "entry": "0x825eb680",
+    "hook": "0x8211a430",
+    "bytes": 104,
+    "input": "RT held for native type-6 accumulation; no outcome override"
+  },
+  "storage": {
+    "entry": "0x82193038",
+    "bytes": 116,
+    "scope": "Xenia simulated HDD device 1; requires a signed-in game user"
+  }
+}

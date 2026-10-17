@@ -1,0 +1,5 @@
+{
+  "local_only": true,
+  "purpose": "Test native ranged projectile action instead of jab action; no HP/outcome writes",
+  "base_sha256": "40fd703eafc38cd358d25389971c8acdc088ac60310cb98d3fa6ef992bfd6fe0"
+}

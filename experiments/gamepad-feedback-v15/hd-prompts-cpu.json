@@ -1,0 +1,146 @@
+{
+  "scope": "Execute the HD adapter and compare every decoded texel block to its DDS.\n\nThis verifies bounded native VRAM writes, allocation guards, idempotence,\nPowerPC branches and preserved UI frame/LR/r31. It does not prove rendering.\n",
+  "patch_sha256": "1a41dcbd785e0a419be5f6a3e5a14d0c4e74ba308789e371b18cade2d409b29d",
+  "passed": 10,
+  "cases": [
+    {
+      "case": "normal",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 180224
+    },
+    {
+      "case": "missing_pad",
+      "textures_replaced": [],
+      "decoded_bytes": 0
+    },
+    {
+      "case": "wrong_count",
+      "textures_replaced": [],
+      "decoded_bytes": 0
+    },
+    {
+      "case": "bad_width",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    },
+    {
+      "case": "bad_height",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    },
+    {
+      "case": "bad_size",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    },
+    {
+      "case": "bad_format",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    },
+    {
+      "case": "bad_owner",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    },
+    {
+      "case": "out_of_allocation",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    },
+    {
+      "case": "bad_fetch_address",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21
+      ],
+      "decoded_bytes": 163840
+    }
+  ]
+}

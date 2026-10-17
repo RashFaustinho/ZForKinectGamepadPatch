@@ -1,0 +1,192 @@
+{
+  "status": "development: completed native prompt table; visual coverage tracked separately",
+  "input_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+  "patch_sha256": "67a175bf405543ec3451f38e9534bd23e174725572ae48b519929cb508314c6c",
+  "original_regions": {
+    "0x821db5d0": {
+      "bytes": 692,
+      "sha256": "c447110506f75d350d1c165cc97f2553762dde0ae330f5de1ef4313f72c075f0"
+    },
+    "0x821db888": {
+      "bytes": 164,
+      "sha256": "739237c76d0ceb7ed6ec393e889d77f228cc9a325205b0a14525e53c7bc50072"
+    },
+    "0x822de720": {
+      "bytes": 148,
+      "sha256": "b10ab2a28a01325a5c274f43a25460c239175b332a977b4ee7b19da470d634cc"
+    },
+    "0x822dae40": {
+      "bytes": 48,
+      "sha256": "1ccbf163d06bfcd57c3cf59d25431f064f6ce8c07ce370931395f9d6413fd944"
+    },
+    "0x822ebbb8": {
+      "bytes": 132,
+      "sha256": "6550664caa2e020fffd41dfbd333bf1697798917ca28f8cf6aa6aea3775171d7"
+    },
+    "0x822e4218": {
+      "bytes": 4,
+      "sha256": "8b1c31e3a2616d0ff01551976744aae8b71a63781c48895e9aba8a547f04c9d6"
+    },
+    "0x822e3af8": {
+      "bytes": 4,
+      "sha256": "5615b2817664b5343e3ea940508dd935fe443e76c1d2262457233ae634a57589"
+    },
+    "0x822e0eec": {
+      "bytes": 4,
+      "sha256": "f26d1455441e216187b11240a5e2d050b3ec10a38e37f851a9e3ab6e3372f7f7"
+    },
+    "0x822e4240": {
+      "bytes": 4,
+      "sha256": "38b1163d34872e0301fb6feb19de7659fa424bf1149654a4848967986a787cca"
+    }
+  },
+  "button_texture_by_action": [
+    3,
+    6,
+    4,
+    10,
+    9,
+    3,
+    10,
+    3,
+    10,
+    2,
+    10,
+    2,
+    14,
+    15,
+    14,
+    10,
+    4,
+    21,
+    5,
+    3,
+    2,
+    6,
+    10,
+    3,
+    15,
+    21,
+    5,
+    15,
+    14,
+    10,
+    6,
+    9,
+    7,
+    10,
+    10,
+    7,
+    9,
+    14,
+    7,
+    5,
+    15,
+    14,
+    2,
+    4,
+    2,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    15
+  ],
+  "first_person_joint_copy": {
+    "source": "ctx+D0",
+    "destinations": [
+      "ctx+B80",
+      "ctx+1600"
+    ]
+  },
+  "special_pose_icons_preserved": true,
+  "contextual_texture_indices": [
+    6,
+    9,
+    7,
+    10,
+    2,
+    4,
+    15,
+    14,
+    7,
+    15,
+    14
+  ],
+  "extra_pose_texture_indices": [
+    6,
+    9,
+    7,
+    10,
+    2,
+    4,
+    15,
+    14,
+    14,
+    7,
+    9,
+    3,
+    6,
+    4,
+    10,
+    7,
+    5,
+    15,
+    14,
+    10,
+    4
+  ],
+  "native_extra_pose_actions": [
+    30,
+    31,
+    32,
+    33,
+    42,
+    43,
+    40,
+    41,
+    37,
+    35,
+    36,
+    0,
+    1,
+    2,
+    3,
+    38,
+    39,
+    13,
+    14,
+    15,
+    16
+  ],
+  "native_catalog_function": "8211CE50",
+  "native_catalog_prefix_sha256": "4e91cd2fa4b881c65150845f472ef224b8dd03ec92eec8ad410da8aea0bafd4f",
+  "only_changed_guest_offsets": [
+    "0x821db7eb",
+    "0x821db7ec",
+    "0x821db7ed",
+    "0x821db7ee",
+    "0x821db7f1",
+    "0x821db7f2",
+    "0x821db7f3",
+    "0x821db7f4",
+    "0x821db848"
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "Read all twelve power-up cards through the real pad-operated Card Reader.\n\nThis uses an isolated profile, genuine pad events, read-only guest inspection\nand the game's own save path. No menu, selection or save fields are forced.\nStart at the root menu with the catalog on Shield (67), or on a character.\n",
+  "rows": [
+    {
+      "catalog_index": 68,
+      "powerup": 1,
+      "native_label": "Kaioken",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "06e486b22524d9f4ba33d44ea476136b594daec96f00b8004bf455a113cbd5bb"
+    },
+    {
+      "catalog_index": 69,
+      "powerup": 2,
+      "native_label": "Kaioken x3",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "41197266e75d1c22af2541c91713fbe640b7069005406ef33d4148c03d2932c1"
+    },
+    {
+      "catalog_index": 70,
+      "powerup": 3,
+      "native_label": "Kaioken x10",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "6ad190ac299b90efd3f5fd836475539451b0910b0e785c1cecf72482acbd458f"
+    },
+    {
+      "catalog_index": 71,
+      "powerup": 4,
+      "native_label": "Kaioken x20",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "fdc625af5133ee973faf9a52068d51e7513ce5d4505383a01f4228d991a22534"
+    },
+    {
+      "catalog_index": 72,
+      "powerup": 5,
+      "native_label": "Supreme Kai",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "31177952b2de14067ecf49c9225af9a2a2120fe3434ca81612b55becee24ddec"
+    },
+    {
+      "catalog_index": 73,
+      "powerup": 6,
+      "native_label": "Unleash Ki",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "074d731f394dbd1d901573023cf1ace8a963f7e010e2e78d420707aab95a2133"
+    },
+    {
+      "catalog_index": 74,
+      "powerup": 7,
+      "native_label": "Eternal Youth",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "baef56b380e2ba2f2a6afb4dd5810ddf957ae9f8e7d2f6c0c100d4ea603982db"
+    },
+    {
+      "catalog_index": 75,
+      "powerup": 8,
+      "native_label": "Double Ki Blast",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "6314991d8974f47dcf1f2b99e0ce02f98821c3a549070d7df33f858542488674"
+    },
+    {
+      "catalog_index": 76,
+      "powerup": 9,
+      "native_label": "High-Speed Ki Blast",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "1abee46ee2864ff4d444e27b0fbb11a991cfca603925fcdf86bd6c8f40e672d8"
+    },
+    {
+      "catalog_index": 77,
+      "powerup": 10,
+      "native_label": "Guided Ki Blast",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "ec1bc220f60fc85bc41488ed7fb07b9955ad76dc07625faad60a29a23bebfc59"
+    },
+    {
+      "catalog_index": 78,
+      "powerup": 11,
+      "native_label": "Super Smash",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "0921b04e7c08983bd2134c472f4b5b54da2f7a318ae24224dd328014a7fc42eb"
+    },
+    {
+      "catalog_index": 67,
+      "powerup": 0,
+      "native_label": "Shield",
+      "saved_flags": 5,
+      "save_checksum_valid": true,
+      "save_sha256": "8e9a5e11cfad07bcd6903afef78951fd372a0cdfa4d94707d83617b0eca0ab80"
+    }
+  ],
+  "complete": true
+}

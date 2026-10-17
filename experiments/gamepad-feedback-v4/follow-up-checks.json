@@ -1,0 +1,255 @@
+{
+  "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+  "status": "confirmed current-patch native boss completion, player-shot rendering, isolated Y/left, and live LS-left combo escape; contextual-button timing/visual coverage remains partial",
+  "normal_inputs": {
+    "isolated-y": {
+      "session": "revision4-confirmation-null-01",
+      "gpu": "null",
+      "capture_sha256": "9f7172525f460a13e00b5c0e4458d0ceb53842eb9b50c44e526892a7f1324b24",
+      "native_actor_states": [
+        0,
+        10
+      ],
+      "native_actions": [
+        2
+      ],
+      "enemy_hp_before": 45000.0,
+      "enemy_hp_after": 45000.0,
+      "player_position_before": [
+        -3.9998106956481934,
+        -0.0,
+        3.6209257814334705e-11,
+        1.0
+      ],
+      "player_position_after": [
+        -2.4994916915893555,
+        0.0,
+        -0.01176496222615242,
+        1.0
+      ],
+      "scope": "Native input/animation-state entry; no exact visible-move claim"
+    },
+    "isolated-left": {
+      "session": "revision4-confirmation-null-01",
+      "gpu": "null",
+      "capture_sha256": "575fa5035e5049f2b54438d164f8a2d4feeae6c8535bd16b6d0b084e160c1a6e",
+      "native_actor_states": [
+        0,
+        8,
+        37
+      ],
+      "native_actions": [
+        13
+      ],
+      "enemy_hp_before": 45000.0,
+      "enemy_hp_after": 45000.0,
+      "player_position_before": [
+        -2.4994916915893555,
+        0.0,
+        -0.01176496222615242,
+        1.0
+      ],
+      "player_position_after": [
+        -7.652543067932129,
+        0.0,
+        6.05239725112915,
+        1.0
+      ],
+      "scope": "Native input/animation-state entry; no exact visible-move claim"
+    }
+  },
+  "contextual_strikes_cpu": {
+    "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+    "scope": "Execute original contextual-strike consumer with the emitted pad bridge.\n\nThis verifies the original dispatcher's four distinct results and action\nrecords, including native input suppression. ABI register save/restore helpers\nare stubbed because this isolated CPU runs in 32-bit mode. It does not prove that a battle\nhas reached that prompt or establish its visible animation.",
+    "passed": true,
+    "cases": [
+      {
+        "button": "LB",
+        "suppressed": false,
+        "native_result": 1,
+        "native_last_action": "0x1e"
+      },
+      {
+        "button": "LB",
+        "suppressed": true,
+        "native_result": 1,
+        "native_last_action": "0xffffffff"
+      },
+      {
+        "button": "RB",
+        "suppressed": false,
+        "native_result": 2,
+        "native_last_action": "0x1f"
+      },
+      {
+        "button": "RB",
+        "suppressed": true,
+        "native_result": 2,
+        "native_last_action": "0xffffffff"
+      },
+      {
+        "button": "LT",
+        "suppressed": false,
+        "native_result": 3,
+        "native_last_action": "0x20"
+      },
+      {
+        "button": "LT",
+        "suppressed": true,
+        "native_result": 3,
+        "native_last_action": "0xffffffff"
+      },
+      {
+        "button": "RT",
+        "suppressed": false,
+        "native_result": 4,
+        "native_last_action": "0x21"
+      },
+      {
+        "button": "RT",
+        "suppressed": true,
+        "native_result": 4,
+        "native_last_action": "0xffffffff"
+      },
+      {
+        "button": "none",
+        "suppressed": false,
+        "native_result": 0,
+        "native_last_action": "0xffffffff"
+      },
+      {
+        "button": "none",
+        "suppressed": true,
+        "native_result": 0,
+        "native_last_action": "0xffffffff"
+      }
+    ]
+  },
+  "boss": {
+    "session": "revision4-boss-result-null-01",
+    "gpu": "null",
+    "base_input_patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+    "diagnostic_patch_sha256": "db56f55e2d628e0cd5ee90cc30251d001b9bb0564322c4001fbb4739e0bc5233",
+    "startup_readback_passed": true,
+    "global_unlock_hook_absent": true,
+    "progress_flags_before": {
+      "fifth_stage": 3,
+      "next_saga_first_stage": 0
+    },
+    "progress_flags_after": {
+      "fifth_stage": 3,
+      "next_saga_first_stage": 1
+    },
+    "native_unlock_observed": true,
+    "samples": 2170,
+    "all_finite": true,
+    "bases_nondegenerate": true,
+    "disk_before": {
+      "next_saga_first_stage": 0,
+      "checksum_valid": true,
+      "sha256": "e1991fd91d79e38231ba48b921ced5b0be91a89115073f6e74530705cd2e0763"
+    },
+    "disk_after": {
+      "next_saga_first_stage": 1,
+      "checksum_valid": true,
+      "sha256": "97d5d422eea3e556ccd2dbd09c04b983f0198dc3d75c746bf4963fc5e203eb07"
+    },
+    "battle_context_released": true,
+    "persistence_passed": true,
+    "scope": "Current input, skeleton and QTE changes; optional global unlock/QR replacement omitted. Isolated offline fixture grants stage access only; no HP, Ki, phase, animation, gauge, score or outcome writes."
+  },
+  "live_combo_attempt": {
+    "session": "revision4-confirmation-null-01",
+    "seconds": 120,
+    "gauge_filled": false,
+    "prompt_observed": false,
+    "scope": "No eligible full-combo prompt was encountered; not counted as an escape success."
+  },
+  "vulkan_melee": {
+    "session": "revision4-visual-confirmation-01",
+    "capture": "heavy-after-start-action.png",
+    "observed_visual_combo_count": 15,
+    "visible_player_kick_and_impacts": true,
+    "kinect_tuner_banner_visible": false,
+    "scope": "Visual inspection of the native charged-combo animation; this is RT, not the isolated Y test.",
+    "samples": 391
+  },
+  "vulkan_ki_blast": {
+    "session": "revision4-visual-confirmation-01",
+    "gpu": "vulkan/Lavapipe",
+    "character_pair": "Goku versus Raditz, Shield active",
+    "visual_visibility_confirmed": true,
+    "screenshots": [
+      "player-ki-confirmed-shot-3.png",
+      "player-ki-confirmed-shot-6.png",
+      "player-ki-confirmed-shot-9.png"
+    ],
+    "capture_sha256": "98e741f6b1366839931e29beb623b5793ce01985845e5bcbc535d7f61d839f50",
+    "samples_with_player_projectile": 1242,
+    "first_projectile_frame": 2475,
+    "first_damage_frame": 2491,
+    "enemy_hp_before": 38320.0,
+    "enemy_hp_after": 38200.0,
+    "scope": "Player effect created by X; visual inspection confirms launch flash and traveling projectile in three captures. Other characters/backends remain outside this visual sample."
+  },
+  "vulkan_approach": {
+    "session": "revision4-visual-confirmation-01",
+    "native_action": "0x12",
+    "energy_before": 20.42445182800293,
+    "energy_after_initial_request": 10.42445182800293,
+    "cinematic_entered": true,
+    "ranged_state_reached": true,
+    "contextual_rb_response_confirmed": false,
+    "scope": "Approach starts and sequence progresses; RB was sent before a native response window was observed, so it is not counted as contextual-input confirmation."
+  },
+  "live_combo_escape": {
+    "session": "revision4-escape-buu-null-02",
+    "gpu": "null",
+    "native_settings": {
+      "difficulty": 2,
+      "bonus_flags": 7,
+      "selected_bonus": 0,
+      "mode": 1,
+      "saga": 3,
+      "stage": 3
+    },
+    "capture_sha256": "ba42747ef1dac0f08cd47907533d44d3beef68d0fc1463a497ce42e2911731ee",
+    "startup_readback_passed": true,
+    "defender_gauge_filled": true,
+    "first_success_seconds": 14.484,
+    "first_success_frame": 2281,
+    "input": {
+      "key": "a",
+      "pad_held": "0x4000",
+      "meaning": "LS-left held"
+    },
+    "gauge_progress": 1.0,
+    "native_success_flag": 1,
+    "native_phase_fields_at_success": {
+      "0x54": 1,
+      "0x5c": 1,
+      "0x60": 0
+    },
+    "observed_prompt_choices": [
+      1,
+      2
+    ],
+    "observed_native_increments": [
+      0.0,
+      0.004807692486792803,
+      0.00657894741743803
+    ],
+    "gauge_coefficients_modified": false,
+    "scope": "Advanced Buu saga fight on Hard, Shield active. Native input/window, accumulation, clamp, success flag and phase result are retained; no writes to HP, energy, gauge, timers or outcomes."
+  },
+  "secondary_y_attempt": {
+    "session": "revision4-escape-buu-null-02",
+    "capture_sha256": "2975d99a6a29cd18b0d279aed19f63ae92538d75e10b292124cdca0a4b7d0f1a",
+    "native_actor_states": [
+      1,
+      40
+    ],
+    "native_y_accepted": false,
+    "scope": "Y overlapped enemy hit state 40; no acceptance or damage. Not counted as an additional attack success."
+  }
+}

@@ -1,0 +1,5437 @@
+{
+  "patch_sha256": "110b42a0918eceb834e3ee8a91f37a9868020414211a119171c333539514d735",
+  "passed": true,
+  "diagnostic_coverage": null,
+  "action_count": 67,
+  "numeric_checks": 804,
+  "scope": "Run every patched action API on PowerPC; check numeric output and sides.\n\nThis tests the numeric input interface. Native animation, first-person geometry\nand context-dependent QTE acceptance require separate runtime captures.",
+  "actions": [
+    {
+      "action": "0x0",
+      "native_name": "WAT_0_FP_00_Jab",
+      "native_type": 1,
+      "pad_mask": "0x80",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1",
+      "native_name": "WAT_0_FP_02_Upper",
+      "native_type": 1,
+      "pad_mask": "0x100",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2",
+      "native_name": "WAT_0_FP_03_Kick",
+      "native_type": 1,
+      "pad_mask": "0x10",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3",
+      "native_name": "WAT_0_FP_04_OnChargeAtk",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x4",
+      "native_name": "WAT_1_HATK_00_Elbow",
+      "native_type": 1,
+      "pad_mask": "0x200",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x5",
+      "native_name": "WAT_0_FP_05_NormalShot",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x6",
+      "native_name": "WAT_0_FP_04_OnChargeAtk",
+      "native_type": 2,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x7",
+      "native_name": "WAT_0_FP_06_SideShot",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x8",
+      "native_name": "WAT_0_FP_07_OnChargeShot",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x9",
+      "native_name": "WAT_0_FP_08_Repel",
+      "native_type": 1,
+      "pad_mask": "0x20",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0xa",
+      "native_name": "WAT_0_FP_07_OnChargeShot",
+      "native_type": 2,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0xb",
+      "native_name": "WAT_0_FP_09_Guard",
+      "native_type": 1,
+      "pad_mask": "0x20",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0xc",
+      "native_name": "WAT_0_FP_11_SwayRight",
+      "native_type": 1,
+      "pad_mask": "0x8000",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0xd",
+      "native_name": "WAT_0_FP_12_SwayFront",
+      "native_type": 1,
+      "pad_mask": "0x4000",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0xe",
+      "native_name": "WAT_0_FP_13_SwayBack",
+      "native_type": 1,
+      "pad_mask": "0x8000",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0xf",
+      "native_name": "WAT_0_FP_14_OnChargeEn",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x10",
+      "native_name": "WAT_0_FP_15_KickSide",
+      "native_type": 1,
+      "pad_mask": "0x10",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x11",
+      "native_name": "WAT_0_FP_16_Jump",
+      "native_type": 1,
+      "pad_mask": "0x2",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x12",
+      "native_name": "WAT_1_HATK_01_FrontKick",
+      "native_type": 1,
+      "pad_mask": "0x40",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x13",
+      "native_name": "WAT_0_FP_01_Hook",
+      "native_type": 1,
+      "pad_mask": "0x80",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x14",
+      "native_name": "WAT_1_HATK_49_Boss_04_Guard",
+      "native_type": 1,
+      "pad_mask": "0x20",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x15",
+      "native_name": "WAT_1_HATK_50_Boss_05_Sun",
+      "native_type": 1,
+      "pad_mask": "0x100",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x16",
+      "native_name": "WAT_1_HATK_51_Boss_06_SpiritPose",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x17",
+      "native_name": "WAT_1_HATK_52_Boss_07_OneHandShot",
+      "native_type": 1,
+      "pad_mask": "0x80",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x18",
+      "native_name": "WAT_1_HATK_53_Boss_08_SwayLeft",
+      "native_type": 1,
+      "pad_mask": "0x4000",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x19",
+      "native_name": "WAT_1_HATK_54_Boss_09_SwayRight",
+      "native_type": 1,
+      "pad_mask": "0x2",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1a",
+      "native_name": "WAT_1_HATK_55_Boss_Run",
+      "native_type": 1,
+      "pad_mask": "0x40",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1b",
+      "native_name": "WAT_2_BLST_00_path_KameKoshi",
+      "native_type": 1,
+      "pad_mask": "0x4000",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1c",
+      "native_name": "WAT_2_BLST_00_end_KameKoshi",
+      "native_type": 1,
+      "pad_mask": "0x8000",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1d",
+      "native_name": "WAT_2_BLST_00_charge_KameKoshi",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1e",
+      "native_name": "WAT_1_HATK_07_HeadButt",
+      "native_type": 1,
+      "pad_mask": "0x100",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x1f",
+      "native_name": "WAT_1_HATK_13_Backhand",
+      "native_type": 1,
+      "pad_mask": "0x200",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x20",
+      "native_name": "WAT_1_HATK_11_Straight",
+      "native_type": 1,
+      "pad_mask": "0x400",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x21",
+      "native_name": "WAT_1_HATK_05_BackSpinKick",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x22",
+      "native_name": "WAT_1_HATK_34_BackCharge",
+      "native_type": 1,
+      "pad_mask": "0x800",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x23",
+      "native_name": "WAT_1_HATK_11_Straight",
+      "native_type": 1,
+      "pad_mask": "0x400",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x24",
+      "native_name": "WAT_1_HATK_44_GuardVert",
+      "native_type": 1,
+      "pad_mask": "0x200",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x25",
+      "native_name": "WAT_1_HATK_46_Boss_01_SwayBack",
+      "native_type": 1,
+      "pad_mask": "0x8000",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x26",
+      "native_name": "WAT_1_HATK_47_Boss_02_SwayFront",
+      "native_type": 1,
+      "pad_mask": "0x4400",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x27",
+      "native_name": "WAT_1_HATK_48_Boss_03_Jump",
+      "native_type": 1,
+      "pad_mask": "0x40",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x28",
+      "native_name": "WAT_1_HATK_42_SwayBack",
+      "native_type": 1,
+      "pad_mask": "0x4400",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x29",
+      "native_name": "WAT_1_HATK_43_NormalShot",
+      "native_type": 1,
+      "pad_mask": "0x8000",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2a",
+      "native_name": "WAT_1_HATK_44_GuardVert",
+      "native_type": 1,
+      "pad_mask": "0x20",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2b",
+      "native_name": "WAT_1_HATK_45_GuardLimb",
+      "native_type": 1,
+      "pad_mask": "0x10",
+      "source": "0x28",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2c",
+      "native_name": "WAT_1_HATK_44_GuardVert",
+      "native_type": 1,
+      "pad_mask": "0x20",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2d",
+      "native_name": "WAT_2_BLST_05_charge_CrouchStart",
+      "native_type": 2,
+      "pad_mask": "0x20000",
+      "source": "0x1004",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2e",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x20000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x2f",
+      "native_name": "WAT_2_BLST_04_path_Jump",
+      "native_type": 1,
+      "pad_mask": "0x20000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x30",
+      "native_name": "WAT_2_BLST_05_int_charge_CrouchStart",
+      "native_type": 2,
+      "pad_mask": "0x20000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x31",
+      "native_name": "WAT_2_BLST_00_charge_KameKoshi",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1004",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x32",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x33",
+      "native_name": "WAT_2_BLST_01_start_Kame2HandShot",
+      "native_type": 1,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x34",
+      "native_name": "WAT_2_BLST_00_int_charge_KameKoshi",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x35",
+      "native_name": "WAT_2_BLST_06_charge_SpiritPose",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1004",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x36",
+      "native_name": "WAT_2_BLST_06_start_SpiritPose",
+      "native_type": 1,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x37",
+      "native_name": "WAT_2_BLST_11_end_OneHandShoulderCharge",
+      "native_type": 1,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x38",
+      "native_name": "WAT_2_BLST_06_int_charge_SpiritPose",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x39",
+      "native_name": "WAT_2_BLST_11_int_charge_OneHandShoulderCharge",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3a",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3b",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3c",
+      "native_name": "WAT_2_BLST_03_int_charge_ShoulderPose",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3d",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3e",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x3f",
+      "native_name": "WAT_2_BLST_03_int_charge_ShoulderPose",
+      "native_type": 2,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x40",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x41",
+      "native_name": "",
+      "native_type": 0,
+      "pad_mask": "0x10000",
+      "source": "0x1000",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    },
+    {
+      "action": "0x42",
+      "native_name": "WAT_0_FP_10_SwayLeft",
+      "native_type": 1,
+      "pad_mask": "0x4000",
+      "source": "0x20",
+      "checks": [
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 1,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 2,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "integer",
+          "sides": 3,
+          "value": 0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 1,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 2,
+          "value": 0.0
+        },
+        {
+          "active": false,
+          "api": "float",
+          "sides": 3,
+          "value": 0.0
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 1,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 2,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "integer",
+          "sides": 3,
+          "value": 3
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 1,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 2,
+          "value": 1.0
+        },
+        {
+          "active": true,
+          "api": "float",
+          "sides": 3,
+          "value": 1.0
+        }
+      ]
+    }
+  ]
+}

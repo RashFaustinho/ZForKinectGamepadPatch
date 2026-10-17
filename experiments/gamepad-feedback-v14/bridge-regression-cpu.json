@@ -1,0 +1,27 @@
+{
+  "engine": "Unicorn 2.1.4 PPC32 BE",
+  "patch_sha256": "90c1ff920daf9e2f37848d1a1d779596fd8e5597f306167c8343f46abd488222",
+  "checks": [
+    "Lower impulse below 50 Ki is rejected",
+    "Holding the stick after a rejected edge neither queues nor charges",
+    "Lower impulse at 50 Ki starts before release; release does not rearm",
+    "A long native super keeps its continuation gesture beyond 300 frames",
+    "Native cinematic clears initiation while retaining follow-ups; no second cast",
+    "Scripted super continuation accepts an impulse at zero Ki without arming initiation",
+    "Upper and Spirit initiation require 100 Ki",
+    "D-pad Down supplies normal and boss native aura charge",
+    "Boss lateral gestures have distinct left/right edges",
+    "Boss scripted charge on RT is available independently of normal super energy gates",
+    "X supplies native close/ranged attacks; battle A supplies approach, not Ki blast",
+    "Four contextual shoulder/trigger choices have distinct inputs",
+    "Boss inputs also update discrete recognizers using the runtime index/type table",
+    "Shared native recognizers combine active aliases and clear after release",
+    "Normal fights leave the native recognizer states unchanged",
+    "RT supplies type-6 boss QTE input; native accumulation and threshold advance the step",
+    "Other battle kinds preserve the original type-6 Kinect input path",
+    "Storage selection chooses Xenia HDD only for a signed-in user and preserves the notification handle",
+    "B returns from a back-only selector with no selectable items",
+    "Both menu hand coordinates are placed outside the canvas"
+  ],
+  "passed": 20
+}

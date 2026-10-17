@@ -1,0 +1,742 @@
+{
+  "scope": "Xenia Canary b735063 Linux; null GPU; SDL dummy; diagnostic virtual pad",
+  "tested_patch_sha256": "75c524202d75091b3737bb91c3d138ef8a3b53e6bca1ecb9f314c772c7100b64",
+  "current_patch_sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd",
+  "current_revision_difference": "Normal action/menu code and bindings unchanged; boss QTE adapter and Xenia HDD selector added; boss recognizer aliases combined.",
+  "full_game_completion_verified": false,
+  "boss_completion_verified": true,
+  "captures": [
+    {
+      "name": "charge-for-range",
+      "source_sha256": "a3f84a4e3726a960fdb83970fbf5939794c525d816bf411b6ed30160a59855ee",
+      "key": "c",
+      "hold_seconds": 35.0,
+      "before": {
+        "mode": 4,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 50000.0,
+            "energy": 0.0,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -4.0,
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 31500.0,
+            "energy": 0.0,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              4.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 2984,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x0",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "before",
+        "seconds": 0.002
+      },
+      "after": {
+        "mode": 4,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48800.0,
+            "energy": 100.0,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -4.000103950500488,
+              0.0,
+              5.990266799926758e-06,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 31500.0,
+            "energy": 0.0,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -6.997879981994629,
+              0.0,
+              0.1042720228433609,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 3549,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x11",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "completed",
+        "seconds": 18.833
+      },
+      "modes_observed": [
+        4
+      ]
+    },
+    {
+      "name": "charged-strike",
+      "source_sha256": "7cb1525c13918798e2db4a26e3545e4b91e1e0cf7c5889f1752a9f82f3a77a3b",
+      "key": "3",
+      "hold_seconds": 4.0,
+      "before": {
+        "mode": 4,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48800.0,
+            "energy": 100.0,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -4.000103950500488,
+              0.0,
+              5.990266799926758e-06,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 31500.0,
+            "energy": 0.0,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -6.997879981994629,
+              0.0,
+              0.1042720228433609,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 3549,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x11",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "before",
+        "seconds": 0.002
+      },
+      "after": {
+        "mode": 8,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48800.0,
+            "energy": 100.0,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 110,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              98.66973876953125,
+              0.019999999552965164,
+              3.510082244873047,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 32,
+            "charge_flags": 2,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26620.0,
+            "energy": 0.0,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 110,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              102.95506286621094,
+              0.019999999552965164,
+              13.41644287109375,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 3915,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x3",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "completed",
+        "seconds": 12.184
+      },
+      "modes_observed": [
+        4,
+        8
+      ]
+    },
+    {
+      "name": "approach-from-close",
+      "source_sha256": "22ff2711f515337512882870415930cb19c478eb5cac323e5a9ca7968c1bd480",
+      "key": "space",
+      "hold_seconds": 0.2,
+      "before": {
+        "mode": 4,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48800.0,
+            "energy": 100.0,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -4.0,
+              -0.0,
+              -0.0,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26620.0,
+            "energy": 0.0,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 0,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              4.0,
+              0.0,
+              0.0,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5138,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x3",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "before",
+        "seconds": 0.002
+      },
+      "after": {
+        "mode": 6,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48524.0,
+            "energy": 88.66666412353516,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 51,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -2.728421688079834,
+              17.905323028564453,
+              25.448312759399414,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 1
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26620.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 21,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -0.8803592324256897,
+              2.518446683883667,
+              54.931846618652344,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5389,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x12",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "completed",
+        "seconds": 8.353
+      },
+      "modes_observed": [
+        4,
+        6,
+        8
+      ]
+    },
+    {
+      "name": "x-ranged-clean",
+      "source_sha256": "4ec2b0e69f0aa807d312fc2aec79056efb512bc1a6f7cdff07ab95b9269a1cc0",
+      "key": "j",
+      "hold_seconds": 0.2,
+      "before": {
+        "mode": 6,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48524.0,
+            "energy": 88.66666412353516,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -2.930549383163452,
+              17.905323028564453,
+              22.224939346313477,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26620.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -1.3722667694091797,
+              22.076805114746094,
+              47.08406448364258,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5435,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x12",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "before",
+        "seconds": 0.004
+      },
+      "after": {
+        "mode": 6,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48524.0,
+            "energy": 88.66666412353516,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -2.930549383163452,
+              17.905323028564453,
+              22.224939346313477,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26500.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              21.76131248474121,
+              22.076805114746094,
+              14.618711471557617,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5596,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x0",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "completed",
+        "seconds": 5.364
+      },
+      "modes_observed": [
+        6
+      ]
+    },
+    {
+      "name": "approach-from-range",
+      "source_sha256": "37208d366d87d76eef3cf25bb4250551583802dd490a941b9c68c79fcb42df20",
+      "key": "space",
+      "hold_seconds": 0.2,
+      "before": {
+        "mode": 6,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 48524.0,
+            "energy": 88.66666412353516,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -2.930549383163452,
+              17.905323028564453,
+              22.224939346313477,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26500.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              21.76131248474121,
+              22.076805114746094,
+              14.618711471557617,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5596,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x0",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "before",
+        "seconds": 0.003
+      },
+      "after": {
+        "mode": 6,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 47324.0,
+            "energy": 82.66666412353516,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -2.930549383163452,
+              17.905323028564453,
+              22.224939346313477,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26500.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              21.92586326599121,
+              22.076805114746094,
+              14.499699592590332,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5907,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x12",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "completed",
+        "seconds": 10.362
+      },
+      "modes_observed": [
+        6
+      ]
+    },
+    {
+      "name": "lower-single-impulse",
+      "source_sha256": "7240951e5124df037c1b4d1b08a7da76a9c458c1a6f2c3f909ee91cef146bfdc",
+      "key": "Down",
+      "hold_seconds": 0.2,
+      "before": {
+        "mode": 6,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 47324.0,
+            "energy": 82.66666412353516,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              -2.930549383163452,
+              17.905323028564453,
+              22.224939346313477,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 26500.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 20,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              21.92586326599121,
+              22.076805114746094,
+              14.499699592590332,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 5908,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x12",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "before",
+        "seconds": 0.001
+      },
+      "after": {
+        "mode": 8,
+        "players": [
+          {
+            "index": 0,
+            "maximum_hp": 50000,
+            "hp": 47324.0,
+            "energy": 32.666664123535156,
+            "actor": "0xbced6fb0",
+            "last_action": 4294967295,
+            "state": 110,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              102.60897064208984,
+              25.1200008392334,
+              2.8154892921447754,
+              1.0
+            ],
+            "control": "0xbcedca90",
+            "control_flags": 0,
+            "charge_flags": 0,
+            "input_suppressed": 0
+          },
+          {
+            "index": 1,
+            "maximum_hp": 31500,
+            "hp": 21709.0,
+            "energy": 2.0833334922790527,
+            "actor": "0xbcedcf30",
+            "last_action": 4294967295,
+            "state": 110,
+            "pending_state": 114,
+            "last_action_progress": 0.0,
+            "position": [
+              102.95506286621094,
+              0.019999999552965164,
+              13.41644287109375,
+              1.0
+            ],
+            "control": "0x0"
+          }
+        ],
+        "bridge": {
+          "frame": 6519,
+          "held": "0x0",
+          "last_query": "0x2d",
+          "last_result": 0,
+          "last_active_query": "0x2d",
+          "lower_release_frames": 0,
+          "upper_release_frames": 0,
+          "release_flags": "0x0"
+        },
+        "phase": "completed",
+        "seconds": 20.356
+      },
+      "modes_observed": [
+        6,
+        8,
+        10
+      ]
+    }
+  ],
+  "boss_completion_evidence": "boss-checks.json (native next-saga unlock and battle exit)"
+}

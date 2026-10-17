@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+.venv/
+*.iso
+*.xex
+*.7z
+*.zip
+*.torrent
+/dist/
+/saves/
+/private/
+/runtime/
+/analysis/
+.DS_Store

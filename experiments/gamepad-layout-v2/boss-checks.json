@@ -1,0 +1,82 @@
+{
+  "patch_sha256": "c56014807f3245cfc2cabf19106aad7ce41c93349ea901577551a2b3fec0cd2f",
+  "emulator": "Xenia Canary b735063 Linux, null GPU / SDL dummy; diagnostic virtual-pad input",
+  "session": "revision3-ape-qte6-01",
+  "diagnostic_access": "First five Saiyan unlock bits only; no next-saga unlock, HP, outcome or phase writes",
+  "before_next_saga_stage_flags": 0,
+  "after_next_saga_stage_flags": 1,
+  "type6_input": "RT held; native progress reaches 1.0 and gesture state becomes success",
+  "trace": [
+    {
+      "seconds": 162.2,
+      "phase": 23,
+      "qte": {
+        "state": 2,
+        "type": 6,
+        "step": 0,
+        "actions": [
+          12,
+          4294967295,
+          4294967295,
+          4294967295,
+          4294967295
+        ],
+        "progress": 0.7000000476837158
+      }
+    },
+    {
+      "seconds": 162.709,
+      "phase": 23,
+      "qte": {
+        "state": 3,
+        "type": 6,
+        "step": 1,
+        "actions": [
+          12,
+          4294967295,
+          4294967295,
+          4294967295,
+          4294967295
+        ],
+        "progress": 1.0000001192092896
+      }
+    },
+    {
+      "seconds": 166.319,
+      "phase": 24,
+      "qte": {
+        "state": 0,
+        "type": 0,
+        "step": 0,
+        "actions": [
+          4294967295,
+          4294967295,
+          4294967295,
+          4294967295,
+          4294967295
+        ],
+        "progress": 0.0
+      }
+    },
+    {
+      "seconds": 170.389,
+      "phase": 30,
+      "qte": {
+        "state": 0,
+        "type": 0,
+        "step": 0,
+        "actions": [
+          4294967295,
+          4294967295,
+          4294967295,
+          4294967295,
+          4294967295
+        ],
+        "progress": 0.0
+      }
+    }
+  ],
+  "exit": "After ordinary A confirmations the battle context is deallocated",
+  "confirmation_sha256": "8681d6c3591c3eb23df0d2776714af5a0bc3481c9602fc7ba2dda1d8cbcbc07b",
+  "limit": "Automated diagnostic pad sequence; original HUD icons and human response timing still need visual review"
+}

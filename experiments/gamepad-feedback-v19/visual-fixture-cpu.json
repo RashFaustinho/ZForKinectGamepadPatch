@@ -1,0 +1,15 @@
+{
+  "scope": "LOCAL lesson-entry fixture only; separate full native course has no shortcut.",
+  "patch_sha256": "ba11f49386b15860bf3e6cc5c9b5c4ac0fe7812ec508a7a2888463def7c3a632",
+  "cases": [
+    "defense_entry",
+    "other_course",
+    "existing_group",
+    "existing_step",
+    "wrong_count",
+    "wrong_text",
+    "null_table"
+  ],
+  "only_data_write": "initial group selector +D0 = 5",
+  "passed": true
+}

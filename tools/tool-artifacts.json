@@ -1,0 +1,66 @@
+[
+  {
+    "path": "/workspace/tools/apt-local/packages/mesa-vulkan-drivers_25.0.7-2+deb13u1_amd64.deb",
+    "sha256": "caf2f7d296b7522efe74e40a74bce762a3ce84c33b53b5e54e1248ac2e0a13a5",
+    "extract_to": "/workspace/tools/mesa-vulkan",
+    "kind": "deb"
+  },
+  {
+    "path": "/workspace/tools/apt-local/packages/x11-xkb-utils_7.7+9_amd64.deb",
+    "sha256": "745e29c79bb435d057cdbf8bb59a35fa33e818e566cb754674f44d381ccd4317",
+    "extract_to": "/workspace/tools/xvfb",
+    "kind": "deb"
+  },
+  {
+    "path": "/workspace/tools/apt-local/packages/xserver-common_2%3a21.1.16-1.3+deb13u3_all.deb",
+    "sha256": "dc1d37303c103b23c40cd1ea694c5c6561e0e8dc1734a73c7a0ae0ef080e7fcc",
+    "extract_to": "/workspace/tools/xvfb",
+    "kind": "deb"
+  },
+  {
+    "path": "/workspace/tools/apt-local/packages/xvfb_2%3a21.1.16-1.3+deb13u3_amd64.deb",
+    "sha256": "365da2b6c93339f34337c434a9489bb6411a240fa47b9f49693d3091745f28c2",
+    "extract_to": "/workspace/tools/xvfb",
+    "kind": "deb"
+  },
+  {
+    "path": "/workspace/tools/xenia-canary/xenia_canary_linux.AppImage",
+    "sha256": "49987f779695e2ed603f10f6ea3c01bda6769e9676772f8e5c844f7fa60bc345",
+    "kind": "appimage"
+  },
+  {
+    "path": "/workspace/tools/xenia-canary/source-b735063.tar.gz",
+    "sha256": "eaba53e43c7ab041acd98b77ceb15bb924605a1b741dd2786aca2fc9b4dddab4",
+    "kind": "source"
+  },
+  {
+    "path": "/workspace/tools/reverse/ghidra_12.1.3_PUBLIC_20260817.zip",
+    "sha256": "93a5d11a9ad510622acaaf908c556a7b9b764d338e78a7567f3689bf5081fd54",
+    "kind": "zip",
+    "extract_to": "/workspace/tools/reverse/ghidra"
+  },
+  {
+    "path": "/workspace/tools/reverse/ghidra_12.1.3_PUBLIC_20260920_XEXLoaderWV.zip",
+    "sha256": "afdaf425bb8e16706f28a453a836ac84fcd0d5000f93a2275a02105807d030a3",
+    "kind": "zip-extension",
+    "extract_to": "/workspace/tools/reverse/ghidra/ghidra_12.1.3_PUBLIC/Ghidra/Extensions"
+  },
+  {
+    "path": "/workspace/tools/reverse/ghidra_xenon_v12.1.zip",
+    "sha256": "cdbdddf60f23f4a53d6e7f9bc020720a3c35401ca6989085190fbf77e59604d8",
+    "kind": "zip-extension",
+    "extract_to": "/workspace/tools/reverse/ghidra/ghidra_12.1.3_PUBLIC/Ghidra/Extensions"
+  },
+  {
+    "path": "/workspace/tools/apt-local/packages/openjdk-21-jdk-headless_21.0.12.1+1-1~deb13u1_amd64.deb",
+    "sha256": "f3abafb6c644b03df042824e707cd211ea33254761d7f7b75be3f8dc0df97c7a",
+    "kind": "deb",
+    "extract_to": "/workspace/tools/jdk21"
+  },
+  {
+    "path": "/workspace/tools/apt-local/packages/openjdk-21-jre-headless_21.0.12.1+1-1~deb13u1_amd64.deb",
+    "sha256": "e95f36193e45464ac758e5436f940bf3eaecc77de67188275a42104f58aa7674",
+    "kind": "deb",
+    "extract_to": "/workspace/tools/jdk21"
+  }
+]

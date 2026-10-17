@@ -1,0 +1,202 @@
+{
+  "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+  "scope": "Numeric and typed-coordinate audit; finite geometry is not proof of every animation or contextual command working.",
+  "cpu": {
+    "cpu-checks.json": {
+      "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+      "checks": 11,
+      "passed": true
+    },
+    "action-values-cpu.json": {
+      "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+      "checks": 804,
+      "passed": true
+    },
+    "bridge-regression-cpu.json": {
+      "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+      "checks": 20,
+      "passed": true
+    }
+  },
+  "normal_battle": {
+    "session": "revision4-coordinate-audit-null-01",
+    "gpu": "null",
+    "groups": 15,
+    "samples": 1660,
+    "all_finite": true,
+    "bases_nondegenerate": true,
+    "all_joint_buffers_equal_in_full_snapshots": true,
+    "action_coverage": {
+      "queried": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        17,
+        18,
+        19,
+        35,
+        36,
+        40,
+        41,
+        42,
+        43,
+        45,
+        47,
+        49,
+        51
+      ],
+      "accepted": [
+        0,
+        1,
+        3,
+        4,
+        6,
+        12,
+        17,
+        18,
+        40,
+        42,
+        45,
+        47
+      ],
+      "last_accepted": 0,
+      "accepted_frame": 10935,
+      "last_queried": 45,
+      "query_frame": 11034,
+      "caller": "0x822a4448"
+    },
+    "groups_without_native_input_in_initial_window": [
+      "kick",
+      "left",
+      "upper_super"
+    ],
+    "upper_super_retry": {
+      "all_finite": true,
+      "regions": 52,
+      "bases_nondegenerate": true,
+      "joint_buffers_equal": true
+    },
+    "provenance": "Captured before the final LS-left action-28 alias and associated prompt changes; the joint-copy fix is identical.",
+    "runtime_startup_readback_passed": true,
+    "diagnostic_patch_sha256": "c5b3079062784b7ba3620272bceb83eb90b5664b6ac608a45006e0bb7b92bae3",
+    "body_basis_determinant_range": [
+      1.0000556016861968,
+      1.0003890301990022
+    ],
+    "body_basis_axis_norm_range": [
+      0.99981689453125,
+      1.0001367330551147
+    ],
+    "limb_direction_norm_range": [
+      0.9999587535858154,
+      1.0000238054682868
+    ],
+    "limb_angle_range_radians": [
+      3.141592264175415,
+      3.141592264175415
+    ]
+  },
+  "player_ki_blast": {
+    "session": "revision4-coordinate-audit-null-01",
+    "capture": "corrected-shot-final.json",
+    "gpu": "null",
+    "first_projectile_seconds": 0.123,
+    "first_damage_seconds": 0.703,
+    "damage": 120.0,
+    "samples_with_projectile": 54,
+    "spawn_position": [
+      -8.290478706359863,
+      21.347393035888672,
+      71.3130874633789,
+      0.0
+    ],
+    "direction": [
+      0.3739768862724304,
+      -0.04941354691982269,
+      -0.9261201024055481,
+      1.0
+    ],
+    "visual_visibility_confirmed": false,
+    "capture_note": "The legacy capture field named position contains cached direction at effect+350. The origin above is decoded from descriptor+30, effect+7B0.",
+    "descriptor_instances_checked": 54,
+    "all_descriptor_values_finite": true,
+    "direction_norm_range": [
+      0.9999994270822773,
+      0.9999994270822773
+    ]
+  },
+  "boss": {
+    "session": "revision4-coordinate-boss-null-02",
+    "gpu": "null",
+    "samples": 2302,
+    "all_finite": true,
+    "bases_nondegenerate": true,
+    "all_joint_buffers_equal": true,
+    "observed_phases": [
+      0,
+      3,
+      5,
+      7,
+      8,
+      10,
+      12,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      22,
+      23,
+      24,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ],
+    "observed_active_qte_types": [
+      5,
+      6,
+      7
+    ],
+    "native_phase_table_completed": false,
+    "termination_observed": "Battle context not allocated; captured in console after final sample. Completion/win is not inferred.",
+    "runtime_startup_readback_passed": true,
+    "diagnostic_patch_sha256": "910a51569076d32999cf98dbd5040ba6c578b80b58c2a3906de8568b9ce3d98c",
+    "provenance": "Diagnostic variant based on the final patch; all startup hooks and immutable payloads verified by readback.",
+    "prior_capture": {
+      "session": "revision4-coordinate-boss-null-01",
+      "samples": 1501,
+      "all_finite": true
+    }
+  },
+  "limits": [
+    "Not all character animations or contextual-input windows have been visually validated.",
+    "The initial Y/kick group did not receive acceptance in that window; a later isolated Y test entered native action 2 and state 10.",
+    "The isolated Y test did not damage the opponent and does not identify the visible move as a kick.",
+    "Other characters and graphics backends are outside the Goku/Shield Vulkan visibility sample.",
+    "LS-right escape retains isolated native-block CPU evidence; the new live success uses LS-left."
+  ],
+  "subsequent_runtime_confirmation": {
+    "report": "follow-up-checks.json",
+    "boss_completed_and_saved_without_global_unlock": true,
+    "player_ki_blast_visible_in_vulkan_goku_shield_sample": true,
+    "live_ls_left_combo_escape_native_success": true,
+    "isolated_y_and_ls_left_native_input_observed": true,
+    "note": "The earlier GPU-null captures above keep their original scope; later confirmations are separate, current-patch sessions."
+  }
+}

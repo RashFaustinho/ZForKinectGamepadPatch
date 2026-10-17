@@ -1,0 +1,471 @@
+[
+  {
+    "action": 0,
+    "type": 1,
+    "index": 0,
+    "sides": 3,
+    "name": "WAT_0_FP_00_Jab"
+  },
+  {
+    "action": 1,
+    "type": 1,
+    "index": 2,
+    "sides": 3,
+    "name": "WAT_0_FP_02_Upper"
+  },
+  {
+    "action": 2,
+    "type": 1,
+    "index": 3,
+    "sides": 3,
+    "name": "WAT_0_FP_03_Kick"
+  },
+  {
+    "action": 3,
+    "type": 1,
+    "index": 4,
+    "sides": 3,
+    "name": "WAT_0_FP_04_OnChargeAtk"
+  },
+  {
+    "action": 4,
+    "type": 1,
+    "index": 17,
+    "sides": 3,
+    "name": "WAT_1_HATK_00_Elbow"
+  },
+  {
+    "action": 5,
+    "type": 1,
+    "index": 5,
+    "sides": 3,
+    "name": "WAT_0_FP_05_NormalShot"
+  },
+  {
+    "action": 6,
+    "type": 2,
+    "index": 0,
+    "sides": 3,
+    "name": "WAT_0_FP_04_OnChargeAtk"
+  },
+  {
+    "action": 7,
+    "type": 1,
+    "index": 6,
+    "sides": 3,
+    "name": "WAT_0_FP_06_SideShot"
+  },
+  {
+    "action": 8,
+    "type": 1,
+    "index": 7,
+    "sides": 3,
+    "name": "WAT_0_FP_07_OnChargeShot"
+  },
+  {
+    "action": 9,
+    "type": 1,
+    "index": 8,
+    "sides": 3,
+    "name": "WAT_0_FP_08_Repel"
+  },
+  {
+    "action": 10,
+    "type": 2,
+    "index": 1,
+    "sides": 3,
+    "name": "WAT_0_FP_07_OnChargeShot"
+  },
+  {
+    "action": 11,
+    "type": 1,
+    "index": 9,
+    "sides": 3,
+    "name": "WAT_0_FP_09_Guard"
+  },
+  {
+    "action": 12,
+    "type": 1,
+    "index": 11,
+    "sides": 3,
+    "name": "WAT_0_FP_11_SwayRight"
+  },
+  {
+    "action": 13,
+    "type": 1,
+    "index": 12,
+    "sides": 1,
+    "name": "WAT_0_FP_12_SwayFront"
+  },
+  {
+    "action": 14,
+    "type": 1,
+    "index": 13,
+    "sides": 1,
+    "name": "WAT_0_FP_13_SwayBack"
+  },
+  {
+    "action": 15,
+    "type": 1,
+    "index": 14,
+    "sides": 3,
+    "name": "WAT_0_FP_14_OnChargeEn"
+  },
+  {
+    "action": 16,
+    "type": 1,
+    "index": 15,
+    "sides": 3,
+    "name": "WAT_0_FP_15_KickSide"
+  },
+  {
+    "action": 17,
+    "type": 1,
+    "index": 16,
+    "sides": 3,
+    "name": "WAT_0_FP_16_Jump"
+  },
+  {
+    "action": 18,
+    "type": 1,
+    "index": 18,
+    "sides": 3,
+    "name": "WAT_1_HATK_01_FrontKick"
+  },
+  {
+    "action": 19,
+    "type": 1,
+    "index": 1,
+    "sides": 3,
+    "name": "WAT_0_FP_01_Hook"
+  },
+  {
+    "action": 20,
+    "type": 1,
+    "index": 64,
+    "sides": 3,
+    "name": "WAT_1_HATK_49_Boss_04_Guard"
+  },
+  {
+    "action": 21,
+    "type": 1,
+    "index": 65,
+    "sides": 3,
+    "name": "WAT_1_HATK_50_Boss_05_Sun"
+  },
+  {
+    "action": 22,
+    "type": 1,
+    "index": 66,
+    "sides": 3,
+    "name": "WAT_1_HATK_51_Boss_06_SpiritPose"
+  },
+  {
+    "action": 23,
+    "type": 1,
+    "index": 67,
+    "sides": 3,
+    "name": "WAT_1_HATK_52_Boss_07_OneHandShot"
+  },
+  {
+    "action": 24,
+    "type": 1,
+    "index": 68,
+    "sides": 3,
+    "name": "WAT_1_HATK_53_Boss_08_SwayLeft"
+  },
+  {
+    "action": 25,
+    "type": 1,
+    "index": 69,
+    "sides": 3,
+    "name": "WAT_1_HATK_54_Boss_09_SwayRight"
+  },
+  {
+    "action": 26,
+    "type": 1,
+    "index": 70,
+    "sides": 3,
+    "name": "WAT_1_HATK_55_Boss_Run"
+  },
+  {
+    "action": 27,
+    "type": 1,
+    "index": 71,
+    "sides": 1,
+    "name": "WAT_2_BLST_00_path_KameKoshi"
+  },
+  {
+    "action": 28,
+    "type": 1,
+    "index": 72,
+    "sides": 1,
+    "name": "WAT_2_BLST_00_end_KameKoshi"
+  },
+  {
+    "action": 29,
+    "type": 1,
+    "index": 73,
+    "sides": 1,
+    "name": "WAT_2_BLST_00_charge_KameKoshi"
+  },
+  {
+    "action": 30,
+    "type": 1,
+    "index": 23,
+    "sides": 2,
+    "name": "WAT_1_HATK_07_HeadButt"
+  },
+  {
+    "action": 31,
+    "type": 1,
+    "index": 29,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_13_Backhand"
+  },
+  {
+    "action": 32,
+    "type": 1,
+    "index": 27,
+    "sides": 2,
+    "name": "WAT_1_HATK_11_Straight"
+  },
+  {
+    "action": 33,
+    "type": 1,
+    "index": 21,
+    "sides": 1,
+    "name": "WAT_1_HATK_05_BackSpinKick"
+  },
+  {
+    "action": 34,
+    "type": 1,
+    "index": 49,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_34_BackCharge"
+  },
+  {
+    "action": 35,
+    "type": 1,
+    "index": 27,
+    "sides": 2,
+    "name": "WAT_1_HATK_11_Straight"
+  },
+  {
+    "action": 36,
+    "type": 1,
+    "index": 59,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_44_GuardVert"
+  },
+  {
+    "action": 37,
+    "type": 1,
+    "index": 61,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_46_Boss_01_SwayBack"
+  },
+  {
+    "action": 38,
+    "type": 1,
+    "index": 62,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_47_Boss_02_SwayFront"
+  },
+  {
+    "action": 39,
+    "type": 1,
+    "index": 63,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_48_Boss_03_Jump"
+  },
+  {
+    "action": 40,
+    "type": 1,
+    "index": 57,
+    "sides": 1,
+    "name": "WAT_1_HATK_42_SwayBack"
+  },
+  {
+    "action": 41,
+    "type": 1,
+    "index": 58,
+    "sides": 1,
+    "name": "WAT_1_HATK_43_NormalShot"
+  },
+  {
+    "action": 42,
+    "type": 1,
+    "index": 59,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_44_GuardVert"
+  },
+  {
+    "action": 43,
+    "type": 1,
+    "index": 60,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_45_GuardLimb"
+  },
+  {
+    "action": 44,
+    "type": 1,
+    "index": 59,
+    "sides": 4294967295,
+    "name": "WAT_1_HATK_44_GuardVert"
+  },
+  {
+    "action": 45,
+    "type": 2,
+    "index": 10,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_05_charge_CrouchStart"
+  },
+  {
+    "action": 46,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 47,
+    "type": 1,
+    "index": 93,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_04_path_Jump"
+  },
+  {
+    "action": 48,
+    "type": 2,
+    "index": 11,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_05_int_charge_CrouchStart"
+  },
+  {
+    "action": 49,
+    "type": 2,
+    "index": 3,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_00_charge_KameKoshi"
+  },
+  {
+    "action": 50,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 51,
+    "type": 1,
+    "index": 80,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_01_start_Kame2HandShot"
+  },
+  {
+    "action": 52,
+    "type": 2,
+    "index": 4,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_00_int_charge_KameKoshi"
+  },
+  {
+    "action": 53,
+    "type": 2,
+    "index": 12,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_06_charge_SpiritPose"
+  },
+  {
+    "action": 54,
+    "type": 1,
+    "index": 104,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_06_start_SpiritPose"
+  },
+  {
+    "action": 55,
+    "type": 1,
+    "index": 126,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_11_end_OneHandShoulderCharge"
+  },
+  {
+    "action": 56,
+    "type": 2,
+    "index": 13,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_06_int_charge_SpiritPose"
+  },
+  {
+    "action": 57,
+    "type": 2,
+    "index": 19,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_11_int_charge_OneHandShoulderCharge"
+  },
+  {
+    "action": 58,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 59,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 60,
+    "type": 2,
+    "index": 9,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_03_int_charge_ShoulderPose"
+  },
+  {
+    "action": 61,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 62,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 63,
+    "type": 2,
+    "index": 9,
+    "sides": 4294967295,
+    "name": "WAT_2_BLST_03_int_charge_ShoulderPose"
+  },
+  {
+    "action": 64,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 65,
+    "type": 0,
+    "index": 0,
+    "sides": 0,
+    "name": ""
+  },
+  {
+    "action": 66,
+    "type": 1,
+    "index": 10,
+    "sides": 3,
+    "name": "WAT_0_FP_10_SwayLeft"
+  }
+]

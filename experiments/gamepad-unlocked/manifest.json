@@ -1,0 +1,11 @@
+{
+  "status": "experimental; optional persistent content unlock",
+  "base_patch_sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd",
+  "qr_codes": 85,
+  "native_unlock_initializer": "821BEFC0",
+  "replaced_camera_functions": {
+    "0x82302220": 308,
+    "0x82302508": 304
+  },
+  "scope": "Content availability; preserves selected fighter/bonus, HP, scores and native QTE outcomes"
+}

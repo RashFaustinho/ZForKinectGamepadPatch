@@ -1,0 +1,9 @@
+{
+  "scope": "LOCAL rendering fixture: enter the existing tutorial at its defense lesson.\n\nThis chooses native course 5's existing lesson group 5 instead of group 0\non initial entry. Native lesson code still creates the attack, opens defense\nwindows, evaluates pad input and applies results. It does not change combat\nphases, HP, Ki, timers or outcomes. Never count this as completing the whole\ntutorial; the separate full-course pad test provides that coverage.\n",
+  "base_patch_sha256": "519b9cbad922b5b06aa93e897dd3fd31b4373dd916853afb3d7857e4c05086ed",
+  "patch_sha256": "ba11f49386b15860bf3e6cc5c9b5c4ac0fe7812ec508a7a2888463def7c3a632",
+  "hook": "0x822f9430",
+  "entry": "0x825ece80",
+  "bytes": 88,
+  "only_changed_data": "Native tutorial lesson selector D0, initial group 0 -> group 5; no battle fields."
+}

@@ -1,0 +1,156 @@
+{
+  "status": "development; requires separate CPU and gameplay evidence",
+  "input_sha256": "d144e215d0883acf7355b4ff1e0609e1c9c7da44b641857ca19e900969cd6258",
+  "patch_sha256": "ec4d3c7ce5952369c7388874b9cbb0497b36e37903cfbf1dcb022048d1fbeff8",
+  "original_regions": {
+    "0x821db5d0": {
+      "bytes": 692,
+      "sha256": "c447110506f75d350d1c165cc97f2553762dde0ae330f5de1ef4313f72c075f0"
+    },
+    "0x821db888": {
+      "bytes": 164,
+      "sha256": "739237c76d0ceb7ed6ec393e889d77f228cc9a325205b0a14525e53c7bc50072"
+    },
+    "0x822de720": {
+      "bytes": 148,
+      "sha256": "b10ab2a28a01325a5c274f43a25460c239175b332a977b4ee7b19da470d634cc"
+    },
+    "0x822dae40": {
+      "bytes": 48,
+      "sha256": "1ccbf163d06bfcd57c3cf59d25431f064f6ce8c07ce370931395f9d6413fd944"
+    },
+    "0x822ebbb8": {
+      "bytes": 132,
+      "sha256": "6550664caa2e020fffd41dfbd333bf1697798917ca28f8cf6aa6aea3775171d7"
+    },
+    "0x822e4218": {
+      "bytes": 4,
+      "sha256": "8b1c31e3a2616d0ff01551976744aae8b71a63781c48895e9aba8a547f04c9d6"
+    },
+    "0x822e3af8": {
+      "bytes": 4,
+      "sha256": "5615b2817664b5343e3ea940508dd935fe443e76c1d2262457233ae634a57589"
+    },
+    "0x822e0eec": {
+      "bytes": 4,
+      "sha256": "f26d1455441e216187b11240a5e2d050b3ec10a38e37f851a9e3ab6e3372f7f7"
+    },
+    "0x822e4240": {
+      "bytes": 4,
+      "sha256": "38b1163d34872e0301fb6feb19de7659fa424bf1149654a4848967986a787cca"
+    }
+  },
+  "button_texture_by_action": [
+    3,
+    6,
+    4,
+    10,
+    9,
+    3,
+    10,
+    3,
+    10,
+    2,
+    10,
+    2,
+    14,
+    15,
+    14,
+    10,
+    4,
+    21,
+    5,
+    3,
+    2,
+    6,
+    10,
+    3,
+    15,
+    21,
+    5,
+    15,
+    14,
+    10,
+    6,
+    9,
+    7,
+    10,
+    10,
+    7,
+    9,
+    14,
+    7,
+    5,
+    7,
+    14,
+    2,
+    4,
+    2,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    255,
+    15
+  ],
+  "first_person_joint_copy": {
+    "source": "ctx+D0",
+    "destinations": [
+      "ctx+B80",
+      "ctx+1600"
+    ]
+  },
+  "special_pose_icons_preserved": true,
+  "contextual_texture_indices": [
+    6,
+    9,
+    7,
+    10,
+    2,
+    4,
+    15,
+    14,
+    7,
+    15,
+    14
+  ],
+  "extra_pose_texture_indices": [
+    6,
+    9,
+    7,
+    10,
+    2,
+    4,
+    15,
+    14,
+    14,
+    7,
+    9,
+    255,
+    255,
+    255,
+    255,
+    7,
+    5,
+    255,
+    255,
+    255,
+    255
+  ]
+}

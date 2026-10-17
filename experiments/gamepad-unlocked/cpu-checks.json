@@ -1,0 +1,18 @@
+{
+  "engine": "Unicorn 2.1.4 PPC32 BE",
+  "patch_sha256": "d144e215d0883acf7355b4ff1e0609e1c9c7da44b641857ca19e900969cd6258",
+  "checks": [
+    "All 85 catalog entries produce the exact decoded native QR fields only on pad input",
+    "Shoulders wrap the complete catalog; triggers select and wrap all 12 power-up codes",
+    "The original 822FF238 instructions accept every catalog pair: 67/12/3/3 across its four categories",
+    "Unlock adapter preserves menu pointer, stack, LR and selected items; requests one native save of the changed content"
+  ],
+  "passed": 4,
+  "native_classifier_categories": {
+    "1": 67,
+    "2": 12,
+    "3": 3,
+    "4": 3
+  },
+  "limits": "Native classifier executed; native unlock initializer mocked for ABI preservation checks. Xenia gameplay/load tests are separate."
+}

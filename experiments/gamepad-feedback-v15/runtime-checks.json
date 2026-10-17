@@ -1,0 +1,251 @@
+{
+  "status": "experimental; CPU checks and native Vulkan captures passed for reported fixes",
+  "patch_sha256": "1a41dcbd785e0a419be5f6a3e5a14d0c4e74ba308789e371b18cade2d409b29d",
+  "previous_gameplay_revision_sha256": "90c1ff920daf9e2f37848d1a1d779596fd8e5597f306167c8343f46abd488222",
+  "identical_input_and_pose_payloads": [
+    {
+      "address": "0x825eb100",
+      "sha256": "4d714d728d71fdc0d4a68096ee679cec65721f7405467a2ddc8785d517920213"
+    },
+    {
+      "address": "0x825ee600",
+      "sha256": "f79348dc5a82a5cccb4d0d99f691d4cb0608622bbc990901c24bbe3d976e981f"
+    },
+    {
+      "address": "0x825ee800",
+      "sha256": "0614dde5870b133331b1f9b154b975ba46875bd8b7e14ac2a9a5737de426cb2d"
+    },
+    {
+      "address": "0x825ee9c0",
+      "sha256": "74cec5306f219b87040a0e11d2ee733585ad732dbbe8ad2d5e1368359f8fd807"
+    },
+    {
+      "address": "0x825eec00",
+      "sha256": "4ae7a2dc956905fe9d528f288aff9668d83bec6d8f20c5b9a849100825a475fa"
+    }
+  ],
+  "cpu": [
+    {
+      "file": "experiments/gamepad-feedback-v15/action-values-cpu.json",
+      "sha256": "db6bdb96cf23c8cf1040bd13761120b75f9eb33e63c9583dca7f053ac5a0d5d4",
+      "passed": true
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/boss-prompts-cpu.json",
+      "sha256": "bdaa6f4882a881a99c9f627ad6318f0005912e81b7f78deae9bc331538686e0a",
+      "passed": 2103
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/bridge-regression-cpu.json",
+      "sha256": "8f672410674cfd56a61abe397ca5afc1338fa88fdd4580e31b964832893c7d91",
+      "passed": 20
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/charge-start-cpu.json",
+      "sha256": "6b699512cf9b71ba2d5a1d717c92affe9a193fb16c3165eae2cbb0ff17f7e0b4",
+      "passed": 36
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/combat-feedback-cpu.json",
+      "sha256": "e2513d50cd215139986c56743298997a10a25cf4d52cf07ef5b8a4e875ed6816",
+      "passed": true
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/context-consumers-cpu.json",
+      "sha256": "90ad22366f3fb6815553376dae6cd1251c085201a55dd0c7742db313773398f9",
+      "passed": true
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/cpu-checks.json",
+      "sha256": "9cf44462516fda577e9da886bf1fe95e5dbe8f55b6e011b37fb2f161e099098e",
+      "passed": 11
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/hd-prompts-cpu.json",
+      "sha256": "01b554bab9bd7055b7eec228a633e1a7e6e10e42e61575771e4e7b333c17ab4c",
+      "passed": 10
+    },
+    {
+      "file": "experiments/gamepad-feedback-v15/static-prompts-cpu.json",
+      "sha256": "fb0f6134583d8f29056ae5f848955c3ce14fcafe9249ad16316c3e31976d87be",
+      "passed": 13
+    }
+  ],
+  "scope": "Startup patch, virtual pad input, read-only guest observation. No HP, Ki, timers, phases, damage, progress or victories forced during probes. Profiles isolated. ISO/XEX untouched.",
+  "guard": {
+    "baseline_revision13": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-baseline-guard-01/baseline-b-guard-extended.json",
+      "sha256": "485bdd018c1dcafcd949a3291ee7bbc4ea84c610478cd6d4fd19e560b1195d8f"
+    },
+    "tracked_pose_revision14": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-combat-logic-01/tracked-b-guard.json",
+      "sha256": "0ac26827cf336598a355b712e3c04f6f639141d92023018bf618d248c5fb1d23"
+    },
+    "arms_visible_vulkan_revision14": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-combat-visual-01/guard-b-after-start-action-35.png",
+      "sha256": "0390d362e9e3ce04c6fb198f7c26e8131c284cfd558bdbc58ad48c7ca5877cec"
+    },
+    "scope": "Both ordinary guard attempts use Goku/Raditz and Shield; not a guarantee against every attack or QTE."
+  },
+  "ranged_heavy_Y": {
+    "native_damage_revision14": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-combat-logic-01/ranged-y-normal-view.json",
+      "sha256": "82348809f5a01ff8ec36ab1fd40c02603d7a45020c2ca64aa5e1f459c3758851"
+    },
+    "projectiles_revision14": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-combat-logic-01/heavy-y-projectiles.json",
+      "sha256": "bd825d5f800f069fe0dc43664c23b222ef7c4b52f6868e7c96364d7068729354"
+    },
+    "RT_control_revision14": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-combat-logic-01/ranged-rt-control.json",
+      "sha256": "f642798c80233512ff3b0e48664c42dfd8009a8fecc700698be33c270f4fd38c"
+    },
+    "final_vulkan_previews": [
+      {
+        "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/heavy-y-visible-shot-3.png",
+        "sha256": "110dfd2ab7a399f9ee47d9a011c40c916713730924113c31256b93fc0fa8f432"
+      },
+      {
+        "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/heavy-y-visible-shot-6.png",
+        "sha256": "9f410f9ee9b7b6862bb6a745dcaf9bcdb7faf6fa6f000bb8bfe7f14c09edf61e"
+      },
+      {
+        "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/heavy-y-visible-shot-9.png",
+        "sha256": "f6510c5967a3524b5391c76f87b54aac5da358b7a02d42a0bd72a69f2ab60f91"
+      }
+    ],
+    "visually_observed": [
+      "Open hand and forearm",
+      "Player energy emission/projectile",
+      "Y icon"
+    ],
+    "coordinates": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/heavy-active-coordinates.json",
+      "sha256": "f0bcdb5826d636de1b2437110945c25107cfab292cea4b115964249dc05aa8ee"
+    },
+    "final_vulkan_capture": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/heavy-y-visible.json",
+      "sha256": "a80c56e381a1e6bc46f877911def3538c411b6aa50336e42ecf2adebd90a29ab"
+    },
+    "observed_enemy_hp_before": 44400.0,
+    "observed_enemy_hp_after": 39000.0
+  },
+  "approach_attack_meter": {
+    "final_vulkan_preview": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/approach-meter-to-range-defend-1347.png",
+      "sha256": "505566fffb22f19ef7d9cabd6b318f2be47ebc4457aa5a1b022414c3c7b9914f"
+    },
+    "visually_observed": "X replaces the rotating Kinect punches"
+  },
+  "native_child_renderer_order": [
+    "i_ico_dummy_grp",
+    "a_pl_attack_anm_grp",
+    "i_pl_attack",
+    "a_pl_guard_anm_grp",
+    "i_pl_guard",
+    "i_pl_seal_anm_grp"
+  ],
+  "native_boss_revision14": {
+    "completion": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-boss-regression-01/native-boss-result.json",
+      "sha256": "f65ae6e31ee73cd37dedbd7ca2904b818f42810897648ec25e0fbda8b0b1d5d4"
+    },
+    "persistence": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-boss-regression-01/native-boss-persistence.json",
+      "sha256": "a49670abc7fb468def893746fcca397a8853bb35a4778bd89e57932327a523cb"
+    },
+    "loaded_code": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision14-boss-regression-01/runtime-patch-verification.json",
+      "sha256": "68213dfe97086baf6b5b52a79a3c8c996a09da58fab30c2cb3b19d3e56943f28"
+    },
+    "geometry_samples": 1792,
+    "saved_next_chapter": true,
+    "global_unlock_disabled_in_probe": true
+  },
+  "loaded_final_patch": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/runtime-patch-verification.json",
+    "sha256": "5ee35363186bf884e5082691a58c7ccd52d5e7ddf3ad54ff734b88ded941a758"
+  },
+  "native_textures": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/hd-textures-runtime.json",
+    "sha256": "92d2b8d61e5a695a03bcf34c5ac568aa1480d547f7d3a184b61e1f96f489a1d8"
+  },
+  "limitations": [
+    "Full campaign and every character not exhaustively tested",
+    "Windows/D3D12 and physical USB controller not tested",
+    "Static tutorial illustrations remain distinct from interactive prompts",
+    "No new release ZIP generated"
+  ],
+  "approach_two_choices": {
+    "report": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/two-choice-and-seal-visual.json",
+      "sha256": "afd6f746a15896ce34462b4fc7633b2613ba560c007ea5e294b48f13ebfc5f40"
+    },
+    "loaded_panels": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/final-two-choice-panels.json",
+      "sha256": "70339440fb9203ec59bd6b92241596d41412ca04f4e6542116d5c6558950cf61"
+    },
+    "final_vulkan_preview": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision15-combat-visual-01/two-choice-and-seal-visual-defend-2286.png",
+      "sha256": "90410f37ea4eab45f86ca96837ec9ea4565ca2d3eeaf0fd5e461aa16329d7a94"
+    },
+    "observed": [
+      "LT and RB buttons, no Kinect poses",
+      "Native prohibition seal visibly above RB",
+      "Both button texture indices and draw order read from actual loaded panels"
+    ],
+    "native_input_observed": [
+      {
+        "kind": "defend",
+        "action": "0x24",
+        "frame": 2287,
+        "caller": "0x822c79e8",
+        "native_strike_choice": 0,
+        "native_counter_choice": 4294967295,
+        "defense_response": {
+          "choice": 1,
+          "latched": 1
+        }
+      },
+      {
+        "kind": "defend",
+        "action": "0x24",
+        "frame": 2288,
+        "caller": "0x822c79e8",
+        "native_strike_choice": 0,
+        "native_counter_choice": 4294967295,
+        "defense_response": {
+          "choice": 1,
+          "latched": 1
+        }
+      },
+      {
+        "kind": "defend",
+        "action": "0x24",
+        "frame": 2289,
+        "caller": "0x822c79e8",
+        "native_strike_choice": 0,
+        "native_counter_choice": 4294967295,
+        "defense_response": {
+          "choice": 1,
+          "latched": 1
+        }
+      }
+    ],
+    "scope": "A approaches naturally after native cooldown. RB was deliberately pressed despite the prohibition; input acceptance is not evidence of choosing the winning response."
+  },
+  "repository_previews": [
+    {
+      "path": "experiments/gamepad-feedback-v15/previews/approach-choices.png",
+      "sha256": "90410f37ea4eab45f86ca96837ec9ea4565ca2d3eeaf0fd5e461aa16329d7a94"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v15/previews/guard-b.png",
+      "sha256": "0390d362e9e3ce04c6fb198f7c26e8131c284cfd558bdbc58ad48c7ca5877cec"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v15/previews/heavy-y.png",
+      "sha256": "f6510c5967a3524b5391c76f87b54aac5da358b7a02d42a0bd72a69f2ab60f91"
+    }
+  ]
+}

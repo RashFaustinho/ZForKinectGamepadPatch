@@ -1,0 +1,15 @@
+{
+  "local_only": true,
+  "base_sha256": "ae9cd8b36f5048099e4e33a2501227bb54efc3b7309964f19dd1983fdfaf2606",
+  "patch_sha256": "0ce966a10bc014cd1fbc9ac50fa0caeeddc5b7468ce505f7f3b7ac434542214b",
+  "classes": {
+    "action": "0x8266e220",
+    "common": "0x8266e240",
+    "extra": "0x8266e260",
+    "four_choices": "0x8266e280",
+    "four_responses": "0x8266e2a0",
+    "defender": "0x8266e2c0"
+  },
+  "accepted_action_frames": "0x8266e2e0",
+  "scope": "LOCAL ONLY: count native prompt texture requests without changing textures.\n\nWraps the already patched getters with tail branches. Only volatile r9-r11\nare used; r3-r8, LR, CTR and the render loop's nonvolatile registers survive.\nThe counters occupy verified unused alignment padding, never game objects."
+}

@@ -1,0 +1,147 @@
+{
+  "patch_sha256": "110b42a0918eceb834e3ee8a91f37a9868020414211a119171c333539514d735",
+  "cpu_suites_passed": 14,
+  "super_selector_variants_cpu": 11,
+  "native_session": "revision19-super-final-null-08",
+  "native_responses": [
+    {
+      "action": "guard",
+      "native_result": 7,
+      "frame": 5970,
+      "lesson": 124,
+      "source": "/workspace/artifacts/zforkinect/runtime/revision19-super-final-null-08/guard-success.json"
+    },
+    {
+      "action": "evade",
+      "native_result": 6,
+      "frame": 6384,
+      "lesson": 127,
+      "source": "/workspace/artifacts/zforkinect/runtime/revision19-super-final-null-08/evade-success.json"
+    },
+    {
+      "action": "counter",
+      "native_result": 5,
+      "frame": 6671,
+      "lesson": 128,
+      "source": "/workspace/artifacts/zforkinect/runtime/revision19-super-final-null-08/counter-success.json"
+    }
+  ],
+  "final_native_lessons": [
+    130,
+    131,
+    132,
+    133,
+    4294967295
+  ],
+  "native_course_shortcut": false,
+  "native_runtime_diagnostic_payload_verified": true,
+  "gpu_session": "revision19-defense-visual-vulkan-09",
+  "gpu_runtime_diagnostic_payload_verified": true,
+  "gpu_scope": "Existing native tutorial defense lesson selected by LOCAL startup fixture; not a whole-course completion test.",
+  "gpu_screenshot": "super-defense.png",
+  "gpu_buttons": [
+    "RS up",
+    "LS left",
+    "B"
+  ],
+  "native_textures_verified": 13,
+  "pose_groups_hidden": true,
+  "seal_after_button": true,
+  "relevant_diagnostic_regions_equal_public": [
+    {
+      "session": "revision19-super-final-null-08",
+      "scope": "defense wrappers and timing",
+      "bytes": 512,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-super-final-null-08",
+      "scope": "normal guard",
+      "bytes": 4,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-super-final-null-08",
+      "scope": "scripted guard",
+      "bytes": 4,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-super-final-null-08",
+      "scope": "13 texture records",
+      "bytes": 168,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-super-final-null-08",
+      "scope": "compact textures",
+      "bytes": 15600,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-defense-visual-vulkan-09",
+      "scope": "defense wrappers and timing",
+      "bytes": 512,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-defense-visual-vulkan-09",
+      "scope": "normal guard",
+      "bytes": 4,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-defense-visual-vulkan-09",
+      "scope": "scripted guard",
+      "bytes": 4,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-defense-visual-vulkan-09",
+      "scope": "13 texture records",
+      "bytes": 168,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-defense-visual-vulkan-09",
+      "scope": "compact textures",
+      "bytes": 15600,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-card-options-null-04",
+      "scope": "0x82302220",
+      "bytes": 308,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-card-options-null-04",
+      "scope": "0x82302508",
+      "bytes": 304,
+      "identical_to_public": true
+    },
+    {
+      "session": "revision19-card-options-null-04",
+      "scope": "0x8210ec00",
+      "bytes": 680,
+      "identical_to_public": true
+    }
+  ],
+  "card_catalog_session": "revision19-card-options-null-04",
+  "card_reads_verified": 12,
+  "card_saves_checksums_valid": true,
+  "reset": {
+    "ram_flags": 1,
+    "file_flags": 1,
+    "checksum_valid": true,
+    "sha256": "a600b19f870408bd35ab472eddaae56eb25a85e3e2519aeccac497da1b1cd20e",
+    "menu": "0000000200000006ffffffffffffffff44650000432c0000440a000042800000429600003fc0000043cf0000000000010000000000000000000000000000000000000000"
+  },
+  "reset_gpu_menu_return_flag": 1,
+  "limitations": [
+    "All 11 native UI selectors checked on PPC; graphical sample is Piccolo Explosive Demon Wave, not every character or Super.",
+    "Runtime sessions use local diagnostic counters; full public TOML comparison reports their known differences. Relevant defense/card payloads are verified identical above.",
+    "Windows/D3D12/physical USB pad not tested.",
+    "Individual combat effects of all 12 power-up cards not measured."
+  ]
+}

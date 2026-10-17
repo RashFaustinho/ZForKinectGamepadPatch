@@ -1,0 +1,42 @@
+[
+  {
+    "script": "check_bridge_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_step_guard_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_charge_start_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_action_values_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_context_consumers_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_feedback_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_boss_prompt_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  },
+  {
+    "script": "check_static_prompts_cpu.py",
+    "exit_code": 0,
+    "tail": ""
+  }
+]

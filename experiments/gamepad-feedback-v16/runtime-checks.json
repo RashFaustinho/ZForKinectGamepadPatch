@@ -1,0 +1,223 @@
+{
+  "status": "experimental; native controls, charged damage, readable Vulkan HUD and follow-up prompts confirmed",
+  "patch_sha256": "b1d02c704952705963dd6a47d4a811d2c406498de66c69ea7832ed3fcf3833aa",
+  "source_revision15_sha256": "1a41dcbd785e0a419be5f6a3e5a14d0c4e74ba308789e371b18cade2d409b29d",
+  "changed_arrays": [
+    "0x825ee600",
+    "0x825eed00",
+    "0x825eee00",
+    "0x825ef600"
+  ],
+  "all_hooks_unchanged": false,
+  "scope": "Startup patch; virtual pad input and read-only observation. No HP/Ki/timer/phase/result writes during runtime probes. Isolated profiles, original ISO/XEX untouched.",
+  "cpu": [
+    {
+      "path": "experiments/gamepad-feedback-v16/action-values-cpu.json",
+      "sha256": "e1b844116f4038e083582d50ee0a3c7f18fc14939f555c3db0f47d98f15e3588"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/boss-prompts-cpu.json",
+      "sha256": "dff1f168a79e3f2a4eb5e02a71f53ed04b9fcf29cdc9f02662a314cd7b2bd7bb"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/bridge-regression-cpu.json",
+      "sha256": "b065fc5c0afdaf886c5f78a4442390e5ac5d3c70ed49ea617b911f8146791428"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/charge-start-cpu.json",
+      "sha256": "3ef14ccbc56e80ed0cb9b4a4074091c8fc84a06ef7a2afd8e5e4d307d13ccb7f"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/combat-feedback-cpu.json",
+      "sha256": "8748c9b40994418f29d44a3f805eed0754694452c15280e5e3c9377cd4704c5f"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/context-consumers-cpu.json",
+      "sha256": "4bb2ac69ec2007731fd005d2d6e02b54112fa23df629fd669d087cfbac55e64c"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/cpu-checks.json",
+      "sha256": "299438587c34de9142b3bdf1cb0ae5aef769f7c84cfaa00600e0ea0b1aeffe08"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/hd-prompts-cpu.json",
+      "sha256": "fb774cbfc989375d38a8cfdd2da37504274dade70e7348936997872c96b226c8"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/static-prompts-cpu.json",
+      "sha256": "85343ff683051ca0fde977c606d1f68649adcc89a104ca9be971cb84cea5c208"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/step-guard-cpu.json",
+      "sha256": "b655da90088a8e030780228fac81dbbfeb139822865e9aad6a95905887d774ee"
+    }
+  ],
+  "negative_control": {
+    "path": "experiments/gamepad-feedback-v16/negative-control.json",
+    "sha256": "8da6373ac3b153c1e0b0473366058147a4d231e0a6c6c2862c57747b0ce39e11"
+  },
+  "baseline_right": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-baseline-step-01/baseline-right.json",
+    "sha256": "734f23d7cdc4d91611b42936130df5c4ae8f095c244651e975848ac772ab53c6"
+  },
+  "native_final_right": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-logic-01/right-fixed.json",
+    "sha256": "7cc0115032844b9808ef37a59422740bd148e6ee9d78315df646b97f44a5ac5c"
+  },
+  "native_final_left": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-logic-01/left-regression.json",
+    "sha256": "46282f5d707824c318f42394496379c0302f081e72968227b4ba3995f488cade"
+  },
+  "native_final_B": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-logic-01/b-guard-regression.json",
+    "sha256": "538ae458eab3c4acd6755c2aa7e21d215ec5233bc55fae7881e9e2a7a1724795"
+  },
+  "native_charge": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-logic-01/charged-native-first.json",
+    "sha256": "7f570b065f1fa0fbf0fb896b78b076ed181bf7e37957880d0d1bab1a99e3a55b"
+  },
+  "charge_reproduction_before_priority_fix": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-step-logic-01/charged-close-native.json",
+    "sha256": "0f4b7a7b60ddbe5d3bf6cd2a8e4802d5872192fd86426eddf3576399ceba0f54"
+  },
+  "charge_observed": {
+    "native_state": 13,
+    "native_charge_progress": 1.0,
+    "initial_hand_gesture": 5,
+    "RT_held_while_X_pressed": true,
+    "enemy_hp_before_charged_punch": 44850,
+    "enemy_hp_after_charged_punch": 43630,
+    "native_followup_choice": "LB / action1E / choice1",
+    "native_followup_caller": "8229CF5C"
+  },
+  "coordinates": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-logic-01/after-charge.json",
+    "sha256": "73269511c3613d609e91fc066d14d70113f296691433ef3fe4fbb48050fdda79"
+  },
+  "loaded_logic_patch": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-logic-01/runtime-patch-verification.json",
+    "sha256": "d6e98abe0bbbdad848f1a43a4a3b83e984feeee8d864ae4267b41967df9fe3fa",
+    "scope": "Native controls before the final HUD-only UV change"
+  },
+  "loaded_visual_patch": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-visual-01/runtime-patch-verification.json",
+    "sha256": "d6e98abe0bbbdad848f1a43a4a3b83e984feeee8d864ae4267b41967df9fe3fa",
+    "scope": "Native controls before the final HUD-only UV change"
+  },
+  "limitations": [
+    "Goku/Raditz tested; not every character or campaign battle",
+    "Linux Xenia Canary b735063; no Windows/D3D12 or physical-pad run",
+    "No new release ZIP generated"
+  ],
+  "identical_input_and_pose_helpers_to_prior_native_run": [
+    {
+      "address": "0x825ee600",
+      "sha256": "4098fa364299a573392413802eff98749e54620b069948c138f13ad839870f01"
+    },
+    {
+      "address": "0x825ee800",
+      "sha256": "0614dde5870b133331b1f9b154b975ba46875bd8b7e14ac2a9a5737de426cb2d"
+    },
+    {
+      "address": "0x825ee9c0",
+      "sha256": "74cec5306f219b87040a0e11d2ee733585ad732dbbe8ad2d5e1368359f8fd807"
+    },
+    {
+      "address": "0x825eec00",
+      "sha256": "4ae7a2dc956905fe9d528f288aff9668d83bec6d8f20c5b9a849100825a475fa"
+    }
+  ],
+  "prior_public_patch_sha256": "6895796d58c3c58f85a33579b146c0005ccd250b25cf5ac4b5858944694407fc",
+  "prior_startup_diagnostic": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-visual-01/storage/patches/4E4D084E.local-prompts.patch.toml",
+    "sha256": "0ce479ac2ddb31c2b2fec0f0b13dc80a37495c7e2d096e519b995e689e2e75b8"
+  },
+  "additional_hook": "0x822df944: mapped HUD button UV direction",
+  "native_before_hud_uv_capture": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-visual-01/charged-strike-visible.json",
+    "sha256": "fecccd86851c64472104fe47164790ebaa5d33515cfce2a65ec0a1da1ab18acc"
+  },
+  "native_textures": {
+    "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-visual-01/hd-textures-runtime.json",
+    "sha256": "92d2b8d61e5a695a03bcf34c5ac568aa1480d547f7d3a184b61e1f96f489a1d8"
+  },
+  "final_vs_native_tested_variant": {
+    "identical_existing_arrays": 53,
+    "identical_existing_hooks": 24,
+    "only_added_array": "0x825ef600",
+    "only_added_hook": "0x822df944",
+    "new_diagnostic_sha256": "5665b3dbcfeb75bf520740d3e2956a5a1f379d35edb20060ee7cb0bcc8ff5bde"
+  },
+  "final_hud_run": {
+    "report": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision16-hud-visual-01/charged-readable.json",
+      "sha256": "f08d0d4cfc1e2d315c8c0cba304f4b6b4b16183268e7d4cb8f9e4b8e60cd565f"
+    },
+    "loaded_code": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision16-hud-visual-01/runtime-patch-verification.json",
+      "sha256": "431bb9b54f8584676f3b9ef2694e77b5772e6bc7464d5af029cd4f31371a50b6"
+    },
+    "native_textures": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision16-hud-visual-01/hd-textures-runtime.json",
+      "sha256": "92d2b8d61e5a695a03bcf34c5ac568aa1480d547f7d3a184b61e1f96f489a1d8"
+    },
+    "coordinates": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision16-hud-visual-01/final-after-charge.json",
+      "sha256": "6c939ebffedfbc952a3b962732b0045746dd5540f480e283ece254431bc1d3e8"
+    },
+    "native_charge": 1.0,
+    "native_hand_side": 0,
+    "enemy_HP_before": 45000,
+    "enemy_HP_after": 43780,
+    "charged_damage": 1220,
+    "X_sent_while_RT_held": true,
+    "native_choice": [
+      {
+        "kind": "attack",
+        "action": "0x1e",
+        "frame": 1261,
+        "caller": "0x8229cf5c",
+        "native_strike_choice": 1,
+        "native_counter_choice": 1,
+        "defense_response": {
+          "choice": 4294967295,
+          "latched": 0
+        }
+      }
+    ],
+    "visually_observed": [
+      "RT reads normally during the charge",
+      "LB/RB/LT/RT on the following four-choice screen",
+      "Native prohibition seal above LT; no Kinect pose in these choice panels"
+    ]
+  },
+  "prior_native_visuals": {
+    "right": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-visual-01/right-visible.json",
+      "sha256": "de0fe9790ccd2659c4bdf4ad8a64cdb110b6ec9f75031e541b1c16ac402d0014"
+    },
+    "guard": {
+      "path": "/workspace/artifacts/zforkinect/runtime/revision16-final-visual-01/b-guard-visible.json",
+      "sha256": "7630f76ed886757026c218b94b2a61b09f47feb8d1ead38af62e08f06bd62f40"
+    },
+    "scope": "All 53 existing diagnostic payloads are byte-identical; final variant adds only the HUD UV helper and its hook."
+  },
+  "previews": [
+    {
+      "path": "experiments/gamepad-feedback-v16/previews/b-guard.png",
+      "sha256": "292cec4195aedf2ba3aac41f09e3b356701d2b3c177886a017f610c8bb9b1d7d"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/previews/charged-followup.png",
+      "sha256": "f20c25d2b7a399e3ee3d983d4002fb4ccb2bb256e874ed24906c3d5cac7904f7"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/previews/charged-rt.png",
+      "sha256": "3ee35e10bc760c4262c9ef6a979e4eaefa797e131711e866f92305f98109c414"
+    },
+    {
+      "path": "experiments/gamepad-feedback-v16/previews/right-step.png",
+      "sha256": "e298c619f7b9fe7c00ea1e125bdcd99a5e822e429fbcf0b1a1657bb2cb36e59c"
+    }
+  ]
+}

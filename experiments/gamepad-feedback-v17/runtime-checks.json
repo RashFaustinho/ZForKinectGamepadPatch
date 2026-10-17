@@ -1,0 +1,520 @@
+{
+  "patch_sha256": "3e8233d23a1ec5a4f986b65c22507e15ae5e96a7950a8b8ed1ab838023a83ab0",
+  "diagnostic_sha256": "df9d863400d4735159e002a28dfaff9bbc42bed4be1407bace127d7f2056b6a9",
+  "scope": "Native pad inputs and O_RDONLY guest observations in isolated profiles. No debugger writes to guest memory; native HP/Ki/timing/phase state machines run unforced. Diagnostic counters do not replace game decisions.",
+  "animation_source": "Authored first-person trajectories; original character meshes, native hand poses and renderer. No extracted CPU attack clips.",
+  "cpu_reports": [
+    {
+      "file": "action-values-cpu.json",
+      "passed": true
+    },
+    {
+      "file": "animated-combat-cpu.json",
+      "passed": true
+    },
+    {
+      "file": "boss-prompts-cpu.json",
+      "passed": 2103
+    },
+    {
+      "file": "bridge-regression-cpu.json",
+      "passed": 20
+    },
+    {
+      "file": "charge-start-cpu.json",
+      "passed": 36
+    },
+    {
+      "file": "combat-feedback-cpu.json",
+      "passed": true
+    },
+    {
+      "file": "context-consumers-cpu.json",
+      "passed": true
+    },
+    {
+      "file": "cpu-checks.json",
+      "passed": 11
+    },
+    {
+      "file": "hd-prompts-cpu.json",
+      "passed": 10
+    },
+    {
+      "file": "static-prompts-cpu.json",
+      "passed": 13
+    },
+    {
+      "file": "step-guard-cpu.json",
+      "passed": true
+    }
+  ],
+  "suite_results": [
+    {
+      "script": "check_bridge_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_step_guard_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_charge_start_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_combat_feedback_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_action_values_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_context_consumers_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_feedback_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_boss_prompt_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_hd_prompts_cpu.py",
+      "exit_code": 0
+    },
+    {
+      "script": "check_static_prompts_cpu.py",
+      "exit_code": 0
+    }
+  ],
+  "native_null": {
+    "session": "revision17-animation-null-06",
+    "startup_readback_passed": true,
+    "native_128px_textures_verified": 11,
+    "final_geometry_regions": 64,
+    "final_geometry_all_finite": true,
+    "requested_internal_resolution": [],
+    "cases": {
+      "near-x": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/near-x.json",
+        "source_sha256": "7ece509753742e44dfb6d67c23be7b7a35a0614b31c070aca75c7aac34b2212a",
+        "native_states": [
+          1,
+          10
+        ],
+        "native_modes": [
+          4
+        ],
+        "native_actions": [
+          "0x0"
+        ],
+        "opponent_hp_before": 44550.0,
+        "opponent_hp_after": 44400.0,
+        "capture_count": 4,
+        "captured_regions": 208,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.1499647132346663,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/near-x-action-1.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/near-x-action-4.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/near-x-action-7.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/near-x-action-10.png"
+          }
+        ]
+      },
+      "charge-y": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/charge-y.json",
+        "source_sha256": "a88927ef0368a3985ff10787132c472a4451741bc9109b2f0883e6ac38829504",
+        "native_states": [
+          1,
+          12,
+          13
+        ],
+        "native_modes": [
+          4,
+          5,
+          6
+        ],
+        "native_actions": [
+          "0x0",
+          "0x5"
+        ],
+        "opponent_hp_before": 44400.0,
+        "opponent_hp_after": 43180.0,
+        "capture_count": 5,
+        "captured_regions": 260,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.4683692649232273,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/charge-y-action-3.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/charge-y-action-35.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/charge-y-action-37.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/charge-y-action-39.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/charge-y-action-41.png"
+          }
+        ]
+      },
+      "far-x": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-x.json",
+        "source_sha256": "6e724d79c97f37b6000d31400825109f6a5e1ec921936020667dc472682f26f2",
+        "native_states": [
+          20,
+          29
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0x0"
+        ],
+        "opponent_hp_before": 43180.0,
+        "opponent_hp_after": 43060.0,
+        "capture_count": 4,
+        "captured_regions": 224,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.16696075757489734,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-x-action-0.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-x-action-3.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-x-action-7.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-x-action-11.png"
+          }
+        ]
+      },
+      "far-y": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-y.json",
+        "source_sha256": "7a603e51c37ea3fc540349685fdabe418bbe3817b8c9815c8e4af18caa8e93f1",
+        "native_states": [
+          20,
+          32
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0x7"
+        ],
+        "opponent_hp_before": 43060.0,
+        "opponent_hp_after": 40660.0,
+        "capture_count": 3,
+        "captured_regions": 176,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.20485866196888514,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-y-action-3.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-y-action-7.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/far-y-action-11.png"
+          }
+        ]
+      },
+      "guard-b": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/guard-b.json",
+        "source_sha256": "2f8ccaf07acb9d858939e4eb1973307d67a50e1a2525034f93c6704fcd1c2d56",
+        "native_states": [
+          20,
+          77,
+          80
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0xc"
+        ],
+        "opponent_hp_before": 40660.0,
+        "opponent_hp_after": 40660.0,
+        "capture_count": 1,
+        "captured_regions": 52,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.0,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/guard-b-action.png"
+          }
+        ]
+      },
+      "step-right": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/step-right.json",
+        "source_sha256": "451f34f05e5a2321fa60ed316a3ed6e484fd52bc15bedaef4d40590dcbf960ed",
+        "native_states": [
+          20,
+          21,
+          80
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0xc",
+          "0xe"
+        ],
+        "opponent_hp_before": 40660.0,
+        "opponent_hp_after": 40660.0,
+        "capture_count": 0,
+        "captured_regions": 0,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.0,
+        "screenshots": []
+      },
+      "step-left": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-null-06/step-left.json",
+        "source_sha256": "7ecebfa5afdf6c5172b0e9355f4e00a283c165a4fd27663c9ba68cd9e531d071",
+        "native_states": [
+          20,
+          21
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0xd"
+        ],
+        "opponent_hp_before": 40660.0,
+        "opponent_hp_after": 40660.0,
+        "capture_count": 0,
+        "captured_regions": 0,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.0,
+        "screenshots": []
+      }
+    }
+  },
+  "native_vulkan": {
+    "session": "revision17-animation-vulkan-07",
+    "startup_readback_passed": true,
+    "native_128px_textures_verified": 11,
+    "final_geometry_regions": 60,
+    "final_geometry_all_finite": true,
+    "requested_internal_resolution": [
+      "--custom_internal_display_resolution_x=640",
+      "--custom_internal_display_resolution_y=360"
+    ],
+    "cases": {
+      "near-x": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/near-x.json",
+        "source_sha256": "ef6c9934d2e4f38140d24ba40d61890cad5463566bffc61942d9b8cc22fd6db8",
+        "native_states": [
+          0,
+          10
+        ],
+        "native_modes": [
+          4
+        ],
+        "native_actions": [
+          "0x0"
+        ],
+        "opponent_hp_before": 44400.0,
+        "opponent_hp_after": 44250.0,
+        "capture_count": 4,
+        "captured_regions": 208,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.13704306131714047,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/near-x-action-1.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/near-x-action-4.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/near-x-action-7.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/near-x-action-10.png"
+          }
+        ]
+      },
+      "charge-y": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y.json",
+        "source_sha256": "a6f004613e019b4889c1617aa4b2f016f9271c010e1f81d55cb7821b5e7ee175",
+        "native_states": [
+          0,
+          12,
+          13
+        ],
+        "native_modes": [
+          4,
+          5,
+          6
+        ],
+        "native_actions": [
+          "0x0",
+          "0x5"
+        ],
+        "opponent_hp_before": 44250.0,
+        "opponent_hp_after": 43030.0,
+        "capture_count": 6,
+        "captured_regions": 312,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.46516309890228974,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y-action-3.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y-action-32.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y-action-35.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y-action-37.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y-action-39.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/charge-y-action-41.png"
+          }
+        ]
+      },
+      "far-x": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-x.json",
+        "source_sha256": "38e76ca35075447c5bc5d59b97ad9e3ea9b352f1c84576e3e3e1d9fb17602c46",
+        "native_states": [
+          20,
+          29
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0x0"
+        ],
+        "opponent_hp_before": 43030.0,
+        "opponent_hp_after": 42910.0,
+        "capture_count": 4,
+        "captured_regions": 220,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.20293845808907943,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-x-action-0.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-x-action-3.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-x-action-7.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-x-action-11.png"
+          }
+        ]
+      },
+      "far-y": {
+        "source": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-y.json",
+        "source_sha256": "5c947426c582494e6f4fdbe6723fcb6f7cb86792f440ee9f27c937be1b07a052",
+        "native_states": [
+          20,
+          32
+        ],
+        "native_modes": [
+          6
+        ],
+        "native_actions": [
+          "0x7"
+        ],
+        "opponent_hp_before": 42910.0,
+        "opponent_hp_after": 41110.0,
+        "capture_count": 4,
+        "captured_regions": 228,
+        "all_captures_finite": true,
+        "arm_translation_max_distance": 0.1897956685632434,
+        "screenshots": [
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-y-action-0.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-y-action-3.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-y-action-7.png"
+          },
+          {
+            "ok": true,
+            "path": "/workspace/artifacts/zforkinect/runtime/revision17-animation-vulkan-07/far-y-action-11.png"
+          }
+        ]
+      }
+    }
+  },
+  "previews": {
+    "punch-x.png": "near-x-action-7.png",
+    "charge-y.png": "charge-y-action-32.png",
+    "release-y.png": "charge-y-action-39.png",
+    "ki-x.png": "far-x-action-7.png",
+    "ki-y.png": "far-y-action-7.png"
+  },
+  "limitations": [
+    "Goku versus Raditz in Score Attack; not every character or chapter.",
+    "No physical USB pad or Windows backend test.",
+    "Vulkan screenshots use the internal resolution settings recorded above."
+  ]
+}

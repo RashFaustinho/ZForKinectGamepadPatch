@@ -1,0 +1,98 @@
+{
+  "width": 128,
+  "height": 128,
+  "format": "BC3/DXT5, linear, native byte order",
+  "packing": "independent raw LZ4 blocks",
+  "packed_bytes": 22123,
+  "sha256": "7bc5d95c2b48a6336d2cdfda4d204af07a2e2bcf288ed7eaf8cd52c3458d3678",
+  "textures": [
+    {
+      "index": 2,
+      "label": "B",
+      "offset": 0,
+      "packed_bytes": 2714,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "91e8f8de21f2ca207d1085825c44441045d5e9d074da5d4ce5e492b653631f49"
+    },
+    {
+      "index": 3,
+      "label": "X",
+      "offset": 2714,
+      "packed_bytes": 2909,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "1a4af93f932084f4a721a2c4be4de110c9e8202f4309fbd01d5d5471aef3e469"
+    },
+    {
+      "index": 4,
+      "label": "Y",
+      "offset": 5623,
+      "packed_bytes": 2724,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "b07b5081e031f9a914ac5ed6498aa1eba72157fa3fdb97aa4690fa9a2a1926c7"
+    },
+    {
+      "index": 5,
+      "label": "A",
+      "offset": 8347,
+      "packed_bytes": 2840,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "f17924a4b307a9eaa5a23d60b09ab57541fc89e4fbfb806ba651bd3cbdab6d67"
+    },
+    {
+      "index": 6,
+      "label": "LB",
+      "offset": 11187,
+      "packed_bytes": 1365,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "cf15b55415f2bf6245e5c6cd49401ea0ce10f66fc6a8966923344d7bff6049c0"
+    },
+    {
+      "index": 7,
+      "label": "LT",
+      "offset": 12552,
+      "packed_bytes": 1238,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "834eae99e823b71200c2d0b0bc3c4f18a92fd89c6ba0a454e8458a813ca643cb"
+    },
+    {
+      "index": 9,
+      "label": "RB",
+      "offset": 13790,
+      "packed_bytes": 1523,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "b10958996a250fe187e46a7f1881cbb38144f8745731de8e37765bbed32322cb"
+    },
+    {
+      "index": 10,
+      "label": "RT",
+      "offset": 15313,
+      "packed_bytes": 1389,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "e7f0a0cbef9e9115dbc0cc347f4bd1da7f52fcfa817356b50fc3f31625c700c1"
+    },
+    {
+      "index": 14,
+      "label": "LS_RIGHT",
+      "offset": 16702,
+      "packed_bytes": 2354,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "aa2454d9cac44983033f9bd939d85289b13fd8dc47426e23c0b7c909efccdf99"
+    },
+    {
+      "index": 15,
+      "label": "LS_LEFT",
+      "offset": 19056,
+      "packed_bytes": 2360,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "d41a33b845a058e41421275d638b27d64d5a2be1efae29abc1c3d45145c74028"
+    },
+    {
+      "index": 21,
+      "label": "DPAD_DOWN",
+      "offset": 21416,
+      "packed_bytes": 707,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "300b902a842a36055fe7f814df12e6dfad1ea2f0f022dc348dfcd3a474bc1f0b"
+    }
+  ]
+}

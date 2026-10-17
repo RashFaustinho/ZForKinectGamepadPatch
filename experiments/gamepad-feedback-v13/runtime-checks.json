@@ -1,0 +1,237 @@
+{
+  "status": "experimental; compact icons verified; full campaign and front escape success remain unverified",
+  "patch_sha256": "2b959569f24df88dd11d7e41ad579835754913ba7ebab308de2125972fd5a663",
+  "title_id": "4E4D084E",
+  "module_hash": "C9561ED1F9AFFED4",
+  "emulator": "Xenia Canary b735063 Linux",
+  "observation_rules": "Only virtual pad input and read-only guest observations; no HP, Ki, phase, timer or victory forcing. Isolated offline test profiles. Original ISO/XEX untouched.",
+  "cpu": [
+    {
+      "file": "experiments/gamepad-feedback-v13/cpu-checks.json",
+      "sha256": "74afb09a91c72693cdf3cd175e63074d5cc091ce2598e5614963ed82d42b26d7",
+      "passed": 11
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/action-values-cpu.json",
+      "sha256": "5dad6cad1e296b54e01e8c2e6695e77734ad36701cd82142de1ee1b202b00752",
+      "passed": true
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/charge-start-cpu.json",
+      "sha256": "1aa0e40944c712801c0e62cf0ba1aaa52d68ceb53780512007405c7a474641c4",
+      "passed": 24
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/context-consumers-cpu.json",
+      "sha256": "26bd0cc27ef8b52aa2b17f77e237aa218005e01da628f9de0bcb5daa1247582d",
+      "passed": true
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/boss-prompts-cpu.json",
+      "sha256": "a556b123c5db7cda99056c7b9f5560d59439771c3e2a83d22944c0dba757051e",
+      "passed": 2103
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/static-prompts-cpu.json",
+      "sha256": "d5b5b49c4b97c85a270bc4c1c075b8a4925284d38a7964add64ce1f77256b26a",
+      "passed": 13
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/hd-prompts-cpu.json",
+      "sha256": "3e689431f7ab6c3fe5426d4b12dcda397dfa89b48d8867dbbb941a250cdef077",
+      "passed": 10
+    },
+    {
+      "file": "experiments/gamepad-feedback-v13/bridge-regression-cpu.json",
+      "sha256": "4db91e79d756d2733add504861abb1c30ae1545662597a235209874d31a05e5d",
+      "passed": 20
+    }
+  ],
+  "revision11_gameplay_equivalence": {
+    "patch_sha256": "de7a6bf3810d959c4787ea3dbbec7059caea8e918e7e0218f27b328dcdfaa9b6",
+    "all_be32_hooks_identical": true,
+    "all_payloads_except_texture_records_and_compressed_artwork_identical": true
+  },
+  "current_compact_rendering": {
+    "scale": 0.55,
+    "texture_dimensions": [
+      128,
+      128
+    ],
+    "backend": "Vulkan/Lavapipe",
+    "preview": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-compact-tutorial-visual-01/compact-panels-settled-action-85.png",
+      "sha256": "3ccc816da7c103caa61cdb7eb88c695ec637d873b6c703310746e538231292ec"
+    },
+    "visually_observed": [
+      "RT under Smash Charge",
+      "X under Smash Punch",
+      "centered transparent padding inside original panels"
+    ],
+    "native_texture_readback": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-compact-tutorial-visual-01/hd-textures-runtime.json",
+      "sha256": "92d2b8d61e5a695a03bcf34c5ac568aa1480d547f7d3a184b61e1f96f489a1d8"
+    },
+    "texture_count": 11
+  },
+  "four_native_attack_choices": {
+    "evidence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision11-charge-tutorial-logic-01/four-native-choice-confirmation.json",
+      "sha256": "900a41ab8520bf580af721df7b764a8e9e6bb6efcf37f32b9353b94e1dfb4cf4"
+    },
+    "cases": [
+      {
+        "button": "LB",
+        "report": "four-choice-lb-native.json",
+        "report_sha256": "a84b202799fee14f2a538d7bb0b6ffa8395a19799824cc52cf5784cf6ccb3037",
+        "action": "0x1e",
+        "native_choice": 1,
+        "accepted_frame": 1822,
+        "native_consumer_caller": "0x8229cf5c",
+        "sample_frame": 1822
+      },
+      {
+        "button": "RB",
+        "report": "four-choice-rb-confirmed.json",
+        "report_sha256": "d8f4b99ebc1da27dbe64d33ee189abaa7a16dfd0ce829a5c268343692ea8ef5f",
+        "action": "0x1f",
+        "native_choice": 2,
+        "accepted_frame": 4630,
+        "native_consumer_caller": "0x8229cfe0",
+        "sample_frame": 4630
+      },
+      {
+        "button": "LT",
+        "report": "four-choice-lt-confirmed.json",
+        "report_sha256": "e7270ae650ff056d2862c3ff41eeee5775eebee2537683f98fda1cc45b9db723",
+        "action": "0x20",
+        "native_choice": 3,
+        "accepted_frame": 5054,
+        "native_consumer_caller": "0x8229d03c",
+        "sample_frame": 5054
+      },
+      {
+        "button": "RT",
+        "report": "four-choice-rt-confirmed.json",
+        "report_sha256": "e485dd9457f3c56dc73b9c9bbdedb8542547df9452c9518e3cfc2246a0dc6d93",
+        "action": "0x21",
+        "native_choice": 4,
+        "accepted_frame": 5121,
+        "native_consumer_caller": "0x8229d098",
+        "sample_frame": 5121
+      }
+    ],
+    "revision": 11,
+    "current_vulkan_LB_confirmation": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-compact-tutorial-visual-01/compact-four-buttons.json",
+      "sha256": "e9079a6a4bd2835160676acf613f82adf84f00dc7304b5b4c0e24331fb90ad2d"
+    }
+  },
+  "fresh_RB_defense": {
+    "evidence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-score-defense-logic-01/fresh-rb-defense-score.json",
+      "sha256": "ce7daa3498ded8af522b20d0bd1d4334e11c1f0b90d0819af22cee4795c47467"
+    },
+    "accepted": {
+      "kind": "defend",
+      "action": "0x24",
+      "frame": 14091,
+      "caller": "0x822c79e8",
+      "native_strike_choice": 0,
+      "native_counter_choice": 4294967295,
+      "defense_response": {
+        "choice": 1,
+        "latched": 1
+      }
+    },
+    "loaded_patch_verification": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-score-defense-logic-01/runtime-patch-verification.json",
+      "sha256": "9091384d4fd8ea0d7622664b7c9bef71fc8850bd84e8f02720edfb80048473bf"
+    }
+  },
+  "isolated_RB_attack": {
+    "evidence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-score-defense-logic-01/isolated-rb-ready.json",
+      "sha256": "33d31d09281fd79c89b527c68f1a379a19abbc9a5122d52225e2199c685cfa55"
+    },
+    "native_action": 4,
+    "opponent_hp_before": 64400.0,
+    "opponent_hp_after": 63760.0,
+    "animation_name_not_visually_asserted": true
+  },
+  "boss_native_completion": {
+    "evidence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-boss-logic-01/native-boss-result.json",
+      "sha256": "1cce656f555ae401191c2de9696aea58da243ede3a462a26f07313038485abf2"
+    },
+    "persistence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-boss-logic-01/native-boss-persistence.json",
+      "sha256": "f3ab829bcd85ce7c174df810c52de3223cd0e1633ba66a3beab7ddb4f3fd1253"
+    },
+    "progress_before": {
+      "fifth_stage": 3,
+      "next_saga_first_stage": 0
+    },
+    "progress_after": {
+      "fifth_stage": 3,
+      "next_saga_first_stage": 1
+    },
+    "native_save_checksum_valid": true,
+    "global_unlock_hook_absent": true,
+    "geometry_samples": 1893,
+    "full_geometry_snapshots": 100,
+    "all_finite": true,
+    "bases_nondegenerate": true,
+    "loaded_patch_verification": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-boss-logic-01/runtime-patch-verification.json",
+      "sha256": "9091384d4fd8ea0d7622664b7c9bef71fc8850bd84e8f02720edfb80048473bf"
+    },
+    "prompts_requested_not_visibility": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-boss-logic-01/final-boss-prompts.json",
+      "sha256": "b6a4b4f9067673d88564506b077d2f82474dcbe5a82972c2b2cf9899da93cfe7"
+    }
+  },
+  "normal_coordinates": {
+    "evidence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-compact-tutorial-visual-01/final-normal-coordinate-snapshot.json",
+      "sha256": "bfc3419624632c764834108dcb66e07e856bf1d6421b15968407fbd6e6c0c977"
+    },
+    "region_count": 52,
+    "all_finite": true,
+    "bases_nondegenerate": true,
+    "joint_buffers_equal": true
+  },
+  "earlier_revision4_evidence": {
+    "Y_hit": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision4-complete-visual-02/isolated-y-native-pulses.json",
+      "sha256": "eb86041f7eb90a7972aeb322ea9a4deaf3ac250aca8be04147f4e089169df1d4"
+    },
+    "left_escape": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision4-escape-buu-null-02/live-combo-escape.json",
+      "sha256": "ba42747ef1dac0f08cd47907533d44d3beef68d0fc1463a497ce42e2911731ee"
+    },
+    "right_escape": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision4-normal-right-escape-04/right-only-native-escape.json",
+      "sha256": "be984a43a2116e8634430bb6d582402bcea48fe765f210c86905422effaa8a4b"
+    },
+    "scope": "These reports describe their own revision and do not by themselves prove every command in revision13."
+  },
+  "front_LT_escape": {
+    "evidence": {
+      "file": "/workspace/artifacts/zforkinect/runtime/revision13-score-defense-logic-01/lt-front-native-escape.json",
+      "sha256": "0c1711949160584f715beee8bf6b2c6ea48854bad8195b8e1cf3da3dddbc8c72"
+    },
+    "accepted_and_native_gauge_increases": true,
+    "max_observed_progress": 0.5638300776481628,
+    "full_native_success": false,
+    "status": "not confirmed: native window closed before gauge filled; fixture CPU test is not counted as runtime success"
+  },
+  "limitations": [
+    "No exhaustive whole-campaign/character coverage",
+    "No Windows/D3D12 or physical controller verification",
+    "Final boss completion tested with null GPU; not a visual confirmation of every boss prompt",
+    "Three extra slots not encountered in boss runtime are covered by both-catalog CPU tests only",
+    "Static tutorial preview illustrations are separate from interactive control panels",
+    "No new release ZIP generated"
+  ]
+}

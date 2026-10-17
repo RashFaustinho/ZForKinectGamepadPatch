@@ -1,0 +1,38 @@
+{
+  "scope": "Publication-only checks, separate from the recorded game-dependent validation.",
+  "region": "Europe",
+  "languages": [
+    "En",
+    "Fr",
+    "De",
+    "Es",
+    "It"
+  ],
+  "source_validation": "Python AST, JSON/TOML syntax, relative Markdown links, final metadata agreement, public-file allowlist.",
+  "game_dependent_tests_rerun": false,
+  "portable_decoder": {
+    "decoded_image_sha256": "72a42f55ed4bf98f7f81d0037144b49997bfe9cb916ddac4fc610a2594296b6b",
+    "matched": true
+  },
+  "portable_final_builder": {
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "matched": true,
+    "records": 79
+  },
+  "english_release": {
+    "archive": "ZForKinectGamepadPatch-1.0.0.zip",
+    "bytes": 23440,
+    "sha256": "f63e598c14f141e22cfb8039378329b1bc3d853b45026892d0449298e025e1eb",
+    "repeated_build_identical": true,
+    "crc_and_extracted_bytes_verified": true,
+    "files": [
+      "ZForKinectGamepadPatch-1.0.0/CARD_READER.md",
+      "ZForKinectGamepadPatch-1.0.0/README.md",
+      "ZForKinectGamepadPatch-1.0.0/SHA256SUMS",
+      "ZForKinectGamepadPatch-1.0.0/VERIFICATION.md",
+      "ZForKinectGamepadPatch-1.0.0/manifest.json",
+      "ZForKinectGamepadPatch-1.0.0/patches/4E4D084E.gamepad.patch.toml",
+      "ZForKinectGamepadPatch-1.0.0/validation.json"
+    ]
+  }
+}

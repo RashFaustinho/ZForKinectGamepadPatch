@@ -1,0 +1,10 @@
+{
+  "local_only": true,
+  "base_sha256": "6895796d58c3c58f85a33579b146c0005ccd250b25cf5ac4b5858944694407fc",
+  "global_unlock_removed": false,
+  "queried_bitmap": "8266E1D0",
+  "accepted_bitmap": "8266E1DC",
+  "last_accepted_pair": "8266E1E8",
+  "last_queried_pair": "8266E1F0",
+  "last_contextual_query": null
+}

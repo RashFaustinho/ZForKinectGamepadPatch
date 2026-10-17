@@ -1,0 +1,38 @@
+{
+  "session": "revision3-unlock-ui-01",
+  "tested_patch_sha256": "10c69464eeaf15be834b7fbf80905b07dde30a50aa2f663f81555a008bb856a3",
+  "current_patch_sha256": "d144e215d0883acf7355b4ff1e0609e1c9c7da44b641857ca19e900969cd6258",
+  "current_difference": "Only the six combination-part catalog entries were reordered into complementary pairs; adapter code and all tested character/power-up entries unchanged.",
+  "character_groups_unlocked": 55,
+  "character_variants_unlocked": 67,
+  "character_test": {
+    "key": "RB",
+    "before": [
+      5,
+      23,
+      391,
+      391,
+      0
+    ],
+    "after": [
+      5,
+      23,
+      394,
+      394,
+      0
+    ],
+    "catalog_index": 1
+  },
+  "powerup_test": {
+    "catalog_index": 78,
+    "powerup": 11,
+    "flags": 5
+  },
+  "powerup_visual_name": "Super Smash",
+  "native_save_checksum_valid": true,
+  "native_saved_powerup": 11,
+  "native_saved_character_skin": 394,
+  "native_file_sha256": "1b66c47f9c0e42ab332fd8b3ff2d3a35732cf848104a088b9e8aa8e43f1f6e36",
+  "gpu": "Vulkan lavapipe; XTest virtual pad",
+  "profile": "Initially empty game profile; no generated save imported"
+}

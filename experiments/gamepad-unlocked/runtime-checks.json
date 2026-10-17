@@ -1,0 +1,100 @@
+{
+  "patch_sha256": "d144e215d0883acf7355b4ff1e0609e1c9c7da44b641857ca19e900969cd6258",
+  "title_id": "4E4D084E",
+  "module_hash": "C9561ED1F9AFFED4",
+  "hooks": [
+    {
+      "address": "0x82195550",
+      "match": true,
+      "expected": "484568f0",
+      "actual": "484568f0"
+    },
+    {
+      "address": "0x8211a430",
+      "match": true,
+      "expected": "484d1250",
+      "actual": "484d1250"
+    },
+    {
+      "address": "0x8211a720",
+      "match": true,
+      "expected": "484d0cbc",
+      "actual": "484d0cbc"
+    },
+    {
+      "address": "0x82197118",
+      "match": true,
+      "expected": "484543a8",
+      "actual": "484543a8"
+    },
+    {
+      "address": "0x82197250",
+      "match": true,
+      "expected": "48454278",
+      "actual": "48454278"
+    },
+    {
+      "address": "0x821dc5b0",
+      "match": true,
+      "expected": "4840efec",
+      "actual": "4840efec"
+    },
+    {
+      "address": "0x822fc450",
+      "match": true,
+      "expected": "480060b8",
+      "actual": "480060b8"
+    }
+  ],
+  "arrays": [
+    {
+      "address": "0x825eb100",
+      "scope": "entire immutable payload",
+      "bytes_checked": 3096,
+      "match": true
+    },
+    {
+      "address": "0x8266e180",
+      "scope": "signature only; input counters/selections are mutable",
+      "bytes_checked": 4,
+      "match": true
+    },
+    {
+      "address": "0x825ebe40",
+      "scope": "entire immutable payload",
+      "bytes_checked": 308,
+      "match": true
+    },
+    {
+      "address": "0x82193038",
+      "scope": "entire immutable payload",
+      "bytes_checked": 116,
+      "match": true
+    },
+    {
+      "address": "0x82302220",
+      "scope": "entire immutable payload",
+      "bytes_checked": 308,
+      "match": true
+    },
+    {
+      "address": "0x82302508",
+      "scope": "entire immutable payload",
+      "bytes_checked": 304,
+      "match": true
+    },
+    {
+      "address": "0x8210ec00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 680,
+      "match": true
+    },
+    {
+      "address": "0x8266e1c0",
+      "scope": "signature only; input counters/selections are mutable",
+      "bytes_checked": 4,
+      "match": true
+    }
+  ],
+  "passed": true
+}

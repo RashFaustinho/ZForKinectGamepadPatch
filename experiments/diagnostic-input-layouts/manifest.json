@@ -1,0 +1,21 @@
+{
+  "local_only": true,
+  "modes": {
+    "0": [
+      0,
+      5,
+      7
+    ],
+    "1": [
+      0
+    ],
+    "2": [
+      5
+    ],
+    "3": [
+      7
+    ]
+  },
+  "frame_code_bytes": 72,
+  "filter_bytes": 100
+}

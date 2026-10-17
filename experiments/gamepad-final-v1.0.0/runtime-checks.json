@@ -1,0 +1,87 @@
+{
+  "version": "1.0.0",
+  "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+  "passed": true,
+  "cpu_suites_passed": 15,
+  "cpu_suites": [
+    "tools/check_bridge_cpu.py",
+    "tools/check_step_guard_cpu.py",
+    "tools/check_charge_start_cpu.py",
+    "tools/check_combat_feedback_cpu.py",
+    "tools/check_action_values_cpu.py",
+    "tools/check_context_consumers_cpu.py",
+    "tools/check_feedback_cpu.py",
+    "tools/check_boss_prompt_cpu.py",
+    "tools/check_hd_prompts_cpu.py",
+    "tools/check_static_prompts_cpu.py",
+    "tools/check_animated_combat_cpu.py",
+    "tools/check_super_defense_cpu.py",
+    "tools/check_super_timing_cpu.py",
+    "tools/check_content_cpu.py",
+    "tools/check_launch_guard_cpu.py"
+  ],
+  "public_startup": {
+    "passed": true,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "immutable_payloads_and_hooks_verified": true,
+    "diagnostic_patch_loaded": false,
+    "native_128x128_textures_verified": 13,
+    "virtual_pad_keys_released": true
+  },
+  "launch_guard": {
+    "native_choice_cases": 36,
+    "unrelated_caller_cases": 16,
+    "ABI_and_no_write_cases": 16,
+    "old_B_plus_stick_failures_reproduced": 8,
+    "scope": "Only the four native lateral queries before B in launch choices; no phase or result fields are written."
+  },
+  "native_match": {
+    "identity": {
+      "actor_character_ids": [
+        37,
+        52
+      ],
+      "selected_custom_triple": [
+        98,
+        416,
+        416
+      ],
+      "saga": 1,
+      "stage": 5,
+      "frame": 13204
+    },
+    "method": "Real pad navigation and read-only observations in Score Attack, revision 19 plus local counters. No combat fields or outcomes forced.",
+    "B_selection_accepted": true,
+    "accepted_frame": 10698,
+    "native_guard_caller": "0x8220e8b8",
+    "native_panel_choice": 0,
+    "in_game_successful_damage_avoidance_claimed": false,
+    "scope": "Pure B confirmed in the requested matchup; new B+stick priority exercised in both original dispatchers on the PPC CPU."
+  },
+  "review": {
+    "overlapping_writes": 0,
+    "normalization_preserves_effective_bytes": true,
+    "all_revision19_bytes_preserved_except_input_entry": true,
+    "new_adapter_only_added_code": true,
+    "local_diagnostic_code_excluded": true,
+    "shared_virtual_pad_cleanup": true
+  },
+  "inherited_revision19_validation": {
+    "source_patch_sha256": "110b42a0918eceb834e3ee8a91f37a9868020414211a119171c333539514d735",
+    "scope": "All UI, animation, card and other input payloads remain byte-identical.",
+    "Super_defense_selector_variants_CPU": 11,
+    "native_Super_guard_evade_counter_results": [
+      7,
+      6,
+      5
+    ],
+    "Vulkan_sample": "Piccolo Explosive Demon Wave with B / LS-left / RS-up displayed; local lesson-entry fixture, not a full-course graphic test.",
+    "native_powerup_reads_and_valid_saves": 12,
+    "powerup_reset_persists": true
+  },
+  "limitations": [
+    "No claim that every B choice avoids damage: the native valid/invalid choice and result rules remain.",
+    "All possible matchups, campaign completion, Windows/D3D12 and a physical USB pad have not been exhaustively tested.",
+    "The original one-off incident cannot be identified with certainty; the reproducible B+stick priority conflict is fixed."
+  ]
+}

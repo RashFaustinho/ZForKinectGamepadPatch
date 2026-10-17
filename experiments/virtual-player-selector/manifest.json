@@ -1,0 +1,9 @@
+{
+  "status": "experimental, unvalidated",
+  "hook": "0x82195550",
+  "code_cave": "0x825eb100",
+  "diagnostic_data": "0x8266e180",
+  "code_bytes": 460,
+  "original_xex_sha256": "d09d3c36857d930279f2657188f0b135c27d22a39306178743d4e9becd42d438",
+  "purpose": "Test logical player fields and title confirmation; combat not implemented"
+}

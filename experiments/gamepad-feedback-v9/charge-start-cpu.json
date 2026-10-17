@@ -1,0 +1,133 @@
+{
+  "scope": "Run original 822A4138 to verify RT initializes a charged strike's hand.\n\nThe native close-distance predicate and ABI helpers are stubbed in this 32-bit\nfixture; the original selection body and both actual input APIs execute.\n",
+  "patch_sha256": "af36ac5fab583fb1b74d37849fdc5143a9464dc8ba3320697f35b01037cff87f",
+  "passed": 18,
+  "cases": [
+    {
+      "mode": 4,
+      "button": "RT",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 4,
+      "button": "RT",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "X",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 4,
+      "button": "X",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "none",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 4,
+      "button": "none",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "RT",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 5,
+      "button": "RT",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "X",
+      "suppressed": false,
+      "native_action": "0x5",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 5,
+      "button": "X",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "none",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 5,
+      "button": "none",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "RT",
+      "suppressed": false,
+      "native_action": "0x7",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 6,
+      "button": "RT",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "X",
+      "suppressed": false,
+      "native_action": "0x7",
+      "native_side": "0x0"
+    },
+    {
+      "mode": 6,
+      "button": "X",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "none",
+      "suppressed": false,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    },
+    {
+      "mode": 6,
+      "button": "none",
+      "suppressed": true,
+      "native_action": "0xffffffff",
+      "native_side": "0xffffffff"
+    }
+  ]
+}

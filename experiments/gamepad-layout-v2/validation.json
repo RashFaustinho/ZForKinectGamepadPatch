@@ -1,0 +1,19 @@
+{
+  "status": "experimental; partial gameplay and content validation; full story unverified",
+  "current_patch_sha256": "ae3e1d4f1342a34483c0c484bce63c4429ca3ab50edfd3a962819c0dfb3d0cbd",
+  "cpu_checks_passed": 20,
+  "runtime_payloads_match": true,
+  "gameplay_evidence": "gameplay-checks.json",
+  "boss_evidence": [
+    "boss-checks.json",
+    "boss-persistence-checks.json"
+  ],
+  "native_save_load_evidence": "../content-unlock/save-load-checks.json",
+  "limits": [
+    "Physical controller and Windows not tested",
+    "Human timing and every HUD prompt not reviewed",
+    "Entire story and all character animations not tested"
+  ],
+  "original_game_files_modified": false,
+  "boss_native_progress_saved": true
+}

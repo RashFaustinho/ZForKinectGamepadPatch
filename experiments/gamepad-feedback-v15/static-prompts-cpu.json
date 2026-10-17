@@ -1,0 +1,72 @@
+{
+  "scope": "Verify the UI epilogue adapter with the original native part-name lookup. Native texture creation stubbed; screen rendering requires Vulkan.",
+  "patch_sha256": "1a41dcbd785e0a419be5f6a3e5a14d0c4e74ba308789e371b18cade2d409b29d",
+  "passed": 13,
+  "cases": [
+    {
+      "case": "normal",
+      "label_replaced": true,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "already_labelled",
+      "label_replaced": true,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "no_manager",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "no_text_base",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "wrong_header",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "wrong_name",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "wrong_count",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "short_text",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "wrong_BOM",
+      "label_replaced": false,
+      "approach_icon_replaced": true
+    },
+    {
+      "case": "not_ready",
+      "label_replaced": true,
+      "approach_icon_replaced": false
+    },
+    {
+      "case": "no_scene",
+      "label_replaced": true,
+      "approach_icon_replaced": false
+    },
+    {
+      "case": "no_pad",
+      "label_replaced": true,
+      "approach_icon_replaced": false
+    },
+    {
+      "case": "no_part",
+      "label_replaced": true,
+      "approach_icon_replaced": false
+    }
+  ]
+}

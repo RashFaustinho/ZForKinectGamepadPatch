@@ -1,0 +1,92 @@
+[
+  {
+    "script": "tools/check_bridge_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_step_guard_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_charge_start_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_combat_feedback_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_action_values_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_context_consumers_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_feedback_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_boss_prompt_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_hd_prompts_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_static_prompts_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_animated_combat_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_super_defense_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_super_timing_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_content_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  },
+  {
+    "script": "tools/check_launch_guard_cpu.py",
+    "exit_code": 0,
+    "patch_sha256": "bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50",
+    "tail": ""
+  }
+]
