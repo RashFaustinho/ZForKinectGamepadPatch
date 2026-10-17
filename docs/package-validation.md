@@ -5,3 +5,5 @@ The final package contains the exact64,441-byte European TOML plus English insta
 The English publication package replaces only the earlier local Italian guide/package text. The patch hash remains `bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50`. The published GitHub release supplies the definitive English archive checksum; an old package checksum from the research session does not identify the English archive.
 
 Historical preview1 package checks used patch hash `feb2f0aa42b226e7ee951d785b97d04214ff616988421b44427081a8d404808d` and archive hash `887d53c5d56d0fa7466f7493b9bbc43929caebd128a4f4e6d04319204cf46195`. They verified four hooks/3,096 payload bytes in Xenia and menu-to-Goku/Raditz introduction, not the final patch's full control set. This history is retained to avoid confusing that package smoke test with later gameplay evidence.
+
+A byte-identical English ZIP and its checksum are also committed under `releases/v1.0.0`, so the installation package is available directly from the repository. Publication CI verifies the frozen archive digest.

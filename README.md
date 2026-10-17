@@ -24,6 +24,7 @@ Play the game through Xenia using a normal controller: navigate menus, fight, ch
 ## Download and install
 
 - **[Download version 1.0.0](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/tag/v1.0.0)** — patch, English guides, validation summary, and checksums.
+- [English ZIP package](releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip) and [archive checksum](releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip.sha256) are also kept in the repository.
 - [View the standalone TOML](experiments/gamepad-final-v1.0.0/4E4D084E.gamepad.patch.toml).
 
 1. Close Xenia. Find its **Storage root**, shown in the startup log.

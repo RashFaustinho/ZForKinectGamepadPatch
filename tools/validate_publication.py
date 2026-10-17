@@ -21,10 +21,15 @@ def main():
         cwd=ROOT).decode().split('\0')
     files = sorted({ROOT / name for name in names if name})
     errors = []
+    release_zip = ROOT / 'releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip'
+    if hashlib.sha256(release_zip.read_bytes()).hexdigest() != 'f63e598c14f141e22cfb8039378329b1bc3d853b45026892d0449298e025e1eb':
+        errors.append('Frozen English release archive changed')
     counts = {'files': len(files), 'python': 0, 'json': 0, 'toml': 0, 'markdown': 0}
     for path in files:
         rel = path.relative_to(ROOT)
-        if path.suffix.lower() in {'.iso', '.xex', '.torrent', '.zip', '.7z', '.log'} or rel.parts[0] in {'saves', 'private', 'dist', 'runtime', 'analysis'}:
+        if (path.suffix.lower() in {'.iso', '.xex', '.torrent', '.7z', '.log'}
+                or (path.suffix.lower() == '.zip' and path != release_zip)
+                or rel.parts[0] in {'saves', 'private', 'dist', 'runtime', 'analysis'}):
             errors.append(f'Private/distribution-only file: {rel}')
         try:
             if path.suffix == '.py':

@@ -12,3 +12,4 @@ __pycache__/
 /runtime/
 /analysis/
 .DS_Store
+!/releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip
