@@ -34,8 +34,8 @@ Tested emulator: **Xenia Canary b735063, Linux**. Runtime checks use a virtual c
 
 Choose **one** package for your edition:
 
-- [Europe 1.1.2 ZIP — patch + optional save](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-Europe.zip) — En/Fr/De/Es/It, module `C9561ED1F9AFFED4`.
-- [USA 1.1.2 ZIP — patch + optional save](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-USA.zip) — module `8FDD4F4AB147612A`.
+- [Europe 1.1.2 ZIP — patch + optional save](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Europe.zip) — En/Fr/De/Es/It, module `C9561ED1F9AFFED4`.
+- [USA 1.1.2 ZIP — patch + optional save](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-USA.zip) — module `8FDD4F4AB147612A`.
 - [Standalone European TOML](experiments/gamepad-v1.1.2-europe/4E4D084E.gamepad.patch.toml) / [American TOML](experiments/gamepad-v1.1.2-usa/4E4D084E.gamepad.patch.toml).
 - [Original European 1.0.0 release](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/tag/v1.0.0) and its [frozen patch](experiments/gamepad-final-v1.0.0/4E4D084E.gamepad.patch.toml).
 
@@ -53,7 +53,7 @@ The original European 1.0.0 remains **64,441 bytes (62.93 KiB)**, SHA-256 `bcf6e
 
 [European save and guide](releases/v1.0.0/content-complete-save/README.md) / [American save and guide](releases/v1.1.0/content-complete-save-USA/README.md). It enables identified chapters and all 55 character groups / 67 variants, with **no active power-up**. Scores and Xbox achievements are not fabricated, and no account profile is included. Both editions loaded the same generated game-data bytes with the automatic unlock hook disabled. Both regional packages include their optional save; both editions normally share a save folder for the same local profile. The patch already enables content availability, so this save is optional.
 
-Save-only downloads: [Europe](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe.zip) / [USA](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA.zip). They contain the same independently loaded game-data bytes, with regional guides and verification.
+Save-only downloads: [Europe](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe.zip) / [USA](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA.zip). They contain the same independently loaded game-data bytes, with regional guides and verification.
 
 ## Xbox 360 controls
 

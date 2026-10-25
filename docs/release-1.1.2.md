@@ -11,6 +11,16 @@ Both regional packages include the gamepad patch, English installation and
 Card Reader instructions, checksums, and an **optional content-complete save**.
 The two save-only ZIPs are provided for users who already installed the patch.
 
+## Downloads
+
+- [European patch + optional save](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Europe.zip)
+- [USA patch + optional save](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-USA.zip)
+- [European content-complete save only](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe.zip)
+- [USA content-complete save only](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA.zip)
+- [SHA256SUMS](https://raw.githubusercontent.com/RashFaustinho/ZForKinectGamepadPatch/v1.1.2/releases/v1.1.2/SHA256SUMS)
+
+These are direct downloads of the versioned files in the public repository.
+
 | Download | Supported Xbox 360 executable |
 | --- | --- |
 | `ZForKinectGamepadPatch-1.1.2-Europe.zip` | EUROPEAN En/Fr/De/Es/It, module `C9561ED1F9AFFED4` |

@@ -75,5 +75,12 @@
       "native_save_checksum_valid": true,
       "gameplay_bytes_unchanged": true
     }
-  ]
+  ],
+  "delivery": {
+    "method": "Public GitHub release with direct download links to versioned repository ZIPs",
+    "release_tag": "v1.1.2",
+    "release_id": 423528673,
+    "native_asset_upload_available": false,
+    "native_asset_upload_failure": "HTTP 401 Bad credentials from uploads.github.com; normal GitHub API and Git push access work. No credentials or proxy configuration were changed."
+  }
 }
