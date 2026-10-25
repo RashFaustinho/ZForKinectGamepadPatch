@@ -12,3 +12,7 @@ jobs:
           python-version: '3.11'
       - run: python tools/validate_publication.py
       - run: python tools/package_patch.py
+      - run: python tools/package_update.py
+      - run: python tools/package_update.py --version 1.1.1 --output dist/1.1.1
+      - run: python tools/package_update.py --version 1.1.2 --output dist/1.1.2
+      - run: python tools/package_saves.py --version 1.1.2 --source releases/v1.1.2 --output dist/1.1.2

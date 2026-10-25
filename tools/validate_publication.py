@@ -22,6 +22,8 @@ def main():
         cwd=ROOT).decode().split('\0')
     files = sorted({ROOT / name for name in names if name})
     errors = []
+    regional_zips = {ROOT / f'releases/v{version}/ZForKinectGamepadPatch-{version}-{region}.zip' for version in ('1.1.0','1.1.1','1.1.2') for region in ('Europe', 'USA')}
+    regional_zips.update(ROOT / f'releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-{region}.zip' for region in ('Europe','USA'))
     release_zip = ROOT / 'releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip'
     if hashlib.sha256(release_zip.read_bytes()).hexdigest() != 'f63e598c14f141e22cfb8039378329b1bc3d853b45026892d0449298e025e1eb':
         errors.append('Frozen English release archive changed')
@@ -37,7 +39,7 @@ def main():
     for path in files:
         rel = path.relative_to(ROOT)
         if (path.suffix.lower() in {'.iso', '.xex', '.torrent', '.7z', '.log'}
-                or (path.suffix.lower() == '.zip' and path != release_zip)
+                or (path.suffix.lower() == '.zip' and path != release_zip and path not in regional_zips)
                 or rel.parts[0] in {'saves', 'private', 'dist', 'runtime', 'analysis'}):
             errors.append(f'Private/distribution-only file: {rel}')
         try:

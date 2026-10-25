@@ -1,0 +1,7 @@
+{
+  "negative_baseline": "1.1.1 Europe",
+  "expected_failure": true,
+  "exit_code": 1,
+  "scope": "Real native 822F1608 selector with empty Kinect catalog; expected X is missing. No live state writes.",
+  "error": "Traceback (most recent call last):\n  File \"/workspace/ZForKinectGamepadPatch/tools/check_clash_prompt_cpu.py\", line 77, in <module>\n    assert get(0x121024)==0x190300,(wrapper,count,ready,'no X glyph')\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: ({'native': '0x822f1608', 'wrapper': '0x822f1608'}, 0, 0, 'no X glyph')\n"
+}

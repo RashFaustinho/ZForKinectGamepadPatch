@@ -1,0 +1,23 @@
+{
+  "version": "1.1.0",
+  "packages": [
+    {
+      "region": "Europe",
+      "zip_bytes": 25693,
+      "zip_sha256": "e87ebd31163d590772848555ea42b6c38d253a7b4e2bf4ff277708c8f4e43c8c",
+      "patch_bytes": 70291,
+      "patch_sha256": "b96c0f8355a851985e6643d9c0da4ec88f85b2c464a1ca0ac7ddb2185070210a",
+      "all_embedded_checksums_verified": true
+    },
+    {
+      "region": "USA",
+      "zip_bytes": 30201,
+      "zip_sha256": "e540c11c888f58c3e72d6d7b364ac6ea713a753dc2c40c0d1f7c1428dc1dec33",
+      "patch_bytes": 70288,
+      "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+      "all_embedded_checksums_verified": true
+    }
+  ],
+  "deterministic_repeat_build_verified": true,
+  "original_1_0_patch_and_archive_unchanged": true
+}

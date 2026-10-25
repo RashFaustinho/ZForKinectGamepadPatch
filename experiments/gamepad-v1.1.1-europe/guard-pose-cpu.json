@@ -1,0 +1,176 @@
+{
+  "scope": "Check the actual emitted guard skeleton after both accepted X arm sides.\n\nThis checks the PPC pose-selection/copy chain, native B query and geometry,\nnot rendered character meshes. The separate native/Vulkan report covers that.\n",
+  "patch_sha256": "93cf01aa395fff1bd4a32ef6034a5036214169eeaad82f82b61c25007446eee0",
+  "passed": true,
+  "cases": [
+    {
+      "mode": 4,
+      "native_state": 1,
+      "history": "idle",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 4,
+      "native_state": 77,
+      "history": "accepted X side 0",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 4,
+      "native_state": 77,
+      "history": "accepted X side 1",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 4,
+      "native_state": 13,
+      "history": "Y preparation",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 6,
+      "native_state": 20,
+      "history": "idle",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 6,
+      "native_state": 77,
+      "history": "accepted X side 0",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 6,
+      "native_state": 77,
+      "history": "accepted X side 1",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    },
+    {
+      "mode": 6,
+      "native_state": 32,
+      "history": "Y preparation",
+      "held_frames": 20,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "native_B_result": 3
+    }
+  ],
+  "guard_held_frames": 160
+}

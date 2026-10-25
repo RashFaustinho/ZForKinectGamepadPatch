@@ -1,6 +1,8 @@
 # Research index and handover for developers and AI
 
-Start by reading the prominent AI disclaimer in the [README](../README.md). This is research for the **European En/Fr/De/Es/It executable only**. Absolute guest addresses are not raw encrypted-XEX file offsets. Do not apply them to another edition or a Title Update.
+For current contour and Super-clash findings, read [the 1.1.2 report](update-1.1.2.md). The [1.1.1 report](update-1.1.1.md) covers the validated guard and initial 256 px allocations. For the alternating-arm update and initial American port, read [the 1.1.0 report](update-1.1.0.md). Older addresses below describe the European logical build; use the American address map for its executable.
+
+Start by reading the prominent AI disclaimer in the [README](../README.md). The historical address references below describe the **European En/Fr/De/Es/It executable**; regional update reports include the verified USA port. Absolute guest addresses are not raw encrypted-XEX file offsets. Do not apply them to another edition or a Title Update.
 
 ## Suggested reading order
 

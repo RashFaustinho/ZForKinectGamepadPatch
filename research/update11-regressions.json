@@ -1,0 +1,12 @@
+{
+  "earlier_tail_candidate": {
+    "patch_sha256": "d40366f2e4ef277ed7aed1f9157d303eccf8a220bd3519012f53192a87490a2b",
+    "new_native_idle_reset_case_exit_code": 1,
+    "observed_failure": "After native side reset, the nominal right-hand trajectory moved the left hand in its idle tail.",
+    "fixed_in": "Both 1.1.0 regional candidates: preserve the committed X side through the authored trajectory."
+  },
+  "earlier_USA_pointer_pass": {
+    "observed_failure": "Native setter chose right but next-side/frame state did not advance: caller-address low halves were accidentally restored during the later rewrite iteration.",
+    "fixed_in": "The relocation loop preserves existing pointer fixups and only overwrites branch words."
+  }
+}

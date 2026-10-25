@@ -1,0 +1,56 @@
+{
+  "fixture": "check_super_timing_cpu.py",
+  "fixture_sha256": "f3529f5752bbc018232f99edb6c7c42402dafe2f42b197343ba8f3e5b6e557bd",
+  "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x82194fd8",
+      "0x82195050"
+    ],
+    [
+      "0x82195120",
+      "0x82195198"
+    ],
+    [
+      "0x8251d780",
+      "0x8251c870"
+    ],
+    [
+      "0x8251d7c4",
+      "0x8251c8b4"
+    ],
+    [
+      "0x8251d780",
+      "0x8251c870"
+    ],
+    [
+      "0x8251d780",
+      "0x8251c870"
+    ],
+    [
+      "0x8251d7d0",
+      "0x8251c8c0"
+    ],
+    [
+      "0x8251d814",
+      "0x8251c904"
+    ],
+    [
+      "0x8251d7d0",
+      "0x8251c8c0"
+    ],
+    [
+      "0x8251d7d0",
+      "0x8251c8c0"
+    ],
+    [
+      "0x82194e30",
+      "0x82194ea8"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

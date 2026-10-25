@@ -1,0 +1,79 @@
+{
+  "version": "1.1.2",
+  "passed": true,
+  "scope": "Deterministic release packaging only; original gameplay patches and independently loaded saves retained. No new game-dependent CPU or emulator tests were run for publication.",
+  "archives": [
+    {
+      "name": "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe.zip",
+      "bytes": 4343,
+      "sha256": "c1e0d64617a89564aba824814f84bebaf226cf6db025e6914e1f1cdff161774f",
+      "files": [
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe/DB_SAVE",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe/README.md",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe/SHA256SUMS",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe/manifest.json",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe/native-load-check.json"
+      ],
+      "native_save_checksum_valid": true,
+      "gameplay_bytes_unchanged": true
+    },
+    {
+      "name": "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA.zip",
+      "bytes": 4090,
+      "sha256": "34fd618429179b850b06ff0945ad2e3c63e9899d77e5f8157b0fd3f8f9cf5d38",
+      "files": [
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA/DB_SAVE",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA/README.md",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA/SHA256SUMS",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA/manifest.json",
+        "ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA/native-load-check.json"
+      ],
+      "native_save_checksum_valid": true,
+      "gameplay_bytes_unchanged": true
+    },
+    {
+      "name": "ZForKinectGamepadPatch-1.1.2-Europe.zip",
+      "bytes": 42923,
+      "sha256": "b5dbf5231a0e59225901a62bdbcb2c38236c1fd1735825abcd3511a3de55d2f0",
+      "files": [
+        "ZForKinectGamepadPatch-1.1.2-Europe/CARD_READER.md",
+        "ZForKinectGamepadPatch-1.1.2-Europe/LICENSE",
+        "ZForKinectGamepadPatch-1.1.2-Europe/README.md",
+        "ZForKinectGamepadPatch-1.1.2-Europe/SHA256SUMS",
+        "ZForKinectGamepadPatch-1.1.2-Europe/VERIFICATION.md",
+        "ZForKinectGamepadPatch-1.1.2-Europe/manifest.json",
+        "ZForKinectGamepadPatch-1.1.2-Europe/optional-save/DB_SAVE",
+        "ZForKinectGamepadPatch-1.1.2-Europe/optional-save/README.md",
+        "ZForKinectGamepadPatch-1.1.2-Europe/optional-save/SHA256SUMS",
+        "ZForKinectGamepadPatch-1.1.2-Europe/optional-save/manifest.json",
+        "ZForKinectGamepadPatch-1.1.2-Europe/optional-save/native-load-check.json",
+        "ZForKinectGamepadPatch-1.1.2-Europe/patches/4E4D084E.gamepad.europe.patch.toml",
+        "ZForKinectGamepadPatch-1.1.2-Europe/validation.json"
+      ],
+      "native_save_checksum_valid": true,
+      "gameplay_bytes_unchanged": true
+    },
+    {
+      "name": "ZForKinectGamepadPatch-1.1.2-USA.zip",
+      "bytes": 42526,
+      "sha256": "cafd91694f54fddbd560685cdc0ad45ccd3dc68e18193bb11768d67ab36e7997",
+      "files": [
+        "ZForKinectGamepadPatch-1.1.2-USA/CARD_READER.md",
+        "ZForKinectGamepadPatch-1.1.2-USA/LICENSE",
+        "ZForKinectGamepadPatch-1.1.2-USA/README.md",
+        "ZForKinectGamepadPatch-1.1.2-USA/SHA256SUMS",
+        "ZForKinectGamepadPatch-1.1.2-USA/VERIFICATION.md",
+        "ZForKinectGamepadPatch-1.1.2-USA/manifest.json",
+        "ZForKinectGamepadPatch-1.1.2-USA/optional-save/DB_SAVE",
+        "ZForKinectGamepadPatch-1.1.2-USA/optional-save/README.md",
+        "ZForKinectGamepadPatch-1.1.2-USA/optional-save/SHA256SUMS",
+        "ZForKinectGamepadPatch-1.1.2-USA/optional-save/manifest.json",
+        "ZForKinectGamepadPatch-1.1.2-USA/optional-save/native-load-check.json",
+        "ZForKinectGamepadPatch-1.1.2-USA/patches/4E4D084E.gamepad.usa.patch.toml",
+        "ZForKinectGamepadPatch-1.1.2-USA/validation.json"
+      ],
+      "native_save_checksum_valid": true,
+      "gameplay_bytes_unchanged": true
+    }
+  ]
+}

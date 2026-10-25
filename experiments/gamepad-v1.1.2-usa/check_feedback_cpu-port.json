@@ -1,0 +1,96 @@
+{
+  "fixture": "check_feedback_cpu.py",
+  "fixture_sha256": "5711a0b4d526f9604ba0054d6b14554c33f7334b54f62e42f269eade5d3c7768",
+  "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x823498a8",
+      "0x823497a0"
+    ],
+    [
+      "0x822de724",
+      "0x822de6bc"
+    ],
+    [
+      "0x822de720",
+      "0x822de6b8"
+    ],
+    [
+      "0x822dae40",
+      "0x822dadd8"
+    ],
+    [
+      "0x822e4218",
+      "0x822e4010"
+    ],
+    [
+      "0x822e3af8",
+      "0x822e3a18"
+    ],
+    [
+      "0x822e0eec",
+      "0x822e100c"
+    ],
+    [
+      "0x822e4240",
+      "0x822e4038"
+    ],
+    [
+      "0x822e4244",
+      "0x822e403c"
+    ],
+    [
+      "0x822ebbbc",
+      "0x822ebb6c"
+    ],
+    [
+      "0x822ebbb8",
+      "0x822ebb68"
+    ],
+    [
+      "0x822dae40",
+      "0x822dadd8"
+    ],
+    [
+      "0x822dae44",
+      "0x822daddc"
+    ],
+    [
+      "0x821db5d0",
+      "0x821db720"
+    ],
+    [
+      "0x821db888",
+      "0x821db9d8"
+    ],
+    [
+      "0x82197118",
+      "0x82197190"
+    ],
+    [
+      "0x822a2e0c",
+      "0x822a2d14"
+    ],
+    [
+      "0x822a3290",
+      "0x822a3198"
+    ],
+    [
+      "0x822174f4",
+      "0x8221744c"
+    ],
+    [
+      "0x8221756c",
+      "0x822174c4"
+    ],
+    [
+      "0x8221756c",
+      "0x822174c4"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

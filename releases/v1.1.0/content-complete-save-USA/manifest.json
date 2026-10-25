@@ -1,0 +1,18 @@
+{
+  "title": "Dragon Ball Z for Kinect",
+  "region": "USA",
+  "title_id": "4E4D084E",
+  "module_hash": "8FDD4F4AB147612A",
+  "bytes": 150000,
+  "sha256": "08f6df33f0a4a79d1be117f210b7cf295cd189ea309b68cc7604d4ebad132ca9",
+  "native_checksum_valid": true,
+  "active_powerup": null,
+  "character_groups": 55,
+  "character_variants": 67,
+  "account_or_profile_data_included": false,
+  "format": "Xenia extracted SystemData/DB_SAVE, not a signed STFS container",
+  "scope": "All identified content available; no fabricated scores or Xbox achievements.",
+  "native_validation": "Exact 150000-byte native load and root-menu entry in the American game, with automatic unlock hook removed.",
+  "same_game_data_bytes_as_validated_European_save": true,
+  "runtime_evidence": "../../../research/published-usa-save-runtime.json"
+}

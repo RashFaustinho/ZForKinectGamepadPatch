@@ -1,0 +1,38 @@
+{
+  "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+  "checks": [
+    "All 67 action icon paths: mapped controls use native Xbox textures; super gestures fall back to the original renderer",
+    "All 17 common gesture icons select valid Xbox texture indices",
+    "Native contextual call sites select LB/RB/LT/RT, guard/uppercut responses, and LT/LS-left/LS-right for the defender gauge",
+    "Contextual button lettering clears the native pose mirror flag",
+    "All 21 extra pose widgets follow the manifest: mapped Xbox textures or explicit original fallback",
+    "Missing pad resources replay the original common-icon load instruction",
+    "Kinect Tuner update and drawing return without touching their object",
+    "Lateral inputs remain active on consecutive held frames, then clear on release",
+    "The emitted copy loop fills both 20-joint buffers, preserves LR, and leaves surrounding memory intact",
+    "The original close-range sway gate accepts held LS-left as well as LT",
+    "Original native defender gauge: all three responses reach 1.0 with held input; edge-only input stalls at 0.05 in the same fixture"
+  ],
+  "passed": 11,
+  "native_gauge_fixture": [
+    {
+      "choice": 0,
+      "action": "0x26",
+      "edge_only_after_30_frames": 0.05000000074505806,
+      "held_after_30_frames": 1.0
+    },
+    {
+      "choice": 1,
+      "action": "0xd",
+      "edge_only_after_30_frames": 0.05000000074505806,
+      "held_after_30_frames": 1.0
+    },
+    {
+      "choice": 2,
+      "action": "0xe",
+      "edge_only_after_30_frames": 0.05000000074505806,
+      "held_after_30_frames": 1.0
+    }
+  ],
+  "scope": "isolated emitted PowerPC; native texture factory stubbed; no gameplay claim"
+}

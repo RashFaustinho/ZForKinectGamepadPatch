@@ -18,8 +18,11 @@ ROOT = args.artifacts
 SOURCE = args.xenia_source
 OUT = ROOT / 'analysis'
 xex = (OUT / 'default.xex').read_bytes()
-if hashlib.sha256(xex).hexdigest() != 'd09d3c36857d930279f2657188f0b135c27d22a39306178743d4e9becd42d438':
-    raise ValueError('Only the verified European original executable is supported')
+if hashlib.sha256(xex).hexdigest() not in {
+    'd09d3c36857d930279f2657188f0b135c27d22a39306178743d4e9becd42d438',
+    'c4d487f1be66b4484aedee63abd509a20138d283f4f91e074e367521afe24ace',
+}:
+    raise ValueError('Only the identified European and American original executables are supported')
 count = struct.unpack_from('>I', xex, 20)[0]
 opts = dict(struct.unpack_from('>II', xex, 24 + i * 8) for i in range(count))
 security = struct.unpack_from('>I', xex, 16)[0]

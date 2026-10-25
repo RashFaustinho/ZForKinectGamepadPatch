@@ -13,3 +13,11 @@ __pycache__/
 /analysis/
 .DS_Store
 !/releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip
+!/releases/v1.1.0/ZForKinectGamepadPatch-1.1.0-Europe.zip
+!/releases/v1.1.0/ZForKinectGamepadPatch-1.1.0-USA.zip
+!/releases/v1.1.1/ZForKinectGamepadPatch-1.1.1-Europe.zip
+!/releases/v1.1.1/ZForKinectGamepadPatch-1.1.1-USA.zip
+!/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Europe.zip
+!/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-USA.zip
+!/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe.zip
+!/releases/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA.zip

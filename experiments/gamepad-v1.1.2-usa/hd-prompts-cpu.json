@@ -1,0 +1,216 @@
+{
+  "scope": "Execute the HD adapter and compare GPU bytes to authored DDS/RGBA sources.\n\nThis verifies bounded native VRAM writes, allocation guards, idempotence,\nPowerPC branches and preserved UI frame/LR/r31. It does not prove rendering.\n",
+  "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+  "passed": 13,
+  "cases": [
+    {
+      "case": "normal",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 1196032
+    },
+    {
+      "case": "missing_pad",
+      "textures_replaced": [],
+      "decoded_bytes": 0
+    },
+    {
+      "case": "wrong_count",
+      "textures_replaced": [],
+      "decoded_bytes": 0
+    },
+    {
+      "case": "bad_width",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "bad_height",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "bad_size",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "bad_format",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "bad_owner",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "out_of_allocation",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "bad_fetch_address",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "allocation_failed",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "truncated_stream",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    },
+    {
+      "case": "invalid_palette_index",
+      "textures_replaced": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        9,
+        10,
+        14,
+        15,
+        21,
+        16,
+        17
+      ],
+      "decoded_bytes": 933888
+    }
+  ]
+}

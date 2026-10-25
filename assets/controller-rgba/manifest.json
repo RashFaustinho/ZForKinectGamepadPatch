@@ -1,0 +1,193 @@
+{
+  "width": 128,
+  "height": 128,
+  "content_scale": 0.55,
+  "face_supersample": 4,
+  "face_alpha_bleed": true,
+  "format": "RGBA8 faces, unchanged BC3 other glyphs",
+  "packing": "Faces: 512-byte RGBA palette + raw LZ4 8-bit indices; others: raw LZ4 BC3",
+  "packed_bytes": 27852,
+  "sha256": "7257eee76ba51a006d9e30b80121a9c2c6441d433bbb45ac7e1477b5828a178e",
+  "textures": [
+    {
+      "index": 2,
+      "label": "B",
+      "offset": 0,
+      "packed_bytes": 4504,
+      "decoded_bytes": 262144,
+      "width": 256,
+      "height": 256,
+      "fetch_word3": 19402000,
+      "format": "RGBA8",
+      "gpu_format": 6,
+      "rgba8_sha256": "6e2d1cd344fd0cdaef3c86a25a3883632cdccca105fffade3326606ebf73b07d",
+      "palette_bytes": 512,
+      "index_bytes": 65536,
+      "palette_entries": 128
+    },
+    {
+      "index": 3,
+      "label": "X",
+      "offset": 4504,
+      "packed_bytes": 4691,
+      "decoded_bytes": 262144,
+      "width": 256,
+      "height": 256,
+      "fetch_word3": 19402000,
+      "format": "RGBA8",
+      "gpu_format": 6,
+      "rgba8_sha256": "c50ff4d3180d579cebf27de525dac1c9f84a831e49ec0007509ee8c0456c4611",
+      "palette_bytes": 512,
+      "index_bytes": 65536,
+      "palette_entries": 128
+    },
+    {
+      "index": 4,
+      "label": "Y",
+      "offset": 9195,
+      "packed_bytes": 4506,
+      "decoded_bytes": 262144,
+      "width": 256,
+      "height": 256,
+      "fetch_word3": 19402000,
+      "format": "RGBA8",
+      "gpu_format": 6,
+      "rgba8_sha256": "23af056dab4fd121edc74b71050c5dc53c5bb4db3fc87b8b4d918790e29a92ab",
+      "palette_bytes": 512,
+      "index_bytes": 65536,
+      "palette_entries": 128
+    },
+    {
+      "index": 5,
+      "label": "A",
+      "offset": 13701,
+      "packed_bytes": 4657,
+      "decoded_bytes": 262144,
+      "width": 256,
+      "height": 256,
+      "fetch_word3": 19402000,
+      "format": "RGBA8",
+      "gpu_format": 6,
+      "rgba8_sha256": "ea7dcbad7f126f8eae9c3505bf6d1bbe43e104af4e24de802c49ac301000ee07",
+      "palette_bytes": 512,
+      "index_bytes": 65536,
+      "palette_entries": 128
+    },
+    {
+      "index": 6,
+      "label": "LB",
+      "offset": 18358,
+      "packed_bytes": 848,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "43c30d2f1401a457f3ccd053089912cb9d71ea7a9edc061176bbfa54b2b09b5b",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 7,
+      "label": "LT",
+      "offset": 19206,
+      "packed_bytes": 828,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "010149eab6e52cec0856753d5e115c82074668c939debc9d3a7f73edbf90bb26",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 9,
+      "label": "RB",
+      "offset": 20034,
+      "packed_bytes": 952,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "1614543715941bd53b3021696e132498f18b130b9a6de5333606c828416206ab",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 10,
+      "label": "RT",
+      "offset": 20986,
+      "packed_bytes": 910,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "4e246b9b983d9012db557876c88cd86d68f10e85a47814ceeedfa93a1e65a4f6",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 14,
+      "label": "LS_RIGHT",
+      "offset": 21896,
+      "packed_bytes": 1350,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "25de5dc0d29711b4aca50f6efdc3b82d3c2b90be294fe71cc8eee8555f8faa31",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 15,
+      "label": "LS_LEFT",
+      "offset": 23246,
+      "packed_bytes": 1345,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "64779d653e317e215c39e70fbe8acb94482e2f559b3bd9f0dc36f4ba83cefe0e",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 21,
+      "label": "DPAD_DOWN",
+      "offset": 24591,
+      "packed_bytes": 561,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "f90d564340fb1144642f4e0fb9de859777096395e5fd57febed840c02aff5939",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 16,
+      "label": "RS_UP",
+      "offset": 25152,
+      "packed_bytes": 1352,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "b9ace233b70a84187739e244dead9eb2ced17c6cb9bd3b83b4e2e46edde5a62c",
+      "width": 128,
+      "height": 128
+    },
+    {
+      "index": 17,
+      "label": "RS_DOWN",
+      "offset": 26504,
+      "packed_bytes": 1348,
+      "decoded_bytes": 16384,
+      "bc3_sha256": "cc55d94908c38cd6730192a74adb2ea86437da2c3c1bf63dd032359503e91c98",
+      "width": 128,
+      "height": 128
+    }
+  ],
+  "face_art_metrics": [
+    {
+      "label": "B",
+      "opaque_rgb_rmse_0_255": 1.4939644371558904,
+      "maximum_alpha_error_0_255": 2,
+      "transport_decodes_exactly_to_authored_png": true
+    },
+    {
+      "label": "X",
+      "opaque_rgb_rmse_0_255": 1.5172792663871417,
+      "maximum_alpha_error_0_255": 2,
+      "transport_decodes_exactly_to_authored_png": true
+    },
+    {
+      "label": "Y",
+      "opaque_rgb_rmse_0_255": 1.7141410639948407,
+      "maximum_alpha_error_0_255": 2,
+      "transport_decodes_exactly_to_authored_png": true
+    },
+    {
+      "label": "A",
+      "opaque_rgb_rmse_0_255": 1.360412933350811,
+      "maximum_alpha_error_0_255": 2,
+      "transport_decodes_exactly_to_authored_png": true
+    }
+  ]
+}

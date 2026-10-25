@@ -1,0 +1,526 @@
+{
+  "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "title_id": "4E4D084E",
+  "module_hash": "8FDD4F4AB147612A",
+  "hooks": [
+    {
+      "address": "0x82114d74",
+      "match": true,
+      "expected": "484d8b8c",
+      "actual": "484d8b8c"
+    },
+    {
+      "address": "0x8211a410",
+      "match": true,
+      "expected": "484d1270",
+      "actual": "484d1270"
+    },
+    {
+      "address": "0x8211a6b8",
+      "match": true,
+      "expected": "484d0d24",
+      "actual": "484d0d24"
+    },
+    {
+      "address": "0x821955c8",
+      "match": true,
+      "expected": "48456878",
+      "actual": "48456878"
+    },
+    {
+      "address": "0x82197190",
+      "match": true,
+      "expected": "48458c70",
+      "actual": "48458c70"
+    },
+    {
+      "address": "0x821972c8",
+      "match": true,
+      "expected": "48454200",
+      "actual": "48454200"
+    },
+    {
+      "address": "0x821db9d8",
+      "match": true,
+      "expected": "4e800020",
+      "actual": "4e800020"
+    },
+    {
+      "address": "0x821dc628",
+      "match": true,
+      "expected": "4840ef74",
+      "actual": "4840ef74"
+    },
+    {
+      "address": "0x822532a8",
+      "match": true,
+      "expected": "3880002c",
+      "actual": "3880002c"
+    },
+    {
+      "address": "0x8225bf88",
+      "match": true,
+      "expected": "3880002c",
+      "actual": "3880002c"
+    },
+    {
+      "address": "0x822dadd8",
+      "match": true,
+      "expected": "48314028",
+      "actual": "48314028"
+    },
+    {
+      "address": "0x822de6b8",
+      "match": true,
+      "expected": "48310648",
+      "actual": "48310648"
+    },
+    {
+      "address": "0x822df8dc",
+      "match": true,
+      "expected": "4830fd24",
+      "actual": "4830fd24"
+    },
+    {
+      "address": "0x822e0480",
+      "match": true,
+      "expected": "4830ee80",
+      "actual": "4830ee80"
+    },
+    {
+      "address": "0x822e04fc",
+      "match": true,
+      "expected": "4830dbc5",
+      "actual": "4830dbc5"
+    },
+    {
+      "address": "0x822e100c",
+      "match": true,
+      "expected": "4befa865",
+      "actual": "4befa865"
+    },
+    {
+      "address": "0x822e39a8",
+      "match": true,
+      "expected": "4830b858",
+      "actual": "4830b858"
+    },
+    {
+      "address": "0x822e3a18",
+      "match": true,
+      "expected": "4bef7e49",
+      "actual": "4bef7e49"
+    },
+    {
+      "address": "0x822e3f88",
+      "match": true,
+      "expected": "4830b178",
+      "actual": "4830b178"
+    },
+    {
+      "address": "0x822e4010",
+      "match": true,
+      "expected": "4bef7841",
+      "actual": "4bef7841"
+    },
+    {
+      "address": "0x822e4038",
+      "match": true,
+      "expected": "4bef78a9",
+      "actual": "4bef78a9"
+    },
+    {
+      "address": "0x822ebb68",
+      "match": true,
+      "expected": "48302098",
+      "actual": "48302098"
+    },
+    {
+      "address": "0x822ec8a8",
+      "match": true,
+      "expected": "48302758",
+      "actual": "48302758"
+    },
+    {
+      "address": "0x822ec940",
+      "match": true,
+      "expected": "483016c1",
+      "actual": "483016c1"
+    },
+    {
+      "address": "0x822eca14",
+      "match": true,
+      "expected": "4830162d",
+      "actual": "4830162d"
+    },
+    {
+      "address": "0x822ecacc",
+      "match": true,
+      "expected": "483015b5",
+      "actual": "483015b5"
+    },
+    {
+      "address": "0x822ef108",
+      "match": true,
+      "expected": "483006f8",
+      "actual": "483006f8"
+    },
+    {
+      "address": "0x822ef580",
+      "match": true,
+      "expected": "48300680",
+      "actual": "48300680"
+    },
+    {
+      "address": "0x822fc3d8",
+      "match": true,
+      "expected": "480060b8",
+      "actual": "480060b8"
+    }
+  ],
+  "arrays": [
+    {
+      "address": "0x8210ec00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 680,
+      "match": true
+    },
+    {
+      "address": "0x8210eea8",
+      "scope": "entire immutable payload",
+      "bytes_checked": 4440,
+      "match": true
+    },
+    {
+      "address": "0x821930b0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 116,
+      "match": true
+    },
+    {
+      "address": "0x821db720",
+      "scope": "entire immutable payload",
+      "bytes_checked": 692,
+      "match": true
+    },
+    {
+      "address": "0x823021a8",
+      "scope": "entire immutable payload",
+      "bytes_checked": 308,
+      "match": true
+    },
+    {
+      "address": "0x82302490",
+      "scope": "entire immutable payload",
+      "bytes_checked": 304,
+      "match": true
+    },
+    {
+      "address": "0x825eb100",
+      "scope": "entire immutable payload",
+      "bytes_checked": 3096,
+      "match": true
+    },
+    {
+      "address": "0x825ebd20",
+      "scope": "entire immutable payload",
+      "bytes_checked": 12,
+      "match": true
+    },
+    {
+      "address": "0x825ebd40",
+      "scope": "entire immutable payload",
+      "bytes_checked": 100,
+      "match": true
+    },
+    {
+      "address": "0x825ebe40",
+      "scope": "entire immutable payload",
+      "bytes_checked": 308,
+      "match": true
+    },
+    {
+      "address": "0x825ec000",
+      "scope": "entire immutable payload",
+      "bytes_checked": 1400,
+      "match": true
+    },
+    {
+      "address": "0x825ec580",
+      "scope": "entire immutable payload",
+      "bytes_checked": 348,
+      "match": true
+    },
+    {
+      "address": "0x825ec800",
+      "scope": "entire immutable payload",
+      "bytes_checked": 1536,
+      "match": true
+    },
+    {
+      "address": "0x825ece00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 96,
+      "match": true
+    },
+    {
+      "address": "0x825ed000",
+      "scope": "entire immutable payload",
+      "bytes_checked": 308,
+      "match": true
+    },
+    {
+      "address": "0x825ed200",
+      "scope": "entire immutable payload",
+      "bytes_checked": 260,
+      "match": true
+    },
+    {
+      "address": "0x825ed400",
+      "scope": "entire immutable payload",
+      "bytes_checked": 236,
+      "match": true
+    },
+    {
+      "address": "0x825ed600",
+      "scope": "entire immutable payload",
+      "bytes_checked": 36,
+      "match": true
+    },
+    {
+      "address": "0x825ed680",
+      "scope": "entire immutable payload",
+      "bytes_checked": 92,
+      "match": true
+    },
+    {
+      "address": "0x825ed800",
+      "scope": "entire immutable payload",
+      "bytes_checked": 15,
+      "match": true
+    },
+    {
+      "address": "0x825ed840",
+      "scope": "entire immutable payload",
+      "bytes_checked": 168,
+      "match": true
+    },
+    {
+      "address": "0x825ed900",
+      "scope": "entire immutable payload",
+      "bytes_checked": 660,
+      "match": true
+    },
+    {
+      "address": "0x825edc00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 216,
+      "match": true
+    },
+    {
+      "address": "0x825edf00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 21,
+      "match": true
+    },
+    {
+      "address": "0x825ee000",
+      "scope": "entire immutable payload",
+      "bytes_checked": 60,
+      "match": true
+    },
+    {
+      "address": "0x825ee040",
+      "scope": "entire immutable payload",
+      "bytes_checked": 48,
+      "match": true
+    },
+    {
+      "address": "0x825ee080",
+      "scope": "entire immutable payload",
+      "bytes_checked": 48,
+      "match": true
+    },
+    {
+      "address": "0x825ee0c0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 48,
+      "match": true
+    },
+    {
+      "address": "0x825ee100",
+      "scope": "entire immutable payload",
+      "bytes_checked": 596,
+      "match": true
+    },
+    {
+      "address": "0x825ee500",
+      "scope": "entire immutable payload",
+      "bytes_checked": 32,
+      "match": true
+    },
+    {
+      "address": "0x825ee600",
+      "scope": "entire immutable payload",
+      "bytes_checked": 304,
+      "match": true
+    },
+    {
+      "address": "0x825ee800",
+      "scope": "entire immutable payload",
+      "bytes_checked": 448,
+      "match": true
+    },
+    {
+      "address": "0x825ee9c0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 448,
+      "match": true
+    },
+    {
+      "address": "0x825eec00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 4,
+      "match": true
+    },
+    {
+      "address": "0x825eed00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 212,
+      "match": true
+    },
+    {
+      "address": "0x825eee00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 176,
+      "match": true
+    },
+    {
+      "address": "0x825ef000",
+      "scope": "entire immutable payload",
+      "bytes_checked": 84,
+      "match": true
+    },
+    {
+      "address": "0x825ef0e0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 8,
+      "match": true
+    },
+    {
+      "address": "0x825ef100",
+      "scope": "entire immutable payload",
+      "bytes_checked": 124,
+      "match": true
+    },
+    {
+      "address": "0x825ef1e0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 8,
+      "match": true
+    },
+    {
+      "address": "0x825ef200",
+      "scope": "entire immutable payload",
+      "bytes_checked": 124,
+      "match": true
+    },
+    {
+      "address": "0x825ef2e0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 8,
+      "match": true
+    },
+    {
+      "address": "0x825ef300",
+      "scope": "entire immutable payload",
+      "bytes_checked": 64,
+      "match": true
+    },
+    {
+      "address": "0x825ef3e0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 8,
+      "match": true
+    },
+    {
+      "address": "0x825ef500",
+      "scope": "entire immutable payload",
+      "bytes_checked": 121,
+      "match": true
+    },
+    {
+      "address": "0x825ef600",
+      "scope": "entire immutable payload",
+      "bytes_checked": 96,
+      "match": true
+    },
+    {
+      "address": "0x825ef800",
+      "scope": "entire immutable payload",
+      "bytes_checked": 316,
+      "match": true
+    },
+    {
+      "address": "0x825efbe0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 8,
+      "match": true
+    },
+    {
+      "address": "0x825efc00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 64,
+      "match": true
+    },
+    {
+      "address": "0x825efce0",
+      "scope": "entire immutable payload",
+      "bytes_checked": 8,
+      "match": true
+    },
+    {
+      "address": "0x825efd00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 116,
+      "match": true
+    },
+    {
+      "address": "0x825efe00",
+      "scope": "entire immutable payload",
+      "bytes_checked": 128,
+      "match": true
+    },
+    {
+      "address": "0x8266e180",
+      "scope": "signature only; input counters/selections are mutable",
+      "bytes_checked": 4,
+      "match": true
+    },
+    {
+      "address": "0x8266e1c0",
+      "scope": "signature only; input counters/selections are mutable",
+      "bytes_checked": 4,
+      "match": true
+    },
+    {
+      "address": "0x8266e900",
+      "scope": "entire immutable payload",
+      "bytes_checked": 576,
+      "match": true
+    },
+    {
+      "address": "0x8266ec20",
+      "scope": "entire immutable payload",
+      "bytes_checked": 5054,
+      "match": true
+    },
+    {
+      "address": "0x826bb800",
+      "scope": "entire immutable payload",
+      "bytes_checked": 17930,
+      "match": true
+    }
+  ],
+  "passed": true
+}

@@ -7,7 +7,7 @@ import tomllib
 
 def validate(document):
     if (document.get('title_id') != '4E4D084E'
-            or document.get('hash') != 'C9561ED1F9AFFED4'):
+            or document.get('hash') not in {'C9561ED1F9AFFED4', '8FDD4F4AB147612A'}):
         raise ValueError('Unsupported title or executable module')
     groups = document.get('patch', [])
     if len(groups) != 1 or groups[0].get('is_enabled') is not True:

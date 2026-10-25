@@ -1,0 +1,20 @@
+{
+  "fixture": "check_action_values_cpu.py",
+  "fixture_sha256": "079fc2d70040aaa18605c9db9775a16be58cbd6a175e0e880362431570224a13",
+  "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x82197118",
+      "0x82197190"
+    ],
+    [
+      "0x82197250",
+      "0x821972c8"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

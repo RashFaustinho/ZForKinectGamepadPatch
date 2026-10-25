@@ -1,0 +1,31 @@
+{
+  "session": "update11-usa-save-load",
+  "scope": "Read-only comparison with the native loaded save buffer; no live writes. Not a full gameplay test.",
+  "startup_patches": [
+    {
+      "name": "4E4D084E.local-save-load.patch.toml",
+      "sha256": "884081c25473d18da57bd23e9ce4a2f5e146eba89acec36c76e3c8e3b4360383"
+    }
+  ],
+  "file_bytes": 150000,
+  "file_sha256": "08f6df33f0a4a79d1be117f210b7cf295cd189ea309b68cc7604d4ebad132ca9",
+  "loaded_buffer_sha256": "08f6df33f0a4a79d1be117f210b7cf295cd189ea309b68cc7604d4ebad132ca9",
+  "loaded_buffer_exact_match": true,
+  "local_native_format_checksum_valid": true,
+  "powerup_flags": 1,
+  "active_powerup": false,
+  "selected_item_slots": [
+    4294967295,
+    4294967295,
+    4294967295,
+    4294967295,
+    4294967295,
+    4294967295
+  ],
+  "region": "USA",
+  "module_hash": "8FDD4F4AB147612A",
+  "automatic_content_unlock_hook_loaded": false,
+  "native_main_menu_hook_original": true,
+  "native_root_menu_reached": true,
+  "backend": "Null GPU: load and menu logic only"
+}

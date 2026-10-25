@@ -1,0 +1,107 @@
+[
+  {
+    "script": "tools/check_bridge_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1\",\n  \"checks\": [\n    \"Lower impulse below 50 Ki is rejected\",\n    \"Holding the stick after a rejected edge neither queues nor charges\",\n    \"Lower impulse at 50 Ki starts before release; release does not rearm\",\n    \"A long native super keeps its continuation gesture beyond 300 frames\",\n    \"Native cinematic clears initiation while retaining follow-ups; no second cast\",\n    \"Scripted super continuation accepts an impulse at zero Ki without arming initiation\",\n    \"Upper and Spirit initiation require 100 Ki\",\n    \"D-pad Down supplies normal and boss native aura charge\",\n    \"Boss lateral gestures have distinct left/right edges\",\n    \"Boss scripted charge on RT is available independently of normal super energy gates\",\n    \"X supplies native close/ranged attacks; battle A supplies approach, not Ki blast\",\n    \"Four contextual shoulder/trigger choices have distinct inputs\",\n    \"Boss inputs also update discrete recognizers using the runtime index/type table\",\n    \"Shared native recognizers combine active aliases and clear after release\",\n    \"Normal fights leave the native recognizer states unchanged\",\n    \"RT supplies type-6 boss QTE input; native accumulation and threshold advance the step\",\n    \"Other battle kinds preserve the original type-6 Kinect input path\",\n    \"Storage selection chooses Xenia HDD only for a signed-in user and preserves the notification handle\",\n    \"B returns from a back-only selector with no selectable items\",\n    \"Both menu hand coordinates are placed outside the canvas\"\n  ],\n  \"passed\": 20\n}\n"
+  },
+  {
+    "script": "tools/check_step_guard_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "{\"passed\": true, \"priority_cases\": 20, \"icon_cases\": 16}\n"
+  },
+  {
+    "script": "tools/check_charge_start_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "Passed 36 native charge-hand selection cases\n"
+  },
+  {
+    "script": "tools/check_combat_feedback_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "{\"scope\": \"Exercise contextual inputs and bounded UI changes; no gameplay claim.\", \"patch_sha256\": \"4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1\", \"input_cases\": 384, \"ui_cases\": [{\"case\": \"normal\", \"changed\": true, \"idempotent\": true}, {\"case\": \"already_ordered\", \"changed\": true, \"idempotent\": true}, {\"case\": \"missing_pad\", \"changed\": false, \"idempotent\": true}, {\"case\": \"unmapped_texture\", \"changed\": false, \"idempotent\": true}, {\"case\": \"missing_root\", \"changed\": false, \"idempotent\": true}, {\"case\": \"missing_dummy\", \"changed\": false, \"idempotent\": true}], \"clash_texture_cases\": 4, \"post_native_wrappers\": [{\"native\": \"0x822ec8a8\", \"wrapper\": \"0x825ef000\", \"panels\": 2}, {\"native\": \"0x822e3f88\", \"wrapper\": \"0x825ef100\", \"panels\": 4}, {\"native\": \"0x822e39a8\", \"wrapper\": \"0x825ef200\", \"panels\": 4}, {\"native\": \"0x822e0480\", \"wrapper\": \"0x825ef300\", \"panels\": 1}], \"native_renderer_draw_order\": [\"i_ico_dummy_grp\", \"a_pl_attack_anm_grp\", \"i_pl_attack\", \"a_pl_guard_anm_grp\", \"i_pl_guard\", \"i_pl_seal_anm_grp\"], \"passed\": true}\n"
+  },
+  {
+    "script": "tools/check_action_values_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "{\"actions\": 67, \"numeric_checks\": 804, \"passed\": true, \"path\": \"/workspace/ZForKinectGamepadPatch/experiments/gamepad-v1.1.1-usa/action-values-cpu.json\"}\n"
+  },
+  {
+    "script": "tools/check_context_consumers_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "{\"passed\": true, \"cases\": 10, \"output\": \"/workspace/ZForKinectGamepadPatch/experiments/gamepad-v1.1.1-usa/context-consumers-cpu.json\"}\n"
+  },
+  {
+    "script": "tools/check_feedback_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "ntrols use native Xbox textures; super gestures fall back to the original renderer\",\n    \"All 17 common gesture icons select valid Xbox texture indices\",\n    \"Native contextual call sites select LB/RB/LT/RT, guard/uppercut responses, and LT/LS-left/LS-right for the defender gauge\",\n    \"Contextual button lettering clears the native pose mirror flag\",\n    \"All 21 extra pose widgets follow the manifest: mapped Xbox textures or explicit original fallback\",\n    \"Missing pad resources replay the original common-icon load instruction\",\n    \"Kinect Tuner update and drawing return without touching their object\",\n    \"Lateral inputs remain active on consecutive held frames, then clear on release\",\n    \"The emitted copy loop fills both 20-joint buffers, preserves LR, and leaves surrounding memory intact\",\n    \"The original close-range sway gate accepts held LS-left as well as LT\",\n    \"Original native defender gauge: all three responses reach 1.0 with held input; edge-only input stalls at 0.05 in the same fixture\"\n  ],\n  \"passed\": 11,\n  \"native_gauge_fixture\": [\n    {\n      \"choice\": 0,\n      \"action\": \"0x26\",\n      \"edge_only_after_30_frames\": 0.05000000074505806,\n      \"held_after_30_frames\": 1.0\n    },\n    {\n      \"choice\": 1,\n      \"action\": \"0xd\",\n      \"edge_only_after_30_frames\": 0.05000000074505806,\n      \"held_after_30_frames\": 1.0\n    },\n    {\n      \"choice\": 2,\n      \"action\": \"0xe\",\n      \"edge_only_after_30_frames\": 0.05000000074505806,\n      \"held_after_30_frames\": 1.0\n    }\n  ],\n  \"scope\": \"isolated emitted PowerPC; native texture factory stubbed; no gameplay claim\"\n}\n"
+  },
+  {
+    "script": "tools/check_boss_prompt_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "Passed 2103 boss prompt cases\n"
+  },
+  {
+    "script": "tools/check_hd_prompts_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "Passed 12 HD adapter cases; 13 decoded textures match their DDS sources\n"
+  },
+  {
+    "script": "tools/check_static_prompts_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "Passed 13 UI adapter cases\n"
+  },
+  {
+    "script": "tools/check_animated_combat_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "{\"passed\": true, \"checks\": [\"Y holds native charge; release animates the fist for five frames then supplies one native punch with charge retained\", \"Leaving close charge or entering a cinematic never synthesizes a punch\", \"Interruptions during the release trajectory cancel the pending punch\", \"Actor replacement cancels the previous actor's charge release\", \"B guard, both steps and far Y heavy remain distinct\", \"Idle keeps a stable raised ready stance without activating guard\", \"The previous near Y uppercut remains available on RT without starting charge\", \"Accepted jab/normal shot/heavy shot animate forward and recoil on both sides in every joint buffer\", \"A short shot state completes its visual motion through idle; a new shot restarts the motion\", \"Charge pose switches to a visible punch trajectory after release\", \"The pose adapter preserves caller arguments, destination pointer, stack and link register\", \"Charge and release prompts show Y; the retained uppercut shows RT; far heavy stays Y\"]}\n"
+  },
+  {
+    "script": "tools/check_super_defense_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "e\": \"evade_1\",\n      \"texture\": 15,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"evade_2\",\n      \"texture\": 15,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"evade_3\",\n      \"texture\": 15,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"evade_4\",\n      \"texture\": 15,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"counter_1_0\",\n      \"texture\": 17,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"counter_1_1\",\n      \"texture\": 16,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"counter_1_2\",\n      \"texture\": 16,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"counter_2\",\n      \"texture\": 16,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"counter_3\",\n      \"texture\": 16,\n      \"native_visibility_setup_checked\": true\n    },\n    {\n      \"case\": \"counter_4\",\n      \"texture\": 16,\n      \"native_visibility_setup_checked\": true\n    }\n  ],\n  \"fallback_cases\": [\n    \"missing_pad\",\n    \"wrong_count\",\n    \"missing_table\",\n    \"missing_texture\",\n    \"missing_dummy\",\n    \"missing_root\"\n  ],\n  \"invalid_selectors\": 6,\n  \"native_consumer_variants\": [\n    \"evade_1\",\n    \"evade_2\",\n    \"evade_3\",\n    \"evade_4\",\n    \"counter_1_0\",\n    \"counter_1_1\",\n    \"counter_1_2\",\n    \"counter_2\",\n    \"counter_3\",\n    \"counter_4\"\n  ],\n  \"super_guard\": \"B accepted; LS-right and neutral rejected\",\n  \"player_super_art\": \"Original special action map and dedicated player Super pose loader unchanged\"\n}\n"
+  },
+  {
+    "script": "tools/check_super_timing_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "Passed all six native two-gesture Super timing variants\n"
+  },
+  {
+    "script": "tools/check_content_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "{\n  \"engine\": \"Unicorn 2.1.4 PPC32 BE\",\n  \"patch_sha256\": \"4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1\",\n  \"checks\": [\n    \"All 85 catalog entries produce the exact decoded native QR fields only on pad input\",\n    \"Shoulders wrap the complete catalog; triggers select and wrap all 12 power-up codes\",\n    \"The original 822FF238 instructions accept every catalog pair: 67/12/3/3 across its four categories\",\n    \"Unlock adapter preserves menu pointer, stack, LR and selected items; requests one native save of the changed content\",\n    \"Inactive/active power-up flag survives menu initialization; original gameplay checker distinguishes the two states\"\n  ],\n  \"passed\": 5,\n  \"native_classifier_categories\": {\n    \"1\": 67,\n    \"2\": 12,\n    \"3\": 3,\n    \"4\": 3\n  },\n  \"limits\": \"Native classifier executed; native unlock initializer mocked for ABI preservation checks. Xenia gameplay/load tests are separate.\"\n}\n"
+  },
+  {
+    "script": "tools/check_launch_guard_cpu.py",
+    "region": "usa",
+    "exit_code": 0,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "tail": "36 native launch-choice cases and 16 unrelated-caller cases passed; 8 old failures reproduced\n"
+  }
+]

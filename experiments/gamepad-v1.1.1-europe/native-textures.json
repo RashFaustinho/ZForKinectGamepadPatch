@@ -1,0 +1,149 @@
+{
+  "scope": "Read-only proof that all eleven native pad resources contain the HD data. Rendering still requires a screenshot.",
+  "passed": 13,
+  "textures": [
+    {
+      "index": 2,
+      "label": "B",
+      "resource": "0xbc667620",
+      "native_size": [
+        256,
+        256
+      ],
+      "data": "0xb6e0e000",
+      "sha256": "d0a50b5866ca875c35dfd1edeaa39d48399ac7e216bd10e4e01ec4bc491da581"
+    },
+    {
+      "index": 3,
+      "label": "X",
+      "resource": "0xbc6676f0",
+      "native_size": [
+        256,
+        256
+      ],
+      "data": "0xb6dfd000",
+      "sha256": "62e55f1d6931e69021226e64575d21920558adae74a3a5a243f2da7e2b376eb6"
+    },
+    {
+      "index": 4,
+      "label": "Y",
+      "resource": "0xbc6677c0",
+      "native_size": [
+        256,
+        256
+      ],
+      "data": "0xb6dec000",
+      "sha256": "70bbd35f70ddb6a65c34eb098802fae01f61a308b835de8e0d78beb0a4b0e8cc"
+    },
+    {
+      "index": 5,
+      "label": "A",
+      "resource": "0xbc667890",
+      "native_size": [
+        256,
+        256
+      ],
+      "data": "0xb6ddb000",
+      "sha256": "1e43ed9354b2010b19ba29c774468e57ea31aed1ec8b99dd8abdfa27d990e537"
+    },
+    {
+      "index": 6,
+      "label": "LB",
+      "resource": "0xbc667960",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb728e000",
+      "sha256": "43c30d2f1401a457f3ccd053089912cb9d71ea7a9edc061176bbfa54b2b09b5b"
+    },
+    {
+      "index": 7,
+      "label": "LT",
+      "resource": "0xbc667a30",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb7292000",
+      "sha256": "010149eab6e52cec0856753d5e115c82074668c939debc9d3a7f73edbf90bb26"
+    },
+    {
+      "index": 9,
+      "label": "RB",
+      "resource": "0xbc667bd0",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb729a000",
+      "sha256": "1614543715941bd53b3021696e132498f18b130b9a6de5333606c828416206ab"
+    },
+    {
+      "index": 10,
+      "label": "RT",
+      "resource": "0xbc667ca0",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb729e000",
+      "sha256": "4e246b9b983d9012db557876c88cd86d68f10e85a47814ceeedfa93a1e65a4f6"
+    },
+    {
+      "index": 14,
+      "label": "LS_RIGHT",
+      "resource": "0xbc667fe0",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb72ae000",
+      "sha256": "25de5dc0d29711b4aca50f6efdc3b82d3c2b90be294fe71cc8eee8555f8faa31"
+    },
+    {
+      "index": 15,
+      "label": "LS_LEFT",
+      "resource": "0xbc6680b0",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb72b2000",
+      "sha256": "64779d653e317e215c39e70fbe8acb94482e2f559b3bd9f0dc36f4ba83cefe0e"
+    },
+    {
+      "index": 21,
+      "label": "DPAD_DOWN",
+      "resource": "0xbc668590",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb72ca000",
+      "sha256": "f90d564340fb1144642f4e0fb9de859777096395e5fd57febed840c02aff5939"
+    },
+    {
+      "index": 16,
+      "label": "RS_UP",
+      "resource": "0xbc668180",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb72b6000",
+      "sha256": "b9ace233b70a84187739e244dead9eb2ced17c6cb9bd3b83b4e2e46edde5a62c"
+    },
+    {
+      "index": 17,
+      "label": "RS_DOWN",
+      "resource": "0xbc668250",
+      "native_size": [
+        128,
+        128
+      ],
+      "data": "0xb72ba000",
+      "sha256": "cc55d94908c38cd6730192a74adb2ea86437da2c3c1bf63dd032359503e91c98"
+    }
+  ]
+}

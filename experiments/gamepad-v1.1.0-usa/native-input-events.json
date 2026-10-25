@@ -1,0 +1,120 @@
+{
+  "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+  "near": [
+    {
+      "frame": 1150,
+      "mode": 4,
+      "state": 1,
+      "action": 0,
+      "side": 1,
+      "input": "0x80",
+      "opponent_hp": 45000.0,
+      "accepted_stamp": 1150,
+      "latched_side_mask": 2,
+      "committed_side_mask": 2,
+      "sequence_index": 0,
+      "side_verified_in_native_actor": true
+    },
+    {
+      "frame": 1197,
+      "mode": 4,
+      "state": 1,
+      "action": 0,
+      "side": 0,
+      "input": "0x80",
+      "opponent_hp": 44850.0,
+      "accepted_stamp": 1197,
+      "latched_side_mask": 1,
+      "committed_side_mask": 1,
+      "sequence_index": 1,
+      "side_verified_in_native_actor": true
+    },
+    {
+      "frame": 1220,
+      "mode": 4,
+      "state": 10,
+      "action": 0,
+      "side": 1,
+      "input": "0x80",
+      "opponent_hp": 44700.0,
+      "accepted_stamp": 1219,
+      "latched_side_mask": 2,
+      "committed_side_mask": 2,
+      "sequence_index": 2,
+      "side_verified_in_native_actor": true
+    },
+    {
+      "frame": 1241,
+      "mode": 4,
+      "state": 1,
+      "action": 0,
+      "side": 0,
+      "input": "0x80",
+      "opponent_hp": 44550.0,
+      "accepted_stamp": 1241,
+      "latched_side_mask": 1,
+      "committed_side_mask": 1,
+      "sequence_index": 3,
+      "side_verified_in_native_actor": true
+    }
+  ],
+  "far": [
+    {
+      "frame": 4942,
+      "mode": 6,
+      "state": 29,
+      "action": 0,
+      "side": 1,
+      "input": "0x80",
+      "opponent_hp": 39900.0,
+      "accepted_stamp": 4941,
+      "latched_side_mask": 2,
+      "committed_side_mask": 2,
+      "sequence_index": 0,
+      "side_verified_in_native_actor": true
+    },
+    {
+      "frame": 4963,
+      "mode": 6,
+      "state": 20,
+      "action": 0,
+      "side": 0,
+      "input": "0x80",
+      "opponent_hp": 39780.0,
+      "accepted_stamp": 4963,
+      "latched_side_mask": 1,
+      "committed_side_mask": 1,
+      "sequence_index": 1,
+      "side_verified_in_native_actor": true
+    },
+    {
+      "frame": 4986,
+      "mode": 6,
+      "state": 29,
+      "action": 0,
+      "side": 1,
+      "input": "0x80",
+      "opponent_hp": 39660.0,
+      "accepted_stamp": 4985,
+      "latched_side_mask": 2,
+      "committed_side_mask": 2,
+      "sequence_index": 2,
+      "side_verified_in_native_actor": true
+    },
+    {
+      "frame": 5008,
+      "mode": 6,
+      "state": 20,
+      "action": 0,
+      "side": 0,
+      "input": "0x80",
+      "opponent_hp": 39540.0,
+      "accepted_stamp": 5008,
+      "latched_side_mask": 1,
+      "committed_side_mask": 1,
+      "sequence_index": 3,
+      "side_verified_in_native_actor": true
+    }
+  ],
+  "scope": "Real virtual-pad requests and read-only native actor observations; no forced combat data."
+}

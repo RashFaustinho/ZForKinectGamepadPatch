@@ -1,0 +1,69 @@
+{
+  "scope": "Exercise contextual inputs and bounded UI changes; no gameplay claim.",
+  "patch_sha256": "b96c0f8355a851985e6643d9c0da4ec88f85b2c464a1ca0ac7ddb2185070210a",
+  "input_cases": 384,
+  "ui_cases": [
+    {
+      "case": "normal",
+      "changed": true,
+      "idempotent": true
+    },
+    {
+      "case": "already_ordered",
+      "changed": true,
+      "idempotent": true
+    },
+    {
+      "case": "missing_pad",
+      "changed": false,
+      "idempotent": true
+    },
+    {
+      "case": "unmapped_texture",
+      "changed": false,
+      "idempotent": true
+    },
+    {
+      "case": "missing_root",
+      "changed": false,
+      "idempotent": true
+    },
+    {
+      "case": "missing_dummy",
+      "changed": false,
+      "idempotent": true
+    }
+  ],
+  "clash_texture_cases": 4,
+  "post_native_wrappers": [
+    {
+      "native": "0x822ec8f8",
+      "wrapper": "0x825ef000",
+      "panels": 2
+    },
+    {
+      "native": "0x822e4190",
+      "wrapper": "0x825ef100",
+      "panels": 4
+    },
+    {
+      "native": "0x822e3a88",
+      "wrapper": "0x825ef200",
+      "panels": 4
+    },
+    {
+      "native": "0x822ee188",
+      "wrapper": "0x825ef300",
+      "panels": 1
+    }
+  ],
+  "native_renderer_draw_order": [
+    "i_ico_dummy_grp",
+    "a_pl_attack_anm_grp",
+    "i_pl_attack",
+    "a_pl_guard_anm_grp",
+    "i_pl_guard",
+    "i_pl_seal_anm_grp"
+  ],
+  "passed": true
+}

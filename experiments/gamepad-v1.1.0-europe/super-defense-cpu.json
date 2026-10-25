@@ -1,0 +1,85 @@
+{
+  "scope": "Execute native Super-defense selectors and consumers with revision 18.\n\nTexture/part resolution and 64-bit register spill helpers are ABI fixtures.\nThe original selector, named-group traversal and defense query code execute\non the PowerPC CPU; this does not stand in for a rendered gameplay test.\n",
+  "patch_sha256": "b96c0f8355a851985e6643d9c0da4ec88f85b2c464a1ca0ac7ddb2185070210a",
+  "passed": true,
+  "selector_variants": [
+    {
+      "case": "guard",
+      "texture": 2,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "evade_1",
+      "texture": 15,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "evade_2",
+      "texture": 15,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "evade_3",
+      "texture": 15,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "evade_4",
+      "texture": 15,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "counter_1_0",
+      "texture": 17,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "counter_1_1",
+      "texture": 16,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "counter_1_2",
+      "texture": 16,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "counter_2",
+      "texture": 16,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "counter_3",
+      "texture": 16,
+      "native_visibility_setup_checked": true
+    },
+    {
+      "case": "counter_4",
+      "texture": 16,
+      "native_visibility_setup_checked": true
+    }
+  ],
+  "fallback_cases": [
+    "missing_pad",
+    "wrong_count",
+    "missing_table",
+    "missing_texture",
+    "missing_dummy",
+    "missing_root"
+  ],
+  "invalid_selectors": 6,
+  "native_consumer_variants": [
+    "evade_1",
+    "evade_2",
+    "evade_3",
+    "evade_4",
+    "counter_1_0",
+    "counter_1_1",
+    "counter_1_2",
+    "counter_2",
+    "counter_3",
+    "counter_4"
+  ],
+  "super_guard": "B accepted; LS-right and neutral rejected",
+  "player_super_art": "Original special action map and dedicated player Super pose loader unchanged"
+}

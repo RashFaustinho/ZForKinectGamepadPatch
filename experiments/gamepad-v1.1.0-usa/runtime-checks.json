@@ -1,0 +1,240 @@
+{
+  "version": "1.1.0",
+  "region": "usa",
+  "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+  "passed": true,
+  "cpu_regression_suites_passed": 15,
+  "additional_native_side_and_idle_tail_suite_passed": true,
+  "native_attacks": {
+    "near": {
+      "session": "update11-usa-vulkan-final",
+      "source_report": "near-x.json",
+      "source_sha256": "a82812afc46e8b3c4e783b2c21c6423c6e937640a44885ab92842909d40d1edc",
+      "accepted_count": 4,
+      "native_sides": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "alternates": true,
+      "all_sides_verified_in_native_actor": true,
+      "all_requests_entered_native_attack_state": 10,
+      "first_opponent_hp": 45000.0,
+      "last_observed_opponent_hp": 44550.0,
+      "events": [
+        {
+          "frame": 1150,
+          "mode": 4,
+          "state": 1,
+          "action": 0,
+          "side": 1,
+          "input": "0x80",
+          "opponent_hp": 45000.0,
+          "accepted_stamp": 1150,
+          "latched_side_mask": 2,
+          "committed_side_mask": 2,
+          "sequence_index": 0,
+          "side_verified_in_native_actor": true
+        },
+        {
+          "frame": 1197,
+          "mode": 4,
+          "state": 1,
+          "action": 0,
+          "side": 0,
+          "input": "0x80",
+          "opponent_hp": 44850.0,
+          "accepted_stamp": 1197,
+          "latched_side_mask": 1,
+          "committed_side_mask": 1,
+          "sequence_index": 1,
+          "side_verified_in_native_actor": true
+        },
+        {
+          "frame": 1220,
+          "mode": 4,
+          "state": 10,
+          "action": 0,
+          "side": 1,
+          "input": "0x80",
+          "opponent_hp": 44700.0,
+          "accepted_stamp": 1219,
+          "latched_side_mask": 2,
+          "committed_side_mask": 2,
+          "sequence_index": 2,
+          "side_verified_in_native_actor": true
+        },
+        {
+          "frame": 1241,
+          "mode": 4,
+          "state": 1,
+          "action": 0,
+          "side": 0,
+          "input": "0x80",
+          "opponent_hp": 44550.0,
+          "accepted_stamp": 1241,
+          "latched_side_mask": 1,
+          "committed_side_mask": 1,
+          "sequence_index": 3,
+          "side_verified_in_native_actor": true
+        }
+      ]
+    },
+    "far": {
+      "session": "update11-usa-null-final",
+      "source_report": "far-x.json",
+      "source_sha256": "91bd30d72da5ce2db351cc34d8814bd628ece24bfc69c326fcc862fa2bf6eba5",
+      "accepted_count": 4,
+      "native_sides": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "alternates": true,
+      "all_sides_verified_in_native_actor": true,
+      "all_requests_entered_native_attack_state": 29,
+      "first_opponent_hp": 39900.0,
+      "last_observed_opponent_hp": 39540.0,
+      "events": [
+        {
+          "frame": 4942,
+          "mode": 6,
+          "state": 29,
+          "action": 0,
+          "side": 1,
+          "input": "0x80",
+          "opponent_hp": 39900.0,
+          "accepted_stamp": 4941,
+          "latched_side_mask": 2,
+          "committed_side_mask": 2,
+          "sequence_index": 0,
+          "side_verified_in_native_actor": true
+        },
+        {
+          "frame": 4963,
+          "mode": 6,
+          "state": 20,
+          "action": 0,
+          "side": 0,
+          "input": "0x80",
+          "opponent_hp": 39780.0,
+          "accepted_stamp": 4963,
+          "latched_side_mask": 1,
+          "committed_side_mask": 1,
+          "sequence_index": 1,
+          "side_verified_in_native_actor": true
+        },
+        {
+          "frame": 4986,
+          "mode": 6,
+          "state": 29,
+          "action": 0,
+          "side": 1,
+          "input": "0x80",
+          "opponent_hp": 39660.0,
+          "accepted_stamp": 4985,
+          "latched_side_mask": 2,
+          "committed_side_mask": 2,
+          "sequence_index": 2,
+          "side_verified_in_native_actor": true
+        },
+        {
+          "frame": 5008,
+          "mode": 6,
+          "state": 20,
+          "action": 0,
+          "side": 0,
+          "input": "0x80",
+          "opponent_hp": 39540.0,
+          "accepted_stamp": 5008,
+          "latched_side_mask": 1,
+          "committed_side_mask": 1,
+          "sequence_index": 3,
+          "side_verified_in_native_actor": true
+        }
+      ]
+    }
+  },
+  "native_attack_backend": {
+    "near": "Vulkan/Lavapipe",
+    "far": "Null GPU: logic only, no rendering claim"
+  },
+  "public_startup": {
+    "passed": true,
+    "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+    "exact_public_hooks_and_payloads_read_back": true,
+    "local_diagnostic_patch_loaded": false,
+    "native_textures_verified": 13,
+    "face_sampling_word3": "0x01280D10"
+  },
+  "visual_melee_and_idle_tail": {
+    "session": "update11-usa-vulkan-final",
+    "backend": "Vulkan/Lavapipe",
+    "virtual_display_capture_size": [
+      1280,
+      720
+    ],
+    "requested_internal_display_options": [
+      "--custom_internal_display_resolution_x=1280",
+      "--custom_internal_display_resolution_y=720"
+    ],
+    "actual_render_target_resolution_independently_measured": false,
+    "local_selector_logger_only": true,
+    "local_payload_readback_passed": true,
+    "public_code_changes_limited_to_selector_hook_and_reserved_logger": true,
+    "native_textures_verified": 13,
+    "geometry_regions": [
+      52,
+      52
+    ],
+    "all_geometry_finite": true,
+    "three_joint_buffers_equal": true,
+    "selected_hand_moves_forward_after_native_side_reset": [
+      {
+        "expected_mask": 2,
+        "committed_mask": 2,
+        "phase": 2,
+        "left_hand": [
+          -0.2199999988079071,
+          0.6100000143051147,
+          2.180000066757202
+        ],
+        "right_hand": [
+          0.1850000023841858,
+          0.6869999766349792,
+          2.13100004196167
+        ],
+        "selected_hand_further_forward": true
+      },
+      {
+        "expected_mask": 1,
+        "committed_mask": 1,
+        "phase": 2,
+        "left_hand": [
+          -0.1850000023841858,
+          0.6869999766349792,
+          2.13100004196167
+        ],
+        "right_hand": [
+          0.2199999988079071,
+          0.6100000143051147,
+          2.180000066757202
+        ],
+        "selected_hand_further_forward": true
+      }
+    ],
+    "screenshots": [
+      "near-x-2-left.png",
+      "near-x-1-right.png"
+    ]
+  },
+  "limits": [
+    "No exhaustive campaign, character/variant, every-QTE or every-power-up effect playthrough.",
+    "Windows/D3D12 and physical USB controllers were not tested.",
+    "Four ranged X requests, their native sides/state 29 and damage are verified through the Null backend. Final 1.1.0 ranged Vulkan projectile rendering is not independently confirmed.",
+    "A separate USA software-Vulkan ranged attempt timed out during the automated transition; it is not counted as a successful ranged visual test.",
+    "Native QTE favorable/unfavorable outcome rules, health, Ki, scoring and timing are retained."
+  ]
+}

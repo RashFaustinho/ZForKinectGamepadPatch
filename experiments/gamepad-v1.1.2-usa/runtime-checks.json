@@ -1,0 +1,164 @@
+{
+  "version": "1.1.2",
+  "region": "usa",
+  "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+  "passed": true,
+  "cpu_suites": 19,
+  "public_startup": {
+    "passed": true,
+    "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+    "native_textures_verified": 13,
+    "session": "update112-final-usa-public",
+    "face_format": "RGBA8, native format 6, 256x256, 262144 bytes each",
+    "other_format": "nine unchanged BC3 textures"
+  },
+  "guard_and_X_payloads_unchanged_from_1_1_1": true,
+  "unchanged_payloads": [
+    {
+      "address": "0x825eb100",
+      "bytes": 2048,
+      "sha256": "64e9750f344faba2cafa4ca7b831bb4f1e40e1eb850a2aa98bfb75a731b3a348"
+    },
+    {
+      "address": "0x825ec000",
+      "bytes": 1400,
+      "sha256": "521b012bcc68f73417832c4e42904c26bded7fffe25a415598bc2b53ea38f830"
+    },
+    {
+      "address": "0x825ed200",
+      "bytes": 260,
+      "sha256": "c651a655817655763901795d812b55950df05145926162f04d31b88d2b87287b"
+    },
+    {
+      "address": "0x825ed400",
+      "bytes": 236,
+      "sha256": "2ada7837eef800cdfa096518724f849cf0ffb02d0431c97a3d3a67f048fff565"
+    },
+    {
+      "address": "0x825ed680",
+      "bytes": 92,
+      "sha256": "6b5aeb5ec2e2888218ad1862b07ff10e410b7d33b644305284ec3c232d9e599d"
+    },
+    {
+      "address": "0x825ec800",
+      "bytes": 1632,
+      "sha256": "ee033204def62665e75cb75e9188e2da48a25e6dd6313ce216335dc893a08398"
+    },
+    {
+      "address": "0x825ee600",
+      "bytes": 304,
+      "sha256": "29b139235fb4a4f5852535d93f6a7578df51f91f51e73da7d6907d16c7301672"
+    },
+    {
+      "address": "0x825ee800",
+      "bytes": 448,
+      "sha256": "1e602b08fd7e575ce3179882bce19ce27330f73c130d43caf5ff7bbb977e02f7"
+    },
+    {
+      "address": "0x8266e900",
+      "bytes": 576,
+      "sha256": "2f0a42f28593d89e64ca9fdd7f3b259b957f68ae9433d3e17165c2f4f5667e5b"
+    },
+    {
+      "address": "0x825efe00",
+      "bytes": 128,
+      "sha256": "c6a54d4a6eb0f8b0f951d4f9f3426e178bdefead572abf224a40dc3151675638"
+    }
+  ],
+  "baseline_patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "clash_CPU_cases": 168,
+  "native_mash_selectors_executed": [
+    "0x822e0480",
+    "0x822f1460"
+  ],
+  "clash_panel_visual_fixture": {
+    "passed": true,
+    "region": "Europe",
+    "public_base_patch_sha256": "581c724308eaceb05973508f913151690a3c2ad49c8c634a8b8b27b49f548ff3",
+    "LOCAL_patch_sha256": "a8233ca7252af116342164d18bc898aa9a49c9144a4e15d4a285a0f3cc48c7ba",
+    "scope": "Native UI panel display, not an organically reached Super clash or completed N18/N17 encounter. LOCAL code selects existing tutorial group 4 and requests its UI show animation only.",
+    "scene_report": {
+      "scope": "Observe the native Super-mash widget using pad X and read-only UI traversal.\n\nAn optional LOCAL native tutorial-group selector can make the existing lesson\naccessible. This driver never writes phases, Ki, HP, progress or UI state.\n",
+      "passed": true,
+      "session": "update112-clash-display-vulkan",
+      "samples": [
+        {
+          "widget": "0xbd407620",
+          "vtable": "0x820f6fe8",
+          "active": 1,
+          "visibility_state": 1,
+          "progress": 0.0,
+          "dummy_part": "0xbd938040",
+          "dummy_texture": "0xbc6676f0",
+          "X_texture": "0xbc6676f0",
+          "groups": {
+            "": false,
+            "i_pl_attack": false,
+            "i_pl_guard": false,
+            "a_pl_attack_anm_grp": false,
+            "a_pl_guard_anm_grp": false,
+            "i_ico_dummy_grp": true,
+            "i_pl_seal_anm_grp": false
+          },
+          "X_mapped": true,
+          "frame": 1103,
+          "lesson": 118
+        },
+        {
+          "widget": "0xbd407620",
+          "vtable": "0x820f6fe8",
+          "active": 1,
+          "visibility_state": 2,
+          "progress": 0.0,
+          "dummy_part": "0xbd938040",
+          "dummy_texture": "0xbc6676f0",
+          "X_texture": "0xbc6676f0",
+          "groups": {
+            "": false,
+            "i_pl_attack": false,
+            "i_pl_guard": false,
+            "a_pl_attack_anm_grp": false,
+            "a_pl_guard_anm_grp": false,
+            "i_ico_dummy_grp": true,
+            "i_pl_seal_anm_grp": false
+          },
+          "X_mapped": true,
+          "frame": 1104,
+          "lesson": 118
+        }
+      ],
+      "final": {
+        "widget": "0xbd407620",
+        "vtable": "0x820f6fe8",
+        "active": 1,
+        "visibility_state": 2,
+        "progress": 0.0,
+        "dummy_part": "0xbd938040",
+        "dummy_texture": "0xbc6676f0",
+        "X_texture": "0xbc6676f0",
+        "groups": {
+          "": false,
+          "i_pl_attack": false,
+          "i_pl_guard": false,
+          "a_pl_attack_anm_grp": false,
+          "a_pl_guard_anm_grp": false,
+          "i_ico_dummy_grp": true,
+          "i_pl_seal_anm_grp": false
+        },
+        "X_mapped": true
+      },
+      "screenshot": "clash-X.png",
+      "full_N18_vs_N17_match_reproduced": false
+    },
+    "only_declared_LOCAL_changes_verified": true,
+    "screenshot": "../gamepad-v1.1.2-europe/previews/clash-X-UI-fixture.png"
+  },
+  "RGBA_gameplay_preview_candidate": null,
+  "limits": [
+    "Full N18 versus N17 encounter and an organically initiated Super clash were not reproduced.",
+    "Direct tutorial group 4 selection did not initialize a full clash; its Null-GPU probe did not count as passing.",
+    "The Vulkan UI fixture verifies the real widget art and cleanup, without claiming native clash progress, victory or damage.",
+    "USA has exact startup/resource readback and mapped native CPU checks; its graphics were not separately captured.",
+    "No new all-character, campaign, Windows/D3D12 or physical-controller claim."
+  ]
+}

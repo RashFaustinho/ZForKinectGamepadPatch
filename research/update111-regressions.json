@@ -1,0 +1,7 @@
+{
+  "negative_guard_baseline": "1.1.0 Europe",
+  "expected_failure": true,
+  "exit_code": 1,
+  "reason": "The old guard has hands at z 2.17/2.18; the new tucked-guard fixture requires z > 2.30, plus symmetric high fists and bent elbows. This demonstrates detection of the pose change, not reproduction of the user-reported rendering defect.",
+  "stderr": "Traceback (most recent call last):\n  File \"/workspace/ZForKinectGamepadPatch/tools/check_guard_pose_cpu.py\", line 48, in <module>\n    guard(mode, 1 if mode == 4 else 20, \"idle\")\n  File \"/workspace/ZForKinectGamepadPatch/tools/check_guard_pose_cpu.py\", line 31, in guard\n    assert vectors[hand][2] > 2.30  # A short guard reach, distinct from a strike.\n           ^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n"
+}

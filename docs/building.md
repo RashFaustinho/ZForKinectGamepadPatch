@@ -1,5 +1,13 @@
 # Rebuilding and extending the European patch
 
+## Latest regional build
+
+Version 1.1.2 adds RGBA8 face contours and the separate Super-clash prompt to
+the frozen 1.1.1 guard/alternating-arm build. See [the current reproduction steps](update-1.1.2.md#reproduce)
+and exact regional reports. `package_update.py --version 1.1.2` verifies the
+nineteen recorded CPU suites and scoped native UI evidence before packaging.
+The historical 1.0.0 and 1.1.0 artifacts described below remain unchanged.
+
 The final gameplay TOML is frozen at SHA-256 `bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50`. English documentation and release packaging do not change those bytes. The final builder pins its revision-19 input independently of editable reports and verifies the original image before checking its four native launch-choice call sites.
 
 ## Rebuild the final artifact from your own executable
@@ -46,3 +54,7 @@ To use runtime probes, start one owned `debug_session.py serve` per display, wit
 ## English release packaging
 
 Run `python3 tools/validate_publication.py`, then `python3 tools/package_patch.py`. Packaging requires the final hash, all fifteen recorded suites, and the public startup readback to agree. It uses a fixed file allowlist, deterministic ZIP metadata, byte comparisons, and SHA-256 checksums. No game, private profile, diagnostic patch or generated save is bundled. Only release documentation/package names changed to English; gameplay bytes remain the tested 1.0.0.
+
+## Version 1.1.0 and the American port
+
+The frozen 1.0.0 pipeline above remains unchanged. [The 1.1.0 report](update-1.1.0.md) documents new glyph flags, `build_update_patch.py`, `region_port.py`, the dual-image prerequisites and the explicitly adapted USA CPU fixtures. Original European and American binaries remain private.

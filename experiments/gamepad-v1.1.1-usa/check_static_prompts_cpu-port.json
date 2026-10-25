@@ -1,0 +1,28 @@
+{
+  "fixture": "check_static_prompts_cpu.py",
+  "fixture_sha256": "1ab1efb0716f7b22438f6dd09b14aaa2ade0889ca3c2f49aae993411960de097",
+  "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x823498a8",
+      "0x823497a0"
+    ],
+    [
+      "0x82114ddc",
+      "0x82114d74"
+    ],
+    [
+      "0x82114de0",
+      "0x82114d78"
+    ],
+    [
+      "0x82114de0",
+      "0x82114d78"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

@@ -1,0 +1,80 @@
+{
+  "fixture": "check_launch_guard_cpu.py",
+  "fixture_sha256": "1a9230a6ede479a495d6a68f59c37e5a8a28bb7dd0494e63a16cb0b8c981c4fd",
+  "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x8229d178",
+      "0x8229d080"
+    ],
+    [
+      "0x8220e9d0",
+      "0x8220e928"
+    ],
+    [
+      "0x8221100c",
+      "0x82210f64"
+    ],
+    [
+      "0x822110f8",
+      "0x82211050"
+    ],
+    [
+      "0x8229d178",
+      "0x8229d080"
+    ],
+    [
+      "0x8221100c",
+      "0x82210f64"
+    ],
+    [
+      "0x8220e77c",
+      "0x8220e6d4"
+    ],
+    [
+      "0x82210f9c",
+      "0x82210ef4"
+    ],
+    [
+      "0x8220e77c",
+      "0x8220e6d4"
+    ],
+    [
+      "0x82197118",
+      "0x82197190"
+    ],
+    [
+      "0x8220e788",
+      "0x8220e6e0"
+    ],
+    [
+      "0x8220e81c",
+      "0x8220e774"
+    ],
+    [
+      "0x82210fa8",
+      "0x82210f00"
+    ],
+    [
+      "0x82210fc8",
+      "0x82210f20"
+    ],
+    [
+      "0x8220e788",
+      "0x8220e6e0"
+    ],
+    [
+      "0x82210fa8",
+      "0x82210f00"
+    ],
+    [
+      "0x82197118",
+      "0x82197190"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

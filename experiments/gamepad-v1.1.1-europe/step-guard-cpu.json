@@ -1,0 +1,436 @@
+{
+  "scope": "Execute original free-combat priority gates and contextual icon adapters.\n\nThe native gate branches, permission function and actual patched input API run\non PowerPC. Only the texture factory is a recording callback. This catches the\nright-stick alias that the old single-action binding checks did not cover.\n",
+  "patch_sha256": "93cf01aa395fff1bd4a32ef6034a5036214169eeaad82f82b61c25007446eee0",
+  "priority_gate_cases": [
+    {
+      "mode": 4,
+      "button": "none",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 4,
+      "button": "none",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 4,
+      "button": "left",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 1,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 4,
+      "button": "left",
+      "edge": true,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 1,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 4,
+      "button": "right",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 4,
+      "button": "right",
+      "edge": true,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 4,
+      "button": "B",
+      "edge": false,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 4,
+      "button": "B",
+      "edge": true,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 4,
+      "button": "right_and_B",
+      "edge": false,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 4,
+      "button": "right_and_B",
+      "edge": true,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 6,
+      "button": "none",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 6,
+      "button": "none",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 6,
+      "button": "left",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 1,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 6,
+      "button": "left",
+      "edge": true,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 1,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 6,
+      "button": "right",
+      "edge": false,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 6,
+      "button": "right",
+      "edge": true,
+      "gates": {
+        "defensive_C": 0,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 6,
+      "button": "B",
+      "edge": false,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 6,
+      "button": "B",
+      "edge": true,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 0
+      }
+    },
+    {
+      "mode": 6,
+      "button": "right_and_B",
+      "edge": false,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 1
+      }
+    },
+    {
+      "mode": 6,
+      "button": "right_and_B",
+      "edge": true,
+      "gates": {
+        "defensive_C": 1,
+        "left_28": 0,
+        "right_29": 1
+      }
+    }
+  ],
+  "unchanged_cinematic_cases": 12,
+  "original_charge_priority_cases": [
+    {
+      "button": "Y",
+      "held": false,
+      "edge": false,
+      "native_dispatcher_case": 0,
+      "result": 0
+    },
+    {
+      "button": "Y",
+      "held": false,
+      "edge": false,
+      "native_dispatcher_case": 1,
+      "result": 0
+    },
+    {
+      "button": "Y",
+      "held": false,
+      "edge": false,
+      "native_dispatcher_case": 0,
+      "result": 0
+    },
+    {
+      "button": "Y",
+      "held": false,
+      "edge": false,
+      "native_dispatcher_case": 1,
+      "result": 0
+    },
+    {
+      "button": "Y",
+      "held": true,
+      "edge": false,
+      "native_dispatcher_case": 0,
+      "result": 0
+    },
+    {
+      "button": "Y",
+      "held": true,
+      "edge": false,
+      "native_dispatcher_case": 1,
+      "result": 1
+    },
+    {
+      "button": "Y",
+      "held": true,
+      "edge": true,
+      "native_dispatcher_case": 0,
+      "result": 0
+    },
+    {
+      "button": "Y",
+      "held": true,
+      "edge": true,
+      "native_dispatcher_case": 1,
+      "result": 1
+    }
+  ],
+  "icons": [
+    {
+      "entry": "0x825eed00",
+      "mode": 4,
+      "index": 12,
+      "texture": 2
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 4,
+      "index": 6,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 6,
+      "index": 12,
+      "texture": 2
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 6,
+      "index": 3,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 6,
+      "index": 6,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 6,
+      "index": 7,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 6,
+      "index": 8,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eed00",
+      "mode": 6,
+      "index": 10,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 4,
+      "index": 9,
+      "texture": 2
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 4,
+      "index": 3,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 4,
+      "index": 4,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 6,
+      "index": 9,
+      "texture": 2
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 6,
+      "index": 3,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 6,
+      "index": 4,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 6,
+      "index": 5,
+      "texture": 4
+    },
+    {
+      "entry": "0x825eee00",
+      "mode": 6,
+      "index": 6,
+      "texture": 4
+    }
+  ],
+  "original_HUD_UV_cases": [
+    {
+      "resource": "pad",
+      "native_side": 0,
+      "uv": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "resource": "pad",
+      "native_side": 1,
+      "uv": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "resource": "original",
+      "native_side": 0,
+      "uv": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "resource": "original",
+      "native_side": 1,
+      "uv": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "resource": "missing_loader",
+      "native_side": 1,
+      "uv": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "resource": "bad_count",
+      "native_side": 1,
+      "uv": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "resource": "missing_table",
+      "native_side": 1,
+      "uv": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "passed": true
+}

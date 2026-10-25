@@ -1,0 +1,319 @@
+{
+  "scope": "Execute both native launch-choice dispatchers, including mixed pad inputs.\n\nThe actual original query order and patched input API run on PowerPC. Stop\nbefore native UI dispatch: choosing a response is distinct from winning it.\n",
+  "patch_sha256": "b96c0f8355a851985e6643d9c0da4ec88f85b2c464a1ca0ac7ddb2185070210a",
+  "passed": true,
+  "native_choice_cases": [
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x0",
+      "rising": "0x0",
+      "native_choice": 0
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x0",
+      "rising": "0x0",
+      "native_choice": 0
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x20",
+      "rising": "0x0",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x20",
+      "rising": "0x0",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x20",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x20",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x4000",
+      "rising": "0x0",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x4000",
+      "rising": "0x0",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x8000",
+      "rising": "0x8000",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x8000",
+      "rising": "0x8000",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x10",
+      "rising": "0x10",
+      "native_choice": 2
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x10",
+      "rising": "0x10",
+      "native_choice": 2
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x30",
+      "rising": "0x10",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x30",
+      "rising": "0x10",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x0",
+      "rising": "0x0",
+      "native_choice": 0
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x0",
+      "rising": "0x0",
+      "native_choice": 0
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x20",
+      "rising": "0x0",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x20",
+      "rising": "0x0",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x20",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x20",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x4000",
+      "rising": "0x0",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x4000",
+      "rising": "0x0",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x8000",
+      "rising": "0x8000",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x8000",
+      "rising": "0x8000",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x10",
+      "rising": "0x10",
+      "native_choice": 2
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x10",
+      "rising": "0x10",
+      "native_choice": 2
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x30",
+      "rising": "0x10",
+      "native_choice": 1
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x30",
+      "rising": "0x10",
+      "native_choice": 1
+    }
+  ],
+  "revision19_B_stolen_by_stick": [
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 5,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 5,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x4020",
+      "rising": "0x20",
+      "native_choice": 3
+    },
+    {
+      "native_block": "0x8220e77c",
+      "mode": 8,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 4
+    },
+    {
+      "native_block": "0x82210f9c",
+      "mode": 8,
+      "held": "0x8020",
+      "rising": "0x8020",
+      "native_choice": 4
+    }
+  ],
+  "unrelated_caller_cases": 16,
+  "adapter_ABI_and_no_write_cases": 16
+}

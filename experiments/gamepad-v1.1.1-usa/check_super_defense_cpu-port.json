@@ -1,0 +1,76 @@
+{
+  "fixture": "check_super_defense_cpu.py",
+  "fixture_sha256": "b93ab0da6a6740cea418898f56c8cfc60498c85000d6428cb20a8fbd815a1e95",
+  "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x8251d780",
+      "0x8251c870"
+    ],
+    [
+      "0x8251d7c4",
+      "0x8251c8b4"
+    ],
+    [
+      "0x8251d780",
+      "0x8251c870"
+    ],
+    [
+      "0x8251d780",
+      "0x8251c870"
+    ],
+    [
+      "0x8251d7d0",
+      "0x8251c8c0"
+    ],
+    [
+      "0x8251d814",
+      "0x8251c904"
+    ],
+    [
+      "0x8251d7d0",
+      "0x8251c8c0"
+    ],
+    [
+      "0x8251d7d0",
+      "0x8251c8c0"
+    ],
+    [
+      "0x82115458",
+      "0x821153f0"
+    ],
+    [
+      "0x823498a8",
+      "0x823497a0"
+    ],
+    [
+      "0x822ef2b0",
+      "0x822ef108"
+    ],
+    [
+      "0x822ef728",
+      "0x822ef580"
+    ],
+    [
+      "0x822ef2b0",
+      "0x822ef108"
+    ],
+    [
+      "0x822ef2b0",
+      "0x822ef108"
+    ],
+    [
+      "0x82253a80",
+      "0x82253970"
+    ],
+    [
+      "0x82253b68",
+      "0x82253a58"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

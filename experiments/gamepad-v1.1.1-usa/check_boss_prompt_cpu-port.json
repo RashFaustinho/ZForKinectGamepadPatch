@@ -1,0 +1,24 @@
+{
+  "fixture": "check_boss_prompt_cpu.py",
+  "fixture_sha256": "7896c4b987aa9be9829811bd051dd3ff72d506327b14dd732b9d64d621548380",
+  "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x823498a8",
+      "0x823497a0"
+    ],
+    [
+      "0x822ebbb8",
+      "0x822ebb68"
+    ],
+    [
+      "0x822ebbb8",
+      "0x822ebb68"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

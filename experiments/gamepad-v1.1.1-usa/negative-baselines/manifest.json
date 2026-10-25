@@ -1,0 +1,5 @@
+{
+  "region": "USA",
+  "local_only": true,
+  "scope": "Ported historical negative baselines; no final guard-priority adapter."
+}

@@ -10,11 +10,33 @@ import lz4.block
 from pathlib import Path
 import cairosvg
 from PIL import Image
+from collections import deque
+
+
+def bleed_transparent_rgb(image, radius=4):
+ """Extend edge RGB under zero alpha, avoiding black BC3/filtering fringes."""
+ width,height=image.size;pixels=list(image.get_flattened_data());distance=[-1]*len(pixels)
+ queue=deque()
+ for i,pixel in enumerate(pixels):
+  if pixel[3]:distance[i]=0;queue.append(i)
+ while queue:
+  i=queue.popleft()
+  if distance[i]>=radius:continue
+  x,y=i%width,i//width
+  for xx,yy in ((x-1,y),(x+1,y),(x,y-1),(x,y+1)):
+   if not (0<=xx<width and 0<=yy<height):continue
+   j=yy*width+xx
+   if distance[j]>=0:continue
+   pixels[j]=(*pixels[i][:3],pixels[j][3]);distance[j]=distance[i]+1;queue.append(j)
+ result=Image.new('RGBA',image.size);result.putdata(pixels);return result
 
 root=Path(__file__).resolve().parents[1]
 ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--size',type=int,choices=(128,256),default=128);ap.add_argument('--out',type=Path)
 ap.add_argument('--content-scale',type=float,default=1.0,help='Centered drawing size within the transparent canvas')
 ap.add_argument('--include-super-defense',action='store_true',help='Include native right-stick up/down slots for Super counters')
+ap.add_argument('--face-supersample',type=int,choices=(1,2,4,8),default=1,help='Render A/B/X/Y larger before premultiplied-alpha downsampling')
+ap.add_argument('--face-alpha-bleed',action='store_true',help='Extend A/B/X/Y edge RGB under transparent pixels before BC3 encoding')
+ap.add_argument('--face-size',type=int,choices=(128,256),help='Override only the four face-button canvas sizes')
 args=ap.parse_args();out=args.out or root/'assets/controller';out.mkdir(parents=True,exist_ok=True)
 if not .25<=args.content_scale<=1:ap.error('Content scale must be between .25 and 1')
 buttons={2:('B','#bc2429'),3:('X','#2458b6'),4:('Y','#d49c13'),5:('A','#287d32'),
@@ -46,18 +68,25 @@ for index,(label,color) in buttons.items():
  inset=64*(1-args.content_scale)
  svg='<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128"><g transform="translate('+str(inset)+' '+str(inset)+') scale('+str(args.content_scale)+')" font-family="DejaVu Sans" font-weight="bold" text-anchor="middle">'+body+'</g></g></svg>'
  (out/(label+'.svg')).write_text(svg+'\n')
- png=cairosvg.svg2png(bytestring=svg.encode(),output_width=args.size,output_height=args.size)
- image=Image.open(io.BytesIO(png)).convert('RGBA');image.save(out/(label+'.png'))
+ factor=args.face_supersample if color else 1
+ size=(args.face_size or args.size) if color else args.size
+ png=cairosvg.svg2png(bytestring=svg.encode(),output_width=size*factor,output_height=size*factor)
+ image=Image.open(io.BytesIO(png)).convert('RGBA')
+ if factor>1:image=image.convert('RGBa').resize((size,size),Image.Resampling.LANCZOS).convert('RGBA')
+ if color and args.face_alpha_bleed:image=bleed_transparent_rgb(image)
+ image.save(out/(label+'.png'))
  dds=io.BytesIO();image.save(dds,format='DDS',pixel_format='DXT5');data=dds.getvalue()[128:]
- assert len(data)==args.size*args.size
+ assert len(data)==size*size
  # A block-preserving stream keeps native BC3 byte order and is trivial to
  # decode with volatile PowerPC integer registers.
  packed=lz4.block.compress(data,store_size=False,mode='high_compression',compression=12)
  records.append({'index':index,'label':label,'offset':len(blob),'packed_bytes':len(packed),
                  'decoded_bytes':len(data),'bc3_sha256':hashlib.sha256(data).hexdigest()})
+ if args.face_size:records[-1].update(width=size,height=size)
+ if color and (args.face_supersample>1 or args.face_alpha_bleed):records[-1]['fetch_word3']=0x01280D10
  blob.extend(packed)
  (out/(label+'.dds')).write_bytes(dds.getvalue())
 (out/'buttons.lz4').write_bytes(blob)
-(out/'manifest.json').write_text(json.dumps({'width':args.size,'height':args.size,'content_scale':args.content_scale,'format':'BC3/DXT5, linear RGBA, no byte swap',
+(out/'manifest.json').write_text(json.dumps({'width':args.size,'height':args.size,'content_scale':args.content_scale,'face_supersample':args.face_supersample,'face_alpha_bleed':args.face_alpha_bleed,'format':'BC3/DXT5, linear RGBA, no byte swap',
  'packing':'independent raw LZ4 blocks','packed_bytes':len(blob),'sha256':hashlib.sha256(blob).hexdigest(),'textures':records},indent=2)+'\n')
 print('Packed',len(records),'HD buttons into',len(blob),'bytes')

@@ -141,11 +141,14 @@ if args.tutorial is None:
 key('j')
 end=time.monotonic()+args.timeout
 skip_sent=False
+last_start_punch=-1000
 while time.monotonic()<end:
     try:
         s=b.sample()
         if args.skip_intro and not skip_sent and s['mode']==0 and s['players'][0].get('state') in (70,71):
             key('Return');key('space');skip_sent=True
+        if s['mode']==0 and s['players'][0].get('state') in (70,71) and s['bridge']['frame']-last_start_punch>=30:
+            key('j');last_start_punch=s['bridge']['frame']
         if ((args.story_boss and s['battle_kind']==1 and s['players'][0].get('state') is not None)
             or (not args.story_boss and s['mode'] in (4,6) and s['players'][0].get('state') in (0,1,20))):
             req({'command':'pause'});print(json.dumps(s),flush=True);break

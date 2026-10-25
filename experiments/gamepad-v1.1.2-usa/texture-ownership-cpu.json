@@ -1,0 +1,23 @@
+{
+  "scope": "Execute the native texture destructor's physical-buffer ownership branch.\n\nThe allocator/free implementation is an external recording stub; the original\nflag test, back-pointer lookup, pool selection and cleared data field execute\nfrom the selected regional image. This does not simulate GPU synchronization.\n",
+  "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+  "region": "USA",
+  "passed": true,
+  "cases": [
+    {
+      "metadata_flags": "0xa2",
+      "free_calls": [],
+      "repeat_does_not_free_twice": true
+    },
+    {
+      "metadata_flags": "0xaa",
+      "free_calls": [
+        [
+          1069056,
+          1056768
+        ]
+      ],
+      "repeat_does_not_free_twice": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "1.1.2",
+  "recorded_on": "2026-10-25",
+  "reported_by": "RashFaustinho",
+  "source": "Direct user feedback in the development conversation after receiving both regional 1.1.2 packages",
+  "summary": "The user reported that everything appeared to work very well and requested a public GitHub release including Europe, USA and their respective saves.",
+  "guard_followup": "The user had separately confirmed the 1.1.1 guard issue was resolved; its pose and gameplay payload remain unchanged in 1.1.2.",
+  "edition_explicitly_identified_in_latest_feedback": null,
+  "specific_N18_N17_clash_retest_explicitly_identified": false,
+  "scope": "Positive human gameplay feedback. This does not establish a completed campaign, exhaustive matchup coverage, or separate USA/Windows/controller validation. Automated and emulator evidence is recorded separately."
+}

@@ -1,0 +1,1004 @@
+{
+  "scope": "Run the original two-gesture Super recognizer with synthesized pad input.\n\nOnly Xenon's std/ld spill helpers are emulated for Unicorn PPC32. The native\ngesture queries, earliest-valid boundaries, result calculation and progress\nincrements execute unchanged. No renderer or gameplay completion claim.\n",
+  "patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+  "passed": true,
+  "technique_count": 6,
+  "cases": [
+    {
+      "technique": 0,
+      "old_early_result": {
+        "frame": 1,
+        "state": 1,
+        "result": 1,
+        "prepare_quality": 2,
+        "shoot_quality": 2
+      },
+      "native_timed_result": {
+        "frame": 21,
+        "state": 1,
+        "result": 3,
+        "prepare_quality": 3,
+        "shoot_quality": 3
+      },
+      "trace": [
+        {
+          "frame": 1,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 2,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 3,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 4,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 5,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 6,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 7,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 8,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 9,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 10,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 11,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 12,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 13,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 14,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 15,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 16,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 17,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 18,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 19,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 20,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 21,
+          "state": 1,
+          "result": 3,
+          "prepare_quality": 3,
+          "shoot_quality": 3
+        }
+      ]
+    },
+    {
+      "technique": 1,
+      "old_early_result": {
+        "frame": 1,
+        "state": 1,
+        "result": 1,
+        "prepare_quality": 2,
+        "shoot_quality": 2
+      },
+      "native_timed_result": {
+        "frame": 21,
+        "state": 1,
+        "result": 3,
+        "prepare_quality": 3,
+        "shoot_quality": 3
+      },
+      "trace": [
+        {
+          "frame": 1,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 2,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 3,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 4,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 5,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 6,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 7,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 8,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 9,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 10,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 11,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 12,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 13,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 14,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 15,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 16,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 17,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 18,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 19,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 20,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 21,
+          "state": 1,
+          "result": 3,
+          "prepare_quality": 3,
+          "shoot_quality": 3
+        }
+      ]
+    },
+    {
+      "technique": 2,
+      "old_early_result": {
+        "frame": 1,
+        "state": 1,
+        "result": 1,
+        "prepare_quality": 2,
+        "shoot_quality": 2
+      },
+      "native_timed_result": {
+        "frame": 21,
+        "state": 1,
+        "result": 3,
+        "prepare_quality": 3,
+        "shoot_quality": 3
+      },
+      "trace": [
+        {
+          "frame": 1,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 2,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 3,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 4,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 5,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 6,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 7,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 8,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 9,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 10,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 11,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 12,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 13,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 14,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 15,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 16,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 17,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 18,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 19,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 20,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 21,
+          "state": 1,
+          "result": 3,
+          "prepare_quality": 3,
+          "shoot_quality": 3
+        }
+      ]
+    },
+    {
+      "technique": 3,
+      "old_early_result": {
+        "frame": 1,
+        "state": 1,
+        "result": 1,
+        "prepare_quality": 2,
+        "shoot_quality": 2
+      },
+      "native_timed_result": {
+        "frame": 21,
+        "state": 1,
+        "result": 3,
+        "prepare_quality": 3,
+        "shoot_quality": 3
+      },
+      "trace": [
+        {
+          "frame": 1,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 2,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 3,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 4,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 5,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 6,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 7,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 8,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 9,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 10,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 11,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 12,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 13,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 14,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 15,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 16,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 17,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 18,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 19,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 20,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 21,
+          "state": 1,
+          "result": 3,
+          "prepare_quality": 3,
+          "shoot_quality": 3
+        }
+      ]
+    },
+    {
+      "technique": 4,
+      "old_early_result": {
+        "frame": 1,
+        "state": 1,
+        "result": 1,
+        "prepare_quality": 2,
+        "shoot_quality": 2
+      },
+      "native_timed_result": {
+        "frame": 21,
+        "state": 1,
+        "result": 3,
+        "prepare_quality": 3,
+        "shoot_quality": 3
+      },
+      "trace": [
+        {
+          "frame": 1,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 2,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 3,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 4,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 5,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 6,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 7,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 8,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 9,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 10,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 11,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 12,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 13,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 14,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 15,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 16,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 17,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 18,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 19,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 20,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 21,
+          "state": 1,
+          "result": 3,
+          "prepare_quality": 3,
+          "shoot_quality": 3
+        }
+      ]
+    },
+    {
+      "technique": 5,
+      "old_early_result": {
+        "frame": 1,
+        "state": 1,
+        "result": 1,
+        "prepare_quality": 2,
+        "shoot_quality": 2
+      },
+      "native_timed_result": {
+        "frame": 21,
+        "state": 1,
+        "result": 3,
+        "prepare_quality": 3,
+        "shoot_quality": 3
+      },
+      "trace": [
+        {
+          "frame": 1,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 2,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 3,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 4,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 5,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 6,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 7,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 8,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 9,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 10,
+          "state": 2,
+          "result": 0,
+          "prepare_quality": 1,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 11,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 12,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 13,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 14,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 15,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 16,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 17,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 18,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 19,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 20,
+          "state": 3,
+          "result": 0,
+          "prepare_quality": 3,
+          "shoot_quality": 1
+        },
+        {
+          "frame": 21,
+          "state": 1,
+          "result": 3,
+          "prepare_quality": 3,
+          "shoot_quality": 3
+        }
+      ]
+    }
+  ]
+}

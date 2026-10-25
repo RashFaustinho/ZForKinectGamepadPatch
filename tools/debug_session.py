@@ -23,7 +23,7 @@ runner = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(runner)
 
 
-def serve(name, seconds, patch_directory=None, profile_source=None, render_size=None, gpu='vulkan', hid='keyboard', apu='nop', log_level=2, display_name=':99'):
+def serve(name, seconds, patch_directory=None, profile_source=None, render_size=None, gpu='vulkan', hid='keyboard', apu='nop', log_level=2, display_name=':99', game=None, image_path=None):
     display_guard=(ROOT/'runtime'/('display-'+display_name[1:]+'.lock')).open('a')
     try:fcntl.flock(display_guard,fcntl.LOCK_EX|fcntl.LOCK_NB)
     except BlockingIOError:raise RuntimeError('Another supervised Xenia session owns display '+display_name)
@@ -65,6 +65,7 @@ def serve(name, seconds, patch_directory=None, profile_source=None, render_size=
     command = ['/workspace/tools/xenia-canary/squashfs-root/usr/bin/xenia_canary', '--gpu=vulkan', '--apu=nop', '--hid=keyboard', '--keyboard_mode=1', '--headless=true', '--discord=false', '--keybind_a=0x20', '--keybind_b=B', '--keybind_x=J', '--keybind_y=K', '--keybind_start=0x0D', '--storage_root=' + str(storage), '--log_file=' + str(directory / 'xenia.log'), str(ROOT / 'disc/Dragon Ball Z for Kinect (Europe) (En,Fr,De,Es,It).iso')]
     if profile_source:command.insert(-1,'--logged_profile_slot_0_xuid=B13EBABEBABEBABE')
     command[1]='--gpu='+gpu
+    if game:command[-1]=str(game.resolve())
     command[2]='--apu='+apu
     command[3]='--hid='+hid
     command[-1:-1]=[f'--log_level={log_level}', '--log_to_stdout=false']
@@ -92,8 +93,9 @@ def serve(name, seconds, patch_directory=None, profile_source=None, render_size=
             return base
         if memory is None:
             memory = os.open(f'/proc/{process.pid}/mem', os.O_RDONLY)
-        image = (ROOT / 'analysis/Dbkn.image.bin').read_bytes()
-        address = 0x8237ED60
+        image = (image_path or ROOT / 'analysis/Dbkn.image.bin').read_bytes()
+        pe = struct.unpack_from('<I',image,0x3C)[0]
+        address = struct.unpack_from('<I',image,pe+24+16)[0] + 0x82000000
         expected = image[address - 0x82000000:address - 0x82000000 + 16]
         for bit in range(32, 48):
             try:
@@ -239,6 +241,8 @@ if __name__ == '__main__':
     parser.add_argument('--apu',choices=('nop','sdl'),default='nop',help='sdl uses a silent dummy output but retains SDL buffer consumption')
     parser.add_argument('--log-level',type=int,choices=(0,1,2,3),default=2)
     parser.add_argument('--display',default=':99',help='Dedicated X display; one Xenia child per display')
+    parser.add_argument('--game',type=Path,help='Explicit disc image; defaults to the European research copy')
+    parser.add_argument('--image',type=Path,help='Matching decoded image for read-only guest-memory signature checks')
     args = parser.parse_args()
     if not args.name.replace('-', '').replace('_', '').isalnum():
         parser.error('Invalid session name')
@@ -246,6 +250,6 @@ if __name__ == '__main__':
     if args.render_size and not (1<=args.render_size[0]<=1920 and 1<=args.render_size[1]<=1080):
         parser.error('Unsupported render dimensions')
     if args.mode == 'serve':
-        serve(args.name, args.seconds, args.patches,args.profile_source,args.render_size,args.gpu,args.hid,args.apu,args.log_level,args.display)
+        serve(args.name, args.seconds, args.patches,args.profile_source,args.render_size,args.gpu,args.hid,args.apu,args.log_level,args.display,args.game,args.image)
     else:
         request(args.name, args.payload)

@@ -1,0 +1,20 @@
+{
+  "fixture": "check_hd_prompts_cpu.py",
+  "fixture_sha256": "369661a7124fe9945e2b29c5deb268c0240b2ed6de3bc8c4b4fcd85dd757639b",
+  "patch_sha256": "72b146499e15690e7ff34d220b339bf82f16a8ae482ba8107a33f53126a1f027",
+  "original_image_sha256": "12ce5c89e9ee9b6903745bfd459222f628c88e804363895dd54e79d1094cd088",
+  "adapted_numeric_addresses": [
+    [
+      "0x823791d8",
+      "0x82379178"
+    ],
+    [
+      "0x823794b8",
+      "0x82379458"
+    ]
+  ],
+  "behavioral_assertions_unchanged": true,
+  "image_digest_pin_adapted_to_known_USA_build": true,
+  "negative_baselines_ported": true,
+  "passed": true
+}

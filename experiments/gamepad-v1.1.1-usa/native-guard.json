@@ -1,0 +1,83 @@
+{
+  "scope": "Send genuine held B/X pad events and capture read-only guard geometry.\n\nOwns one session's input lock. No live memory writes or forced native states.\nScreenshots require a real rendering backend; Null GPU only checks data flow.\n",
+  "session": "fix12-final-usa-null",
+  "passed": true,
+  "cases": [
+    {
+      "history": "idle",
+      "native_frame": 1608,
+      "mode": 4,
+      "native_action": 12,
+      "native_state": 77,
+      "guard_flag": true,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "finite": true,
+      "joint_buffers_equal": true,
+      "screenshot": null
+    },
+    {
+      "history": "after_X_1",
+      "native_frame": 1648,
+      "mode": 4,
+      "native_action": 12,
+      "native_state": 77,
+      "guard_flag": true,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "finite": true,
+      "joint_buffers_equal": true,
+      "screenshot": null
+    },
+    {
+      "history": "after_X_2",
+      "native_frame": 1688,
+      "mode": 4,
+      "native_action": 12,
+      "native_state": 77,
+      "guard_flag": true,
+      "hands": [
+        [
+          -0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ],
+        [
+          0.11999999731779099,
+          0.8399999737739563,
+          2.3299999237060547,
+          1.0
+        ]
+      ],
+      "finite": true,
+      "joint_buffers_equal": true,
+      "screenshot": null
+    }
+  ],
+  "note": "After-X rows identify input history; this driver does not certify an accepted X attack. Actual setters are covered by the CPU regression."
+}

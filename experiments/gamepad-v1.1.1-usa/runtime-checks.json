@@ -1,0 +1,169 @@
+{
+  "version": "1.1.1",
+  "region": "usa",
+  "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+  "passed": true,
+  "public_startup": {
+    "passed": true,
+    "patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "session": "fix12-final-usa-public",
+    "native_textures_verified": 13,
+    "face_dimensions": [
+      256,
+      256
+    ],
+    "other_dimensions": [
+      128,
+      128
+    ]
+  },
+  "cpu_suites": 18,
+  "native_guard": {
+    "scope": "Send genuine held B/X pad events and capture read-only guard geometry.\n\nOwns one session's input lock. No live memory writes or forced native states.\nScreenshots require a real rendering backend; Null GPU only checks data flow.\n",
+    "session": "fix12-final-usa-null",
+    "passed": true,
+    "cases": [
+      {
+        "history": "idle",
+        "native_frame": 1608,
+        "mode": 4,
+        "native_action": 12,
+        "native_state": 77,
+        "guard_flag": true,
+        "hands": [
+          [
+            -0.11999999731779099,
+            0.8399999737739563,
+            2.3299999237060547,
+            1.0
+          ],
+          [
+            0.11999999731779099,
+            0.8399999737739563,
+            2.3299999237060547,
+            1.0
+          ]
+        ],
+        "finite": true,
+        "joint_buffers_equal": true,
+        "screenshot": null
+      },
+      {
+        "history": "after_X_1",
+        "native_frame": 1648,
+        "mode": 4,
+        "native_action": 12,
+        "native_state": 77,
+        "guard_flag": true,
+        "hands": [
+          [
+            -0.11999999731779099,
+            0.8399999737739563,
+            2.3299999237060547,
+            1.0
+          ],
+          [
+            0.11999999731779099,
+            0.8399999737739563,
+            2.3299999237060547,
+            1.0
+          ]
+        ],
+        "finite": true,
+        "joint_buffers_equal": true,
+        "screenshot": null
+      },
+      {
+        "history": "after_X_2",
+        "native_frame": 1688,
+        "mode": 4,
+        "native_action": 12,
+        "native_state": 77,
+        "guard_flag": true,
+        "hands": [
+          [
+            -0.11999999731779099,
+            0.8399999737739563,
+            2.3299999237060547,
+            1.0
+          ],
+          [
+            0.11999999731779099,
+            0.8399999737739563,
+            2.3299999237060547,
+            1.0
+          ]
+        ],
+        "finite": true,
+        "joint_buffers_equal": true,
+        "screenshot": null
+      }
+    ],
+    "note": "After-X rows identify input history; this driver does not certify an accepted X attack. Actual setters are covered by the CPU regression.",
+    "backend": "Null"
+  },
+  "normal_X_payloads_unchanged_from_1_1_0": true,
+  "unchanged_code_and_motion": [
+    {
+      "address": "0x825eb100",
+      "bytes": 2048,
+      "sha256": "64e9750f344faba2cafa4ca7b831bb4f1e40e1eb850a2aa98bfb75a731b3a348"
+    },
+    {
+      "address": "0x825ec000",
+      "bytes": 1400,
+      "sha256": "521b012bcc68f73417832c4e42904c26bded7fffe25a415598bc2b53ea38f830"
+    },
+    {
+      "address": "0x825ed200",
+      "bytes": 260,
+      "sha256": "c651a655817655763901795d812b55950df05145926162f04d31b88d2b87287b"
+    },
+    {
+      "address": "0x825ed400",
+      "bytes": 236,
+      "sha256": "2ada7837eef800cdfa096518724f849cf0ffb02d0431c97a3d3a67f048fff565"
+    },
+    {
+      "address": "0x825ed680",
+      "bytes": 92,
+      "sha256": "6b5aeb5ec2e2888218ad1862b07ff10e410b7d33b644305284ec3c232d9e599d"
+    },
+    {
+      "address": "0x825ec800",
+      "bytes": 1632,
+      "sha256": "ee033204def62665e75cb75e9188e2da48a25e6dd6313ce216335dc893a08398"
+    },
+    {
+      "address": "0x825ee600",
+      "bytes": 304,
+      "sha256": "29b139235fb4a4f5852535d93f6a7578df51f91f51e73da7d6907d16c7301672"
+    },
+    {
+      "address": "0x8266e900",
+      "bytes": 576,
+      "sha256": "2f0a42f28593d89e64ca9fdd7f3b259b957f68ae9433d3e17165c2f4f5667e5b"
+    },
+    {
+      "address": "0x825efe00",
+      "bytes": 128,
+      "sha256": "c6a54d4a6eb0f8b0f951d4f9f3426e178bdefead572abf224a40dc3151675638"
+    }
+  ],
+  "baseline_patch_sha256": "860d9f2212c91c8c68772773731dde80818741932c5e2a85c0dbe15470f594d9",
+  "historical_native_attack_evidence": "../gamepad-v1.1.0-usa/runtime-checks.json",
+  "local_guard_probe": {
+    "base_patch_sha256": "4ab918aeffd483e0898ee41b54193d378bd6ecad035c4dbcc46e8f4f0521eeb1",
+    "probe_sha256": "2bb6d50dc164df0da7af825a3ce6094914c12831c4e537a949073b8765c20130",
+    "only_extra_selector_hook_and_logger": true,
+    "live_memory_writes": false
+  },
+  "guard_reported_regression": "The reported straight-arm appearance was not reproduced with the prior European Goku pose, which also rendered raised. The new full guard is deliberately tucked and symmetric. No diagnosed regression cause is claimed.",
+  "visual_scope": "Europe Goku vs Raditz, Score Attack, Vulkan 1280x720 window; raised guard and B/X glyphs inspected. All four face sources and loaded resources verified. USA guard uses Null GPU; no new USA screenshot or every-character claim.",
+  "limits": [
+    "Not an exhaustive character/campaign/QTE playthrough.",
+    "Windows/D3D12 and physical controllers not tested.",
+    "Native guard entry/history is observed; every defensive damage result is not revalidated.",
+    "Normal X runtime findings from 1.1.0 remain historical, supported here by byte equality and new native-setter CPU regressions."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "scope": "Verify the RGBA transport and measure old/new authored contour errors.\n\nRequires only project-owned assets, Pillow and LZ4, never the original game.\nThe reddish-texel predicate applies to B; it is not a universal color metric.\n The annulus is radius 62.7..66 on 256px authored canvases; alpha <= 8 is excluded.",
+  "source_sha256": "7257eee76ba51a006d9e30b80121a9c2c6441d433bbb45ac7e1477b5828a178e",
+  "passed": true,
+  "results": [
+    {
+      "label": "B",
+      "BC3": {
+        "red_contour_pixels": 285,
+        "max_contour_red_channel_error": 95
+      },
+      "RGBA8": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 8
+      }
+    },
+    {
+      "label": "X",
+      "BC3": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 16
+      },
+      "RGBA8": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 8
+      }
+    },
+    {
+      "label": "Y",
+      "BC3": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 111
+      },
+      "RGBA8": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 8
+      }
+    },
+    {
+      "label": "A",
+      "BC3": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 16
+      },
+      "RGBA8": {
+        "red_contour_pixels": 0,
+        "max_contour_red_channel_error": 8
+      }
+    }
+  ],
+  "transport_roundtrip_exact": true,
+  "other_nine_decoded_textures_unchanged": true
+}

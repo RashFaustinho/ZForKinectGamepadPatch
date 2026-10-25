@@ -1,0 +1,1356 @@
+{
+  "scope": "Check real mash-texture selection and post-animation widget cleanup.\n\nNative 822EE188 executes with simulated Kinect catalogs (including missing or\nunready catalogs). Other widget bodies model their late pose/texture resets;\ntheir gameplay logic is not simulated. Texture and part factories are fixtures,\nwhile the original named-child traversal and emitted wrappers execute on PPC.\n",
+  "patch_sha256": "581c724308eaceb05973508f913151690a3c2ad49c8c634a8b8b27b49f548ff3",
+  "passed": true,
+  "cases": [
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee188",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822edca0",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822dff20",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822e03d8",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822ee270",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f1608",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 0,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 3,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 0,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "normal",
+      "mapped": true,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_pad",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "wrong_pad_count",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_table",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_texture",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    },
+    {
+      "native": "0x822f0f80",
+      "Kinect_catalog_count": 4,
+      "Kinect_ready": 1,
+      "case": "missing_part",
+      "mapped": false,
+      "OK_and_progress_preserved": true
+    }
+  ],
+  "native_mash_selectors_executed": [
+    "0x822ee188",
+    "0x822f1608"
+  ],
+  "outer_native_bodies": "late-reset ordering fixtures; not full gameplay"
+}

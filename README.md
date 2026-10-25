@@ -5,43 +5,58 @@
 >
 > **AI-generated work can contain mistakes.** Read the evidence and limitations before relying on a technical claim. Passing a CPU fixture, accepting an input, rendering an animation, and completing a battle are different results. This repository documents them separately. “Final 1.0.0” identifies the released revision; it is not a guarantee that every character, event, or emulator backend is bug-free.
 
-# Dragon Ball Z for Kinect — Gamepad Patch 1.0.0
+# Dragon Ball Z for Kinect — Gamepad Patch 1.1.2
 
-**For the EUROPEAN Xbox 360 edition only: En/Fr/De/Es/It.**
+**Supports the EUROPEAN edition (En/Fr/De/Es/It) and the American (USA) edition.** Use the patch for your exact executable module. Other builds and Title Updates are unverified.
 
-Play the game through Xenia using a normal controller: navigate menus, fight, charge Ki, use Super Attacks, answer QTEs, and use the Card Reader without a Kinect. The patch changes the emulated game's memory at startup; it does not modify the ISO or replace `default.xex`.
+Play through Xenia with a normal controller: menus, combat, Ki charge, Super Attacks, QTEs and the Card Reader. The patch applies to emulated memory at startup; no ISO edits or executable replacement are needed.
 
-| Supported build | Value |
-| --- | --- |
-| Region / languages | **Europe — English, French, German, Spanish, Italian** |
-| Title ID | `4E4D084E` |
-| Xenia executable module hash | `C9561ED1F9AFFED4` |
-| Original `default.xex` SHA-256 | `d09d3c36857d930279f2657188f0b135c27d22a39306178743d4e9becd42d438` |
-| Tested emulator | Xenia Canary `b735063`, Linux |
+| Supported Xbox 360 build | Europe | USA |
+| --- | --- | --- |
+| Title ID | `4E4D084E` | `4E4D084E` |
+| Xenia module hash | `C9561ED1F9AFFED4` | `8FDD4F4AB147612A` |
+| Media ID | `320B3C10` | `31D7559F` |
+| Original `default.xex` SHA-256 | `d09d3c36857d930279f2657188f0b135c27d22a39306178743d4e9becd42d438` | `c4d487f1be66b4484aedee63abd509a20138d283f4f91e074e367521afe24ace` |
 
-**Other regions, modified executables, and Title Updates have not been verified.** Windows/D3D12 and a physical USB controller were not tested in this environment; the automated runtime tests used Xenia's virtual controller and Linux Vulkan/Lavapipe or the Null GPU backend.
+Tested emulator: **Xenia Canary b735063, Linux**. Runtime checks use a virtual controller, Vulkan/Lavapipe and, where specified, the Null backend. Physical USB controllers and Windows/D3D12 were not tested in this environment.
+
+## What changed in 1.1.2
+
+- **Clean A/B/X/Y contours:** the remaining red outline artifacts came from BC3 color blocks. The four compact 256×256 faces now use uncompressed RGBA8 GPU pixels. A measured annulus on B changes from 285 reddish texels to zero; loaded GPU bytes match the authored PNG exactly.
+- **X on the Super-mash/clash widget:** the previously unpatched second punch-picture selector is covered, along with cleanup after native animations. OK/NG effects, progress and input timing retain their native behavior.
+- **Working guard and alternating attacks preserved:** the user confirmed the 1.1.1 guard works; its pose/input and normal X code and trajectories are byte-identical here. Both regions pass nineteen CPU suites. The author-side clash rendering check uses an explicitly LOCAL native UI display fixture; the complete N.18 versus N.17 encounter was not replayed. RashFaustinho subsequently reported that 1.1.2 appeared to work very well and approved public publication ([recorded feedback](research/user-feedback-1.1.2.json)).
+
+[1.1.2 findings, source and validation](docs/update-1.1.2.md), [1.1.1 guard and allocation research](docs/update-1.1.1.md), [1.1.0 arm alternation and USA port](docs/update-1.1.0.md).
 
 ## Download and install
 
-- **[Download version 1.0.0](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/tag/v1.0.0)** — patch, English guides, validation summary, and checksums.
-- [English ZIP package](releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip) and [archive checksum](releases/v1.0.0/ZForKinectGamepadPatch-1.0.0.zip.sha256) are also kept in the repository.
-- [View the standalone TOML](experiments/gamepad-final-v1.0.0/4E4D084E.gamepad.patch.toml).
+[Latest public release: v1.1.2](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/tag/v1.1.2) · [Release notes](docs/release-1.1.2.md)
 
-1. Close Xenia. Find its **Storage root**, shown in the startup log.
-2. Copy `4E4D084E.gamepad.patch.toml` into the Storage root's `patches` folder.
-3. Remove older versions of this project's patch from that folder. **Load one version only.**
-4. Enable `apply_patches = true` under `[General]` in Xenia's configuration.
-5. Select a local profile and launch your own European copy of the game. Use Xenia's normal controller driver.
+Choose **one** package for your edition:
 
-The log should show **`Gamepad conversion 1.0.0`** being applied. No Python installation or game recompilation is needed to play. Back up your save before installing. Full instructions: [installation](docs/installation.md).
+- [Europe 1.1.2 ZIP — patch + optional save](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-Europe.zip) — En/Fr/De/Es/It, module `C9561ED1F9AFFED4`.
+- [USA 1.1.2 ZIP — patch + optional save](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-USA.zip) — module `8FDD4F4AB147612A`.
+- [Standalone European TOML](experiments/gamepad-v1.1.2-europe/4E4D084E.gamepad.patch.toml) / [American TOML](experiments/gamepad-v1.1.2-usa/4E4D084E.gamepad.patch.toml).
+- [Original European 1.0.0 release](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/tag/v1.0.0) and its [frozen patch](experiments/gamepad-final-v1.0.0/4E4D084E.gamepad.patch.toml).
 
-The TOML is **64,441 bytes (62.93 KiB)**. Its SHA-256 is `bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50`. The released gameplay bytes are unchanged from the final version tested with the user.
+1. Close Xenia and back up your save. Locate its **Storage root** in the startup log.
+2. Remove older versions of this project's patch from that root's `patches` folder.
+3. Copy the TOML from your chosen regional ZIP's `patches` folder into it.
+4. Set `apply_patches = true` under `[General]` in Xenia's configuration.
+5. Select your local profile and launch your own copy of the matching edition. Use Xenia's normal controller driver.
+
+The log should identify `Gamepad conversion 1.1.2 (Europe)` or `(USA)`. No Python installation is required to play. Each package includes English instructions, the Card Reader map, a verification summary and SHA-256 checksums.
+
+The original European 1.0.0 remains **64,441 bytes (62.93 KiB)**, SHA-256 `bcf6ee7b2f92c4f416cb3c8625487f4f345937c91f0b7cb0b525f1186ef5fb50`; it has not been replaced or modified. The 1.1.2 artifacts have their own hashes and validation reports.
 
 ## Optional content-complete save
 
-[Download the European content-complete save and installation guide](releases/v1.0.0/content-complete-save/README.md). It enables the identified chapters and all 55 character groups / 67 variants, with **no active power-up card**. “Complete” refers to content availability; scores and Xbox achievements are not fabricated. Back up your existing save before replacing it. No account profile is included. The final patch also enables content availability, so this save is optional.
+[European save and guide](releases/v1.0.0/content-complete-save/README.md) / [American save and guide](releases/v1.1.0/content-complete-save-USA/README.md). It enables identified chapters and all 55 character groups / 67 variants, with **no active power-up**. Scores and Xbox achievements are not fabricated, and no account profile is included. Both editions loaded the same generated game-data bytes with the automatic unlock hook disabled. Both regional packages include their optional save; both editions normally share a save folder for the same local profile. The patch already enables content availability, so this save is optional.
+
+Save-only downloads: [Europe](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-Europe.zip) / [USA](https://github.com/RashFaustinho/ZForKinectGamepadPatch/releases/download/v1.1.2/ZForKinectGamepadPatch-1.1.2-Content-Complete-Save-USA.zip). They contain the same independently loaded game-data bytes, with regional guides and verification.
 
 ## Xbox 360 controls
+
 
 | Context | Input | Action |
 | --- | --- | --- |
@@ -108,7 +123,7 @@ This repository includes the patch generators, PowerPC assembler, generated patc
 | What was actually verified | [Final review](docs/final-review.md), [validation methods](docs/validation.md), [final reports](experiments/gamepad-final-v1.0.0) |
 | Rebuilding / extending | [Build instructions](docs/building.md), [tool and evidence provenance](docs/provenance.md) |
 
-Fifteen PowerPC suites pass on the final patch. The exact public startup payload was read back from Xenia; thirteen native 128×128 controller textures were checked byte-for-byte. The research also records native Great Ape completion and saved progression without the global unlock hook, Super-defense responses, and all twelve power-up reads. **These are scoped results, not an exhaustive playthrough of every matchup or the whole campaign.**
+Each 1.1.2 region has nineteen recorded CPU suites, exact public startup/resource readback and scoped European UI rendering evidence. See [the current report](docs/update-1.1.2.md). Version 1.1.0 had fifteen PPC regression suites plus its native-setter/arm-tail suite. Runtime evidence and its exact scope are documented in [the 1.1.0 report](docs/update-1.1.0.md). The original European 1.0.0 startup and thirteen controller textures were separately verified. The research also records native Great Ape completion and saved progression without the global unlock hook, Super-defense responses, and all twelve power-up reads. **These are scoped results, not an exhaustive playthrough of every matchup or the whole campaign.**
 
 Original game binaries, disc images, extracted game assets, full proprietary decompilations, account profiles, and raw process-memory dumps are not distributed. The inspection/decoding tools and documented addresses allow researchers to reproduce the work with their own game copy. Some historical scripts retain the original cloud workspace paths; [building](docs/building.md) explains the prerequisites and portable final-build path.
 
